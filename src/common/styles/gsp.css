@@ -1,0 +1,8 @@
+#hsbcGspHeader {
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    height: 62px;
+    max-height: 62px;
+    background-color: #fff;
+}

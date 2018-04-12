@@ -1,0 +1,100 @@
+/* UI examples styles */
+.example {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid #f2f2f2;
+    background: #fff;
+    h2 {
+        font-size: 2em;
+        padding: 15px 0 10px;
+        color: red;
+    }
+}
+
+.num {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 5px;
+}
+.num2 {
+    background-color: green;
+}
+
+.num3 {
+    background-color: blue;
+}
+
+.dropDownParent {
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 10;
+}
+.dropDownChild {
+    position: relative;
+    z-index: 9;
+}
+
+// button
+.buttonBox {
+    button {
+        margin: 0 10px;
+        display: inline-block;
+    }
+}
+// notification
+.notificationBox {
+    width: 40%;
+}
+//title
+.titleBox {
+    width: 40%;
+    background: #ededed;
+    h2 {
+        padding-left: 15px;
+        font-size: 1.5em;
+        color: #000000;
+    }
+}
+//tooltip
+.tooltipBox {
+    span {
+        font-size: 20pt;
+    }
+}
+// spinner
+.spinnerBox {
+    width: 200px;
+    a {
+        color: #fff;
+        border: 1px solid #3e505e;
+        background-color: #3e505e;
+    }
+}
+//slider
+.sliderBox {
+    width: 400px;
+    height: 40px;
+    padding: 30px 10px;
+    border-radius: 4px;
+    background: #1d262d;
+    .sliderDiv {
+        width: 300px;
+        float: left;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .numericInputDiv {
+        width: 60px;
+        float: left;
+        margin-left: 15px;
+        display: inline-block;
+    }
+}
+

@@ -1,0 +1,46 @@
+/********************************  OrderInputPanel css  *******************************/
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+div.active {
+    display: $block;
+}
+.h-con {
+    color: $color-c;
+    display: $hidden;
+    margin-left: -45px;
+    padding: $num-2 35px;
+    position: $position-relative;
+    background: #1d262e;
+    h3 {
+        border-bottom: 2px solid #404040;
+        margin-bottom: $num-0;
+        padding-bottom: $num-2;
+        .title {
+            border-left: 2px solid $red;
+            padding-left: 15px;
+            font-size: 28px;
+        }
+    }
+}
+.qmark {
+    display: none;
+    z-index: 15;
+    position: $position-absolute;
+    top: $num-2;
+    right: $num-4;
+    color: $white;
+    width: $num-3 * 10;
+    font-size: 20px;
+    text-align: $right;
+    .triangle-top {
+        position: $position-absolute;
+        top: 33px;
+        right: $num-0;
+        border-bottom: 10px solid $white;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        height: $num-0;
+        width: $num-0;
+    }
+}

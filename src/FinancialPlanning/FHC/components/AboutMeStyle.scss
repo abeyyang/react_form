@@ -1,0 +1,372 @@
+.panel{
+            border: 1px solid #D7D8D6;	
+            background-color: #FFFFFF;
+            line-height: 44px;
+            margin-bottom: 5px;
+            h3{
+                color: #333333;
+                font-size: 22px;		
+                line-height: 18px;
+                margin: 15px 20px;
+                vertical-align: middle;
+                .title{
+                    vertical-align: middle;
+                    padding-left: 10px;
+                    border-left: 5px solid #DB0011;
+                    .iconAgree{
+                        color: #008580;
+                        font-size: 30px;
+                    }
+                }            
+                .icon{
+                    color: #333333;
+                    float: right;
+                    margin-top: -23px;
+                    .iconDown{
+                        font-size: 30px;
+                    }
+                }
+            }
+}
+
+.results {
+            padding: 20px;
+            width:1210px;
+            background: #FFFFFF;
+            color: #fff;        
+            }
+ .clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}     
+                .choose {
+                    margin-top: 10px;
+                    position: relative;
+                    .iconEdit {
+                        margin: 0 0 0 5px;
+                        font-size: 30px;
+                    }
+                    .radioCheck {
+                        float: left;
+                        margin-right: 30px;
+                        margin-top: 10px;
+                        padding-left:20px;
+                    }
+                    .sexFontColor{
+                        color:gray;
+                    }                  
+                    .detailHide {
+                        display: none;
+                    }
+                    p.link {
+                        z-index: 2;
+                        top: 41px;
+                        left: 720px;
+                        border-bottom: 15px solid #333;
+                        border-left: 15px solid transparent;
+                        border-right: 15px solid transparent;
+                        margin: 0 auto;
+                        width: 0;
+                        position: absolute;
+                    }
+                    .redIcon{
+                        color:red;
+                    }
+                    .pCss{
+                        color:black;
+                    }
+                    .pUnder18YearsCss{
+                        color:black;
+                        float:left;
+                        width:330px;
+                    }
+                    p.link1 {
+                        z-index: 3;
+                        top: 42px;
+                        left: 721px;
+                        border-bottom: 14px solid #fff;
+                        border-left: 14px solid transparent;
+                        border-right: 14px solid transparent;
+                        margin: 0 auto;
+                        width: 0;
+                        position: absolute;
+                    }
+                    .detailOverlay {
+                        position: absolute;
+                        z-index: 1;
+                        top: 55px;
+                        left: 490px;
+                        width: 500px;
+                        text-align: left;
+                        .detailText {
+                            border: 1px solid #333;
+                            padding: 20px;
+                            background: #fff;
+                            p {
+                                color: #333;
+                                margin: 0;
+                                padding-top: 10px;
+                                font-size: 15px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+                .choose:hover .detailHide {
+                    display: block;
+                }      
+    .currencyType {
+                            border: 1px solid #ccc;
+                            float: left;
+                            position: relative;
+                            padding: 12px;
+                            width: 340px;
+                            span {
+                                color: #666;
+                            }
+                            .num {
+                                position: absolute;
+                                top: 10px;
+                                left: 60px;
+                                border: none;
+                            }
+                            .num:disabled{
+                                background-color: #fff
+                            }
+                        }
+     .inputBoxCss{
+            margin-top: 10px;
+            position: relative;
+            .pCss{
+                color:black;
+            }
+            .currentAgeDiv{
+                padding-left:20px;
+                .currentAgeInput{
+                    width:50px;
+                    height:30px;
+                    text-align:center;
+                }
+                .currentAgeSpan{
+                    color:black;
+                    padding-left:15px;
+                }
+            }
+    }
+    .selectBoxCss{
+            margin-top: 10px;
+            position: relative;
+        .pCss{
+            color:black;
+        }
+        .riskLevelDropdownCss{
+            float:left;
+            padding-left:17px;
+        }
+        .select{
+            width: 200px;
+            height: 40px;
+            padding-left: 10px;
+            margin-left: 20px;
+            border: 1px solid #929292;
+        }
+        .iconEdit {
+             margin: 0px 0 0 5px;
+             font-size: 25px;
+             color:black;
+         }
+         .riskProfileCss{
+             font-size:12px;
+             color:gray;
+             padding-left:20px;
+             margin-top:-5px;
+         }
+         .option{
+             background-image:"../images/pic1.png";
+         }
+    }
+    .under18AgeCss{
+        background-color:#F6F6F6;   
+        width:1220px;
+        .haveManyChildreninputBoxCss{
+                margin-top: 10px;
+                margin-left:20px;
+                position: relative;
+            .pCss{
+                color:black;
+            }
+            .suplusCss{
+                color:black;
+            }
+            .AddCss{
+                color:black;
+            }
+            .manyChildDiv{
+                margin-left:20px;
+                background-color: #3E505E;
+                border:1px solid #3E505E;
+                width: 160px;
+                .currentAgeInput{
+                    width:50px;
+                    height:30px;
+                }          
+                .leftIcon{
+                    color: white;
+                    float: left;
+                    text-decoration-line: none;
+                    .iconDown{
+                        font-size: 30px;
+                    }
+                }
+                .childrenNo{
+                    float: left;
+                    width: 100px;
+                    text-align: center;
+                    background-color: white;
+                    color: black;
+                }
+                .rightIcon{
+                    color: white;
+                    text-decoration-line: none;
+                    .iconDown{
+                        font-size: 30px;
+                    }
+                }
+                
+            }
+
+        }
+        .childrenAgesinputBoxCss{
+                margin-top: 10px;
+                margin-left:20px;
+                position: relative;
+                .capital{
+                    font-size: 15px;
+                    color:black;
+                }
+                .lower{
+                    float: right;
+                    color:black;
+                    font-size:12px;
+                    position: absolute;
+                    margin-top: -10px;
+                }
+            .childCss{
+                margin-left:15px;
+                color:black;
+            }          
+            .pCss{
+                color:black;
+            }
+            .childrenAgesDiv{
+                padding-left:20px;
+                .currentAgeInput{
+                    width:50px;
+                    height:30px;
+                    margin-left:10px;
+                }          
+                .childSpanWidth{
+                    width: 200px;
+                    float: left;
+                    .childLabel{
+                        float: left;
+                        margin-right: 10px;
+                    }
+                    .childInputBox{
+                        float: left;
+                    }
+                }
+            }
+
+        }    
+        .attendUniversityinputBoxCss{
+                margin-left:20px;
+                position: relative;
+            .pCss{
+                color:black;
+            }
+            .universityCountryCdeListCss{
+                padding-left:17px;
+                padding-bottom: 17px;
+            }
+            .attendUniversityAgeDiv{
+                padding-left:20px;
+                .currentAgeInput{
+                    width:50px;
+                    height:30px;
+                }          
+            }
+            .capital{
+                    font-size: 15px;
+                    color:black;
+                }
+        }  
+ }
+ .triangle{
+    width:0px;
+    height:0px;
+    line-height:0;
+    border:20px solid transparent;
+    border-bottom-color:#F6F6F6;
+    border-top:0; 
+    margin-left:15px;
+    margin-bottom:-10px;
+ }
+ .lineCss{
+        background-color: lightgray;
+        height:1px;
+        margin-top:-15px;
+ }
+
+      // radioButton
+.radioButtonList{
+    color:black;
+    .radioButtonLabel {
+        .labelText {
+            display: inline-block;
+            line-height: 30px;
+        }
+    }
+    .radioButtonList li {
+        padding: 5px 0;
+    }   
+            ul {
+                    li {
+                        padding: 5px 0px 0px 17px;
+                        line-height: 23px;
+                        float:left;
+                        span {
+                            float: right;
+                            margin-right: 20px;
+                        }
+                    }
+                    li:nth-child(2n + 1) {
+                        background: #FFFFFF;
+                        color:black;
+                    }
+                    li:first-child {
+                        border-bottom: 1px solid #FFF;
+                    }
+                }       
+}  
+.errorMsgCss {
+    color: #83000A;
+    position: absolute;
+    top: 48px;
+    left: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    white-space: pre;
+}
+.errorMsgCssInLine {
+    @extend .errorMsgCss;
+    left: 0;
+}  

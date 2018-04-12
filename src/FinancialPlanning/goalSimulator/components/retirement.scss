@@ -1,0 +1,72 @@
+.bodyBackground {
+    background-color:#eeeceb;
+    padding-right: 20px;
+    padding-left: 20px;
+    //font-family: "Univers Next for HSBC";
+    .middleMainBackground {
+        background-color:#FFFFFF;
+        padding: 20px;
+        .mainBackground {
+            color:#FFFFFF;
+            .fieldsDiv {
+                padding-left: 20px;
+                height: 180px;
+                background-color: #415562;
+                .makingChanges {
+                    padding-top: 20px;
+                    font-size: 1.6em;
+                    font-weight: 300;
+                }
+                .tiltle {
+                    padding-top: 10px;
+                    font-size: 1em;
+                }
+                .tiltleDesc {
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    font-size: 0.8em;
+                }
+                .calculateBtn {
+                    float: right;
+                    margin-right: 20px;
+                }
+                a{
+                    cursor:pointer;
+                    display: inline-block;
+                    line-height: 40px;
+                    height: 40px;
+                    width: 109px;
+                    margin-top: 26px;
+                    margin-left: 20px;
+                    text-align: center;
+                    border: 1px solid #FFFFFF;
+                }
+                .field {
+                    margin-right: 20px;
+                    float: left;
+                    .label {
+                        padding-bottom: 8px;
+                    }
+                    .input {
+                        border: 1px solid #ccc;
+                        height: 21px;
+                        padding: 10px;
+                        width: 40px;
+                    }
+                    .years {
+                        padding: 15px 0px 0px 0px;
+                        float: right;
+                        right: 15px;
+                        position: relative;
+                    }
+                }
+                .clear {
+                    clear: both;
+                }
+            }
+            
+        }
+    }
+    
+}
+

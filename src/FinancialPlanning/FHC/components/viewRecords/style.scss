@@ -1,0 +1,177 @@
+.viewRecordsPage{
+    margin: 20px 0px;
+    .themeRight{
+        float: right;
+        width: 1050px;
+        position: absolute;
+        margin-top: -44px;
+        padding-left: 254px;
+        color: #333333;
+        .tiltleRight{
+            float: right;
+            margin-top: -50px;
+            margin-right: 10px;
+            font-size: 12px;
+            color: #333333;
+            .circle{
+                margin-right: 5px; 
+                margin-bottom: -2px;    
+                height: 12px;
+                width: 12px;	
+                background-color: #008580;
+                border-radius: 50%;
+                display: inline-block;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
+            }
+        }
+        .tiltleText{
+            height: 18px;
+            //font-family: "Univers Next for HSBC";	
+            font-size: 14px;	
+            line-height: 18px;
+        }
+        .themeSearch{
+            clear: both;
+            float: right;
+            margin-top: -20px;
+            .searchIcon{
+                color: #A7A7A7;
+                font-size: 25px;
+                float: right;
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 15px;
+            }
+            input{
+                padding-left: 45px;
+                height: 40px;	
+                width: 361px;	
+                border: 1px solid #7C7C7C;	
+                background-color: #FFFFFF;
+                color: #7C7C7C;
+                font-size: 14px;
+            }
+        }
+    }
+    .Online{
+        border: 1px solid #D7D8D6;	
+        background-color: #FFFFFF;
+        margin-bottom: 20px;
+        h5{
+            color: #333333;
+            font-size: 16px;	
+            font-weight: bold;	
+            line-height: 44px;
+            margin: 0px 20px;
+            border-bottom: 1px solid #D7D8D6;
+            height: 44px;
+            vertical-align: middle;
+            .title{
+                padding-left: 10px;
+                border-left: 5px solid red;
+            }
+        }
+        table{
+           margin: 20px 20px;
+           width: 100%;
+           padding-right: 40px;
+           color: #333333;
+           font-size: 14px;
+           tr:nth-child(2n) {
+             background: #f6f6f6;
+            } 
+           th{
+               	height: 45px;	
+                background-color: #2F3D46;
+                vertical-align: middle;
+                color: #D7D8D6;
+                div{
+                    margin-left: 35px;
+                    .icon{
+                        float: right;
+                        position: absolute;
+                        margin-top: -15px;
+                    }
+                }
+           } 
+           th:first-child,
+           td:first-child{
+               width: 90px;
+               text-align: center;
+               .circle{
+                    margin-right: 5px; 
+                    margin-bottom: -2px;    
+                    height: 12px;
+                    width: 12px;	
+                    background-color: #008580;
+                    border-radius: 50%;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                }
+           }
+           th:nth-child(2),
+           td:nth-child(2),
+           th:nth-child(3),
+           td:nth-child(3){
+                width: 200px;
+           }
+           th:nth-child(3){
+               div{
+                   margin-left: 45px;
+               }
+           }
+           th:nth-child(4),
+           td:nth-child(4){
+                width: 500px;
+                text-align: right;
+                .iconArticles{
+                    font-size: 25px;
+                }
+           }
+           
+           th:last-child,
+           td:last-child{
+                width: 300px;
+                text-align: right;
+                padding-right: 50px;
+                .iconWindow{
+                    font-size: 25px;
+                }
+           }
+           td{
+               height: 45px;
+               vertical-align: middle;
+           }
+        }
+        .pageNation{
+            margin-left: 20px;
+            margin-bottom: 20px;
+            .pageGroup{
+                color: #333333;
+                h1{
+                    font-size: 14px;
+                }
+                ul{
+                    float: right;
+                    position: absolute;
+                    margin-top: -30px;
+                    margin-left: 45px;
+                    li{
+                        width: 26px;
+                        margin-left: 8px;
+                        line-height: 26px;
+                        padding: 0px;
+                    }
+                }  
+            }
+            .pageDetail{
+                float: right;
+                margin-top: -30px;
+                margin-right: 20px;
+                
+            }
+        }
+    }
+}

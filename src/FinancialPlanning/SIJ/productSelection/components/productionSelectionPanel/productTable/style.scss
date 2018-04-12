@@ -1,0 +1,315 @@
+.tableContant{
+    .productFoundContent{
+        height: 50px;
+        .productTitle{
+            float: left;
+            margin: 15px 20px;
+            font-size: 20px;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    .productFilter{
+		margin: 0px 20px;
+		font-size: 20px;
+		clear: both;
+		.feProductLable{
+			float: left;
+		.spanUnit{
+			float: left;
+			background-color: #fff;
+			padding: 10px 10px;
+			height: 20px;
+			line-height: 20px;
+		   color: #333333;
+			border: 1px solid #929292;
+			
+		}
+		.spanProductType{
+			float: left;
+			border: 1px solid #929292;
+			height: 20px;
+			padding: 10px 10px;
+			line-height: 20px;
+			background-color: #E7E7E6;
+		}
+		}
+		.tag{
+			width: 30%;
+			float: right;
+			text-align: right;
+		}
+		.showOn{
+
+			width:62px;
+			height: 40px;
+			display: inline-block;
+			text-align: center;
+			vertical-align: middle;
+			background-color: #fff;
+			margin-left: 10px;
+			line-height: 40px;
+			border: 1px solid #929292;
+			font-size: 16px;
+		}
+		.showOff{
+			width:62px;
+			height: 40px;
+			display: inline-block;
+			text-align: center;
+			font-size: 16px;
+			background-color: #E7E7E6;
+			border: 1px solid #929292;
+			vertical-align: middle;
+			color: #333333;
+			 line-height: 40px;
+		}
+		
+		.spanTag{
+			margin-left: 20px;
+		}
+	   
+	}
+    .tables{
+    }
+    .bottom{
+        padding-top: 20px;
+        .back {
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+        .button {
+            float: right;
+            margin-top: -30px;
+            font-size: 16px;
+            a {
+                text-decoration: none;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .save{
+                margin-right: 10px;
+                height: 40px;	
+                width: 145px;	
+                border: 1px solid #333333;
+                color: #000000;
+                font-size: 16px;
+            }
+            .report{	
+                width: 165px;
+                border: 1px solid	#DB0011;
+                background-color: #DB0011;
+                color: #fff;
+            }
+        }
+    }
+    .tabInfo{
+        padding-top: 150px;
+    }
+}
+
+.table{
+    position: relative;
+    overflow: hidden;
+    .fixedHead,
+    .tableRow,
+    .tableHead {
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+        color: white;
+        height: 68px;
+    }
+
+    .tableHead,
+    .fixedHead {
+        z-index: 4;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-clip: content-box;
+    }
+
+    .tableHead {
+        position: absolute;
+    }
+
+    .fixedHead {
+        position: fixed;
+        left: 14px;
+        width: calc(100% - 40px);
+
+        .scrollHead {
+            width: 100%;
+        }
+    }
+    .tableRow:nth-child(2n + 1) {
+        display: table;
+        background-color: #F6F6F6;
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
+            font-size: 14px;
+            color:#000000;
+        }
+    }
+    .tableRow {
+        display: table;
+        background-color: #fff;
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
+            font-size: 20px;
+            color:#000000;
+        }
+    }
+
+    .tableBody,
+    .fixedColumn {
+        -webkit-overflow-scrolling: touch;
+        padding-top: 68px;
+    }
+
+    .tableBody {
+        position: relative;
+        overflow: auto;
+
+        .tableRow {
+            position: relative;
+        }
+    }
+
+    .fixedColumn,
+    .fixedHeaderColumn {
+        overflow: hidden;
+        .minWidth {
+            > * {
+                visibility: visible;
+                // pointer-events: none;
+                pointer-events: visible;
+            }
+            > *:nth-child(1) {
+                visibility: visible;
+                pointer-events: visible;
+            }
+        }
+    }
+
+    .fixedColumn {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .fixedHeaderColumn {
+        .scrollHead {
+            background-color: transparent;
+        }
+    }
+
+    .fixedHeaderColumn {
+        z-index: 5;
+    }
+    .detailHeight{
+        height:300px;
+    }
+    .detailWidth{
+        > *:nth-child(1) {
+            min-width: 100%;
+            max-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-right: 1px solid white;
+            width:220px;
+        }
+    }
+    .openedRowShow{
+        z-index: 10;
+    }
+    .openedRowHide{
+        z-index: 1;
+    }
+    .minWidth {
+        > * {
+            border-bottom: 1px solid white;
+        }
+
+        > *:nth-child(1) {
+            width:220px;
+            min-width: 120px;
+            max-width: 120px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-right: 1px solid white;
+        }
+
+        > *:nth-child(2) {
+            min-width: 68px;
+            max-width: 68px;
+            text-align: center;
+        }
+
+        > *:nth-child(3) {
+            min-width: 68px;
+            max-width: 68px;
+            text-align: center;
+        }
+
+        > *:nth-child(4) {
+            min-width: 68px;
+            max-width: 68px;
+            text-align: center;
+        }
+
+        > *:nth-child(5) {
+            min-width: 60px;
+            max-width: 60px;
+            text-align: center;
+        }
+
+        > *:nth-child(6) {
+            min-width: 60px;
+            max-width: 60px;
+            text-align: center;
+        }
+
+        > *:nth-child(7) {
+            min-width: 60px;
+            max-width: 60px;
+            text-align: center;
+        }
+
+        > *:nth-child(8) {
+            min-width: 80px;
+            max-width: 80px;
+            text-align: center;
+        }
+
+        > *:nth-child(9) {
+            min-width: 80px;
+            max-width: 80px;
+            text-align: center;
+        }
+
+        > *:nth-child(10) {
+            min-width: 80px;
+            max-width: 80px;
+            text-align: center;
+        }
+
+        > *:nth-child(11) {
+            min-width: 147px;
+            max-width: 147px;
+            text-align: center;
+        }
+    }
+}

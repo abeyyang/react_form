@@ -1,0 +1,110 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        width: 1305px;
+        .riskProfilePage {
+            background-color: #fff;
+            padding: 20px 25px;
+            color: #333;
+            h2 {
+                font-size: 30px;
+                font-weight: bold;
+                border-bottom: 1px solid #a7a7a7;
+                line-height: 28px;
+                margin: 40px 0px;
+                padding-bottom: 10px;
+            }
+            h3{
+                color: #000;
+                margin: 20px 0px;
+                font-size: 26px;
+                font-weight: bold;
+            }
+            .customerInformation,.customerPreviousRecords{
+                color: #333;
+                margin: 15px 0px;
+                h3{
+                    font-size: 20px;
+                }
+                 table{
+                    margin: 20px 0px;
+                     td{
+                        height: 30px;
+                        vertical-align: middle;
+                        font-size: 16px;
+                        color: #333;
+                    }
+                }
+            }
+            .customerInformation{
+                table{
+                    td{
+                        font-weight: bold;
+                        text-align: left !important;
+                        color:#4c4c4c;
+                        width: 200px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .customerPreviousRecords{
+                table{
+                    background-color: #fff;
+                    tr:nth-child(2n+1) {
+                        background: #f6f6f6;
+                    }
+                    th{
+                        font-weight: bold;
+                         width: 180px;
+                         height: 40px;
+                         vertical-align: middle;
+                         background-color: #a7a7a7;
+                         height: 40px;
+                         font-size: 14px;
+                         text-align: center !important;
+                    }
+                    td{
+                        font-size: 14px;
+                        height: 40px;
+                        text-align: center;
+                        .viewReport{
+                            padding: 5px;
+                            text-decoration: none;
+                            color: #333;
+                            border: 1px solid #a7a7a7;
+                            .icon{
+                               color:#d80a1e;     
+                            }
+                        }
+                    }
+                    th,td:first-child{
+                        padding-left: 8px;
+                        text-align: left;
+                    }
+                }
+            }
+            .button{
+                margin: 180px 0px 20px 0px;
+                a{
+                    text-decoration: none;
+                    color: #333;
+                }
+                .cancel{
+                    padding: 10px;
+                    border: 1px solid #a7a7a7;
+                    margin-right: 20px;
+                }
+                .assessment{
+                    color: #fff;
+                    padding: 10px;
+                    background-color: #d80a1e;
+                    border: 1px solid #d80a1e;
+                }
+            }
+        }
+    }
+}

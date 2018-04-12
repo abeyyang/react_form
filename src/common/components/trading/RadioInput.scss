@@ -1,0 +1,46 @@
+/********************************  RadioInput css  *******************************/
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+.opt {
+    border-bottom: 2px solid #404040;
+    padding: 8px 5px;
+    font-size: 16px;
+    line-height: $num-3;
+    position: $position-relative;
+
+    label {
+        font-weight: $normal;
+    }
+
+    input[type='radio'] {
+        display: $hidden;
+    }
+
+    input[type='radio'] + label::before {
+        content: "";
+        border-radius: $num-1;
+        border: $border $white;
+        display: $inline-block;
+        height: $num-2;
+        margin-right: $num-1;
+        width: $num-2;
+        vertical-align: -4px;
+        background: $hidden;
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 0px 0px 0px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.on {
+    background: #253038;
+
+    input[type='radio'] + label::before {
+        display: $inline-block;
+        background: #41965b;
+    }
+}
+
+.disabled {
+    background: $color-3;
+    color: #929292;
+}

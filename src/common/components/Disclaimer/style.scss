@@ -1,0 +1,40 @@
+.disclaimer {
+        background-color: #eeeceb;
+        margin: 20px;
+        margin-bottom: 25px;
+        
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
+        .chevron {
+            margin: 0 0 0 5px;
+            padding-top:10px;
+            font-size: 30px;
+            float:right;
+            
+        }
+        .pointer {
+            cursor:pointer;
+            line-height:49px;
+            font-size:16px;
+        }
+        .declareDetail {
+            line-height: 16px;
+            font-size: 12px;
+        }
+        
+    }
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}
+.overflowHidden{
+    overflow:hidden;
+}

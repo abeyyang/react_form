@@ -1,0 +1,17 @@
+/********************************  TradinfLi css  *******************************/
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+.triangle-left {
+    position: $position-absolute;
+    top: 24px;
+    right: -20px;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid #1d262e;
+    border-top: 7px solid transparent;
+    height: $num-0;
+    width: $num-0;
+}
+.hidden {
+    display: $hidden;
+}

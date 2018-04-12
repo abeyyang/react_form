@@ -1,0 +1,178 @@
+.panel{
+            border: 1px solid #D7D8D6;	
+            background-color: #FFFFFF;
+            line-height: 44px;
+            margin-bottom: 5px;
+            h3{
+                color: #333333;
+                font-size: 22px;		
+                line-height: 18px;
+                margin: 15px 20px;
+                vertical-align: middle;
+                .title{
+                    vertical-align: middle;
+                    padding-left: 10px;
+                    border-left: 5px solid #DB0011;
+                    .iconAgree{
+                        color: #008580;
+                        font-size: 30px;
+                    }
+                }
+                .icon{
+                    color: #333333;
+                    float: right;
+                    margin-top: -23px;
+                    .iconDown{
+                        font-size: 30px;
+                    }
+                }
+            }
+ }
+ .results {
+            padding: 20px;
+            width:1210px;
+            background: #FFFFFF;
+            color: #fff;
+            ul {
+                    li {
+                        padding: 20px;
+                        line-height: 23px;
+                        span {
+                            float: right;
+                            margin-right: 20px;
+                        }
+                    }
+                    li:nth-child(2n + 1) {
+                        background: #FFFFFF;
+                        color:black;
+                    }
+                    li:first-child {
+                        border-bottom: 1px solid #FFF;
+                    }
+                }            
+            }
+ .clearfix {
+    zoom: 1;
+}
+ .lineCss{
+        background-color: lightgray;
+        height:1px;
+        margin-top:-15px;
+ }
+      .inputBoxCss{
+            margin-top: 10px;
+            clear:left;
+            position: relative;
+            .pCss{
+                color:black;
+                padding-bottom:10px;
+            }
+            .currencyType {
+                background-color: #FFFFFF;
+                margin-left: 20px;
+                border: 1px solid #ccc;
+                padding-left: 15px;
+                float: left;
+                span { 
+                    color: #929292;
+                }
+                .num {
+                    color: black;
+                    padding-left: 10px;
+                    border: none;
+                }                
+            }
+            .leftPositionCss{
+                padding-left:18px;
+             }            
+            .assumptionHeadlineCss{
+                background-color: lightgray;
+                height:1px;
+                margin-top:20px;
+            }  
+            .viewAssumptionCss{
+                float:left;
+                color:black;
+                margin-top:10px;
+                font-size: 30px;
+            }
+            .LeftFloatDivCss{
+                float:left;
+                padding-bottom:5px;
+            }
+            .LeftFloatCss{
+                float:left;
+            }
+            .assumptionUnderlineCss{
+                background-color: lightgray;
+                height:1px;
+                clear:left;
+                margin-bottom:20px;
+                margin-top: 10px;
+            }                         
+            .assumptionCss{
+                line-height: 50px;
+                margin-left: 40px;  
+                .assumptionFontCss{
+                    color:black;
+                    font-weight: bold;
+                }           
+                .pLeftFloatCss{
+                    clear:left;
+                    color:black;
+                } 
+                .leftFloatCss{
+                    float:left;
+                }
+                .icon{
+                    color: #333333;
+                    float: right;
+                    margin-top: -50px;
+                    .iconDown{
+                        font-size: 30px;
+                    }
+                }         
+                .redIcon{
+                    color:red;
+                    display: inline-flex;
+                    vertical-align: 15px;
+                    height: 5px;
+                    margin-bottom: 40px;
+                }
+                .annualExpCss{
+                    display: inline-flex;
+                    float:left;
+                    padding: 0px 10px;                   
+                }
+                .averageYearsOneduCss{
+                    display: inline-flex;
+                    float:left;
+                    padding: 0px 10px;    
+                }
+                .oldestChildOfeducationCss{
+                    float:left;
+                    display: inline-flex;
+                    padding: 0px 10px;                  
+                }                            
+            } 
+
+            .iconEdit {
+                    margin: 0px 0 0 5px;
+                    font-size: 25px;
+                    color:black;
+            }         
+    }
+    .errorMsgCss {
+        color: #83000A;
+        position: absolute;
+        top: 48px;
+        left: 20px;
+        font-size: 12px;
+        line-height: 15px;
+        white-space: pre;
+     }
+    .errorMsgCssInLine{
+        @extend .errorMsgCss;
+        left: 0px;
+    }
+

@@ -1,0 +1,149 @@
+
+ .solutionMain {
+     border: 1px solid #ccc;
+     margin: 0px 20px 20px 20px;
+     padding: 20px;
+     background-color: #fff;
+    .table{
+        position: relative;
+        .tableHead {
+            box-sizing: border-box;
+            width: 100%;
+            color: white;
+            line-height: 55px;
+            height: 55px;
+        }
+
+        .tableRow {
+            display: table;
+            height: 55px;
+            padding-left: 20px;
+            background-color:#FFFFFF ;
+            > * {
+                display: table-cell;
+                text-align:center;
+                font-size: 14px;
+                color:#000000;
+            }
+        }
+        
+        .tableRow:nth-child(2n + 1) {
+            display: table;
+            background-color: #f6f6f6;
+            > * {
+                display: table-cell;
+                text-align:center;
+                font-size: 14px;
+                color:#000000;
+            }
+        }
+        .tableBody,
+        {
+            -webkit-overflow-scrolling: touch;
+            padding-top: 55px;
+            position: relative;
+            overflow: auto;
+            .tableRow {
+                position: relative;
+            }
+        }
+        .minWidth {
+            > * {
+                border-bottom: 1px solid white;
+            }
+
+            > *:nth-child(1) {
+                min-width: 100px;
+                max-width: 100px;
+                text-align: left;
+            }
+
+            > *:nth-child(2) {
+                min-width: 100px;
+                max-width: 100px;
+                text-align: left;
+            }
+
+            > *:nth-child(3) {
+                min-width: 100px;
+                max-width: 100px;
+                text-align: center;
+            }
+        
+        }
+    }
+
+    .noteAdd{
+          font-size: 12px;
+          color: #4A4A4A;
+          float: left;
+          font-family: "Univers Next for HSBC";
+          span{
+             font-weight: bold;
+            }
+         }
+     .Add{
+        float:right;
+        text-align: right;
+        color: #333333;	
+        font-family: "Univers Next for HSBC";
+        cursor: pointer;
+     }
+     .remark {
+         margin-top: 20px;
+         font-size: 14px;
+         span {
+             border: 1px solid #f07e2e;
+             display: inline-block;
+             height: 10px;
+             margin-right: 5px;
+             width: 15px;
+         }
+     }
+     .choose {
+         margin-top: 35px;
+         .iconEdit {
+             margin: 0 0 0 5px;
+             font-size: 30px;
+         }
+         .radioCheck {
+             float: left;
+             margin-right: 30px;
+         }
+         label {
+             font-weight: normal;
+             .wrapper {
+                 position: relative;
+                 top: 5px;
+                 left: 0;
+                 border-radius: 50%;
+                 border: 1px solid #ccc;
+                 box-sizing: content-box;
+                 display: inline-block;
+                 height: 30px;
+                 margin-right: 10px;
+                 width: 30px;
+                 .checked {
+                     border-radius: 50%;
+                     display: inline-block;
+                     height: 15px;
+                     margin: 8px 0 0 8px;
+                     width: 15px;
+                     background: #1d262e;
+                 }
+             }
+         }
+         input[type='radio'] {
+             display: none;
+         }
+         .on {
+             input[type='radio'] + label .checked {
+                 background: #008580;
+             }
+         }
+     }
+ }
+
+.wd150{
+    width:150px;
+}

@@ -1,0 +1,23 @@
+        .productName{
+                width: 280px;
+                color: #333333;
+                input {
+                    padding-left: 15px;
+                    height: 40px;	
+                    width: 271.77px;
+                    border: 1px solid #929292;	
+                    background-color: #FFFFFF;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    //padding: 12px 30px 12px 20px;
+                    color: #333333;	
+                    font-family: "Univers Next for HSBC";	
+                    font-size: 14px;	
+                    line-height: 18px;
+                }
+                input::-ms-expand {
+                        display: none;
+                    }
+                        
+            }

@@ -1,0 +1,488 @@
+.viewRecordsDetial{
+   
+    width:920px;
+    height:atuo;
+    
+    
+    .financialChart{
+        float: left;
+        width: 920px;
+        color: #333333;
+        height:680px;
+        .tiltleText{
+            margin:10px 0 30px 0;
+            font-size: 25px;
+            width:800px;   
+        }
+        .titleSubText{
+            float: left;
+            height:30px;
+            line-height: 30px;
+            .titleSubTextLeft{
+                float: left; 
+                font-size:12px;
+                width: 550px;
+             }
+             .titleSubTextRight{
+                padding-top:10px;
+                float:right;
+                .imgRight{
+                    float:right;
+                }
+                    .chartGreen,
+                    .chartOrange,
+                    .chartRed{
+                        width: 300px;
+                        button{
+                            height: 10px;
+                            width: 10px;
+                            padding: 0px;
+                            cursor: context-menu;
+                        }
+                        .well{
+                            position: absolute;
+                            float: right;
+                            margin-top: -20px;
+                            font-size: 12px;
+                            margin-left: 20px;
+                        }
+                    }
+                    .chartGreen{
+                        button{
+                            background-color: #269792;
+                            border: 1px solid #269792;
+                        }
+                    }
+                    .chartOrange{
+                        float: right;
+                        position: absolute;
+                        margin-top: -10px;
+                        margin-left: 120px;
+                        button{
+                            background-color: #E9A115;
+                            border: 1px solid #E9A115;
+                        }
+                    }   
+                    .chartRed{
+                        float: right;
+                        position: absolute;
+                        margin-top: -10px;
+                        margin-left: 220px;
+                        button{
+                            background-color: #E54D58;
+                            border: 1px solid #E54D58;
+                        }
+                    }                 
+             }
+        }
+        
+    }
+
+    .Summary{
+        width: 920px;
+        color: #333333;
+        float:left;
+
+        .tiltleText{
+            margin:10px 0;
+            font-size: 18px;	   
+        }
+       
+        .CoverageGap{
+            width:440px;
+            float:left;
+            margin-right:40px;
+            table{
+                    color: #333333;
+                    font-size: 14px;
+                    tr{
+                       .fontBoler{
+                            font-weight:bolder;
+                       }
+                    }
+                         
+                    tr:nth-child(2n) {
+                        background: #f6f6f6;
+                        }
+                         
+                    th{
+                            height: 45px;	
+                            background-color: #2F3D46;
+                            vertical-align: middle;
+                            color: #D7D8D6;
+                           
+                    } 
+                    th:first-child,
+                    td:first-child{
+                        width: 220px;
+                        text-align: left;
+                        padding-left:10px;
+                    }
+                    .fontBoldCss{
+                        font-weight: bold;
+                    }
+                    th:last-child,
+                    td:last-child{
+                            width: 220px;
+                            text-align: right;
+                            padding-right: 20px;
+                            .iconWindow{
+                                font-size: 25px;
+                            }
+                    }
+                    td{
+                        height: 45px;
+                        vertical-align: middle;
+                    }                     
+            }
+        }
+
+        .SavingGap{
+            width:440px;
+            float:left;
+            table{
+                    color: #333333;
+                    font-size: 14px;
+                     tr{
+                       .fontBoler{
+                            font-weight:bold;
+                       }
+                    }
+                    tr:nth-child(2n) {
+                        background: #f6f6f6;
+                        }
+                      
+                    th{
+                            height: 45px;	
+                            background-color: #2F3D46;
+                            vertical-align: middle;
+                            color: #D7D8D6;
+                            div{
+                                margin-left: 35px;
+                                .icon{
+                                    float: right;
+                                    position: absolute;
+                                    margin-top: -15px;
+                                }
+                            }
+                    } 
+                    .fontBoldCss{
+                        font-weight: bold;
+                    }
+                    th:first-child,
+                    td:first-child{
+                        width: 220px;
+                        text-align: left;
+                        padding-left:10px;
+                    }
+
+                    th:last-child,
+                    td:last-child{
+                            width: 220px;
+                            text-align: right;
+                            padding-right: 20px;
+                            .iconWindow{
+                                font-size: 25px;
+                            }
+                    }
+                    td{
+                        height: 45px;
+                        vertical-align: middle;
+                        
+                    }                     
+                    
+            }
+        }
+    }
+
+.Comments{
+        margin-top:20px;
+        width: 920px;
+        color: #333333;
+        float:left;
+        .tiltleText{
+            margin:10px 0;
+            font-size: 18px;	   
+        }
+       .commentsFontCss{
+           border: 1px solid #929292;
+           padding: 10px;
+           margin: 10px 0px 10px 0px;
+           min-height: 36px;
+       }
+        .leftTable{
+            width:440px;
+            float:left;
+            margin-right:40px;
+            margin-bottom: 10px;
+            table{
+                    width:100%;
+                    color: #333333;
+                    font-size: 14px;
+                    tr:nth-child(2n) {
+                        background: #f6f6f6;
+                        } 
+                    th{
+                            height: 45px;	
+                            vertical-align: middle;
+                            color:  #333333;
+                            font-weight: bolder;
+                        
+                    } 
+                    .firstTdCss{
+                        padding-left:10px;
+                        padding-right:2px;
+                        padding-top:15px;
+                        padding-bottom:15px;                    
+                        width: 10px;
+                    }
+                    .secondTdCss{
+                        text-align: left;
+                        padding-left:0px;
+                        padding-top:15px;
+                        padding-bottom:15px;                           
+                        width: 220px;
+                    }
+                    .ThreeTdCss{
+                        font-weight: bold;
+                        text-align: right;
+                        padding-top:15px;
+                        padding-bottom:15px;      
+                    }
+                    td{
+                        padding: 8px 10px;                  
+                    }                
+                    .fontBoldCss{
+                        font-weight: bold;
+                    }
+                    .headerNumberCss{
+                        padding-right: 5px;
+                        float: left;
+                    }
+                    .leftRedBorderCss{
+                         border-left: 5px solid #DB0011;       
+                    }
+                    .leftPosistionCss{
+                        padding-left:10px;
+                    }
+            }
+        }
+
+        .rigthTalbe{
+            width:440px;
+            float:left;
+            margin-bottom: 10px;
+            table{
+                    color: #333333;
+                    width:100%;
+                    font-size: 14px;
+                    tr:nth-child(2n) {
+                        background: #f6f6f6;
+                        } 
+                    th{
+                            height: 45px;	
+                            vertical-align: middle;
+                            color: #333333;;
+                            font-weight: bolder;
+                        
+                    } 
+                    td{
+                        padding: 8px 10px;
+                    }
+                    .firstTdCss{
+                        padding-left:10px;
+                        padding-right:2px;
+                        padding-top:15px;
+                        padding-bottom:15px;    
+                        width: 10px;
+                    }
+                    .secondTdCss{
+                        text-align: left;
+                        padding-left:0px;
+                        padding-top:15px;
+                        padding-bottom:15px;                            
+                        width: 220px;
+                    }
+                    .ThreeTdCss{
+                        font-weight: bold;
+                        text-align: right;
+                        padding-top:15px;
+                        padding-bottom:15px;          
+                    }
+                    .fontBoldCss{
+                        font-weight: bold;
+                    } 
+                    .headerNumberCss{
+                        float: left;
+                        padding-right: 5px;
+                    } 
+                     .doubleLineCss{
+                     }                
+                     .leftRedBorderCss{
+                         border-left: 5px solid #DB0011;       
+                    }
+                    .leftPosistionCss{
+                        padding-left:10px;
+                    }                                     
+            }
+        }
+    }
+    .line{
+            border: 1px solid #ccc;
+            clear:both;
+        }
+        .footer{
+            margin-top: 20px;
+            font-size: 15px;
+                margin-bottom: 20px;
+                vertical-align: middle;
+            button{
+                background-color: transparent;
+                border:none;
+            }
+        
+            .btnClose{
+                float: right;
+                .copy{
+                    width:135px;
+                    margin-left: 10px;
+                    background-color: #d80a1e;
+                    border: none;
+                    height: 50px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                .submit{
+                    width:80px;
+                    margin-left: 10px;
+                    background-color: #d80a1e;
+                    border: none;
+                    height: 50px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+    }
+}
+
+ .chartMain{
+                        margin: 18px 0px;
+                        h2 {
+                            font-size: 12px;
+                            color:  #FFFFFF;
+                            .capital{
+                                font-size: 22px;
+                            }
+                            .lower{
+                                float: right;
+                                position: absolute;
+                                margin-top: -3px;
+                            }
+                        }
+                        ul{
+                            li{
+                                border: 5px solid #FFFFFF;
+                                float: left;
+                                width: 276px;
+                                height: 162px;	
+                                background-color: #1D262C;
+                                position: relative;
+                                padding: 10px 10px;
+                                .amPieChart {
+                                    width: 80px;
+                                    height: 80px;
+                                    float: left;
+                                    margin-left: 10px;
+                                    .iconStyle{
+                                        margin-top: -96px;
+                                        margin-left: 25px;
+                                        color: #FFFFFF;
+                                        font-size: 30px;
+                                    }
+                                }
+                                input{
+                                    height: 10px;
+                                    width: 13px;
+                                }
+                                .picture {
+                                    float: left;
+                                    margin: 50px 0px 24px 80px;
+                                    text-align: right;
+                                    width: 30px;
+                                    img{
+                                        height: 64px;
+                                        width: 64px;
+                                    }
+                                    .circle{
+                                        margin-right: 5px; 
+                                        margin-bottom: -2px;    
+                                        height: 64px;
+                                        width: 64px;	
+                                        background-color: #2F3D46;
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                        -moz-border-radius:50%;
+                                        -webkit-border-radius:50%;
+                                    }
+                                    .iconStyle{
+                                        margin-top: -90px;
+                                        margin-left: 18px;
+                                        color: #FFFFFF;
+                                        font-size: 30px;
+                                    }
+                                    .icon {
+                                        height: 27px;	
+                                        width: 35px;	
+                                        color: #FFFFFF;
+                                        font-size: 30px;
+                                    }
+                                }
+                                .caption {
+                                    width: 180px;
+                                    float: right;
+                                    margin-top: 24px;
+                                    color:lightgray;
+                                    font-size: 20px;	
+                                    font-weight: 300;
+                                    line-height: 30px;
+                                }
+                                .pictureCaption {
+                                    width: 120px;
+                                    float: right;
+                                    margin-top: 70px;
+                                    margin-right: -8px;
+                                    color: lightgray;
+                                    font-size: 20px;	
+                                    font-weight: 300;
+                                }                                
+                                .fontCss {
+                                    float: left;
+                                    width:280px;
+                                    padding-top: 10px;
+                                    padding-left: 20px;
+                                    color: #FFFFFF;
+                                    font-size: 14px;	
+                                    font-weight: 200;
+                                    line-height: 20px;
+                                } 
+                                .rightLineCss{
+                                    border-right-color: lightgray;
+                                    border-right-width: 1px;
+                                    border-right-style: solid;
+                                    color:lightgray;
+                                }
+                                .currencyCss {
+                                    padding-left: 10px;
+                                }                                                                                                                 
+                                .iconDown {
+                                    text-decoration: none;
+                                    position: absolute;
+                                    top: 8px;
+                                    right: 10px;
+                                    font-size: 24px;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                    

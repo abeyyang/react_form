@@ -1,0 +1,81 @@
+// Start: Import Global Scss library
+@import "./variable";
+@import "./mixinStyles";
+
+// Start: Component styling
+.contentWrapper {
+    display: inline-block;
+    width: 100%;
+
+    .inner {
+        margin: 40px auto;
+        max-width: 1180px;
+        min-height: 500px;
+        padding: 0 16px;
+    }
+}
+
+.sectionTitle {
+    margin-bottom: 20px;
+    color: $main-txt-clr;
+    font-size: 175%;
+    font-weight: $font-light;
+}
+
+.loadMoreWrapper {
+    margin: 20px 0;
+}
+
+.h2 {
+    display: block;
+    font-size: px-to-rem(28px);
+    font-weight: $font-light;
+}
+
+.note_1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.note_2 {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 20px;
+}
+.note_3 {
+    font-size: 14px;
+    line-height: 20px;
+    span{
+        margin-right: 10px;
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background: #000;
+        vertical-align: middle;
+    }
+}
+//add check box style
+.checkBox{
+    .chkbox {
+            display: none;
+        }
+        label {
+            vertical-align: middle;
+        }
+        .chkbox + label {
+            border: 1px solid #7c7c7c;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            background: none;
+        }
+        .chkbox:checked + label::after {
+            content: "\2714";
+            color: #008580;
+            vertical-align: 5px;
+        }
+}

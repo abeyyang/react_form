@@ -1,0 +1,18 @@
+.errorHandle{
+    background:black;
+    margin: 0 auto;
+    // padding-top: 20px;
+    width: 1305px;
+    .notification{
+        margin-bottom:15px;
+        border-color: #f07e2e;
+        background-color: #fcf8e3;
+    }
+    .errorMessage{
+        line-height: 22px;
+        color: #333;
+    }
+    span::before{
+        color: #f07e2e;
+    }
+}

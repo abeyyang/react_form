@@ -1,0 +1,110 @@
+
+    .archivedPlanPage{
+        padding-top: 20px;
+        background: #fff;
+        position: relative;
+        .archivedPlan{
+            .Online{	
+                background-color: #FFFFFF;
+                margin-bottom: 20px;
+                .title{
+                    font-size: 14px;
+                    color: #000000;
+                }
+                table{
+                    margin: 20px 0px;
+                    width: 1250px;
+                    padding-right: 40px;
+                    color: #333333;
+                    font-size: 14px;
+                    tr:nth-child(2n+1) {
+                        background: #f6f6f6;
+                        } 
+                    th{
+                        height: 45px;	
+                        background-color: #2F3D46;
+                        vertical-align: middle;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        div{
+                            margin-left: 35px;
+                            .icon{
+                                float: right;
+                                position: absolute;
+                                margin-top: -15px;
+                            }
+                        }
+                    } 
+                    th:first-child,
+                    td:first-child{
+                        width: 135px;
+                        padding-left: 40px;
+                    }
+                    th:nth-child(2),
+                    td:nth-child(2){
+                        width: 300px;
+                        .iconWindow{
+                            font-size: 25px;
+                        }
+                        div{
+                            margin-left: 35px;
+                            .icon{
+                               margin-left: 34px;
+                            }
+                        }
+                    }
+                    th:last-child,
+                    td:last-child{
+                            width: 300px;
+                            padding-right: 50px;
+                            .iconWindow{
+                                font-size: 25px;
+                            }
+                    }
+                    td{
+                        height: 45px;
+                        vertical-align: middle;
+                    }
+                }
+                .pageNation{
+                    margin-left: 20px;
+                    .pageGroup{
+                        color: #333333;
+                        h1{
+                            font-size: 14px;
+                        }
+                        ul{
+                            float: right;
+                            position: absolute;
+                            margin-top: -30px;
+                            margin-left: 45px;
+                            li{
+                                width: 26px;
+                                margin-left: 8px;
+                                line-height: 26px;
+                                padding: 0px;
+                            }
+                        }  
+                    }
+                    .pageDetail{
+                        float: right;
+                        margin-top: -30px;
+                        margin-right: 20px;
+                        
+                    }
+                }
+            }
+        }
+    }
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

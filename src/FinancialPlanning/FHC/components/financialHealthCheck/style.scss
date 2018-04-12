@@ -1,0 +1,42 @@
+.financialhealthPage{
+    padding: 15px 25px;
+    background-color: #1d262c;
+    color: #fff;
+    .financialhealthMain{
+        margin: 0 auto;
+        padding: 20px;
+        width: 1305px;
+        background-color: #eeeceb;
+        .header{
+            .MainTiltle{
+                color: #333333;	
+                .tiltle{
+                    height: 32px;
+                    font-size: 32px;	
+                    font-weight: 300;	
+                    line-height: 32px;
+                }
+            }
+            .theme{
+                margin-top: 20px;
+                color: #333333;	
+                button{
+                    font-size: 16px;
+                    height: 40px;
+                    border: 1px solid #929292;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        .back {
+            margin-top:20px;
+            a {
+                font-size: 14px;
+                color: #333;
+                text-decoration: none;
+            }
+        }
+    }
+}

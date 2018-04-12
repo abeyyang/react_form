@@ -1,0 +1,18 @@
+.riskRatingSelect {
+    select {
+        height: 40px;	
+        width: 123.44px;
+        padding-left: 12px;	
+        border: 1px solid #929292;	
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: url('../images/down.png') no-repeat right center;
+        background-color: #FFFFFF;
+        color: #333333;	
+        font-family: "Univers Next for HSBC";	
+        font-size: 14px;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+}

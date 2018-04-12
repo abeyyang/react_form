@@ -1,0 +1,13 @@
+{
+  "plugins": ["transform-runtime"],
+  "presets": ["latest", "react", "stage-0"],
+  "env": {
+    "development": {
+      "plugins": [
+	  	"syntax-flow",
+	    "tcomb",
+	    "transform-flow-strip-types"
+	  ]
+    }
+  }
+}

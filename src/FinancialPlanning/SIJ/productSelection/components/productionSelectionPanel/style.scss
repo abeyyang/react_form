@@ -1,0 +1,540 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        padding: 20px;
+        width: 1305px;
+        .knowledgeExperiencePage {
+            background-color: #eeeceb;
+            h4 {
+                height: 80px;
+                padding: 0 20px;
+                line-height: 80px;
+                position: relative;
+                float:left;
+                width:100%;
+                .title {
+                    height: 32px;
+                    font-size: 32px;
+                    color: #333;
+                    font-weight: 300;
+                    line-height: 32px;
+                    cursor:pointer;
+                }
+                .icon {
+                    //font-size: 26px;
+                    //vertical-align: 0;
+                }
+                p.link {
+                    z-index: 2;
+                    top: 60px;
+                    left: 380px;
+                    border-bottom: 15px solid #333;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    margin: 0 auto;
+                    width: 0;
+                    position: absolute;
+                }
+                p.link1 {
+                    z-index: 3;
+                    top: 61px;
+                    left: 381px;
+                    border-bottom: 14px solid #fff;
+                    border-left: 14px solid transparent;
+                    border-right: 14px solid transparent;
+                    margin: 0 auto;
+                    width: 0;
+                    position: absolute;
+                }
+                .knowledgeOverlay {
+                    position: absolute;
+                    z-index: 1;
+                    top: 74px;
+                    left: 125px;
+                    width: 500px;
+                    text-align: left;
+                    .knowledgeText {
+                        border: 1px solid #333;
+                        padding: 20px;
+                        background: #fff;
+                        p {
+                            color: #333;
+                            margin: 0;
+                            padding-top: 10px;
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+            h5{
+                margin-left: 20px;
+                font-size: 25px;
+                .title{
+                    font-size: 25px;
+                    font-weight:bold;
+                }
+                
+                .productCountNumber {
+                    float: left;
+                    line-height: 40px;
+                }
+                .productStaffEligibility{
+                    clear: left;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #404040;
+                    padding-top: 15px;
+
+                    ul li{
+                        float:left;
+                        width:390px;
+                    }
+                    .productStaffIcon{
+                        color: #8F1A22;
+                        font-size: 23px;
+                        line-height: 19px;
+                    }
+                    .productExceptionIcon {
+                        color: #333333;
+                        font-size: 23px;
+                        line-height: 19px;
+
+                    }
+                }
+                
+                .productTabLabel {
+                     float:right;
+                     margin-right:25px;
+                }
+
+                .right1 {
+                    margin-left: 50px;
+                }
+                
+                .deleteIcon {
+                    font-size: 40px;
+                }
+                .buttonOnIcon {
+                    display: none;
+                }
+                label {
+                    display: block;
+                }
+                .buttonOnIcon + label {
+                    border: 1px solid black;
+                    display: inline-block;
+                    height: 40px;
+                    width: 62px;
+                    line-height: 40px;
+                    text-align: center;
+                    background: none;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-left: 15px;
+                }
+                .buttonOffIcon {
+                    display: none;
+                }
+                label {
+                    display: block;
+                }
+                .buttonOffIcon + label {
+                    border: 1px solid black;
+                    border-left:none;
+                    display: inline-block;
+                    height: 40px;
+                    width: 62px;
+                    line-height: 40px;
+                    text-align: center;
+                    background: #7c7c7c;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: white;
+                }
+            }
+            .knowMain {
+                //border: 1px solid #ccc;
+                //margin: 20px;
+                padding: 20px;
+                clear:both;
+                //background-color: #fff;
+                table {
+                    border: 1px solid #ccc;
+                    border-bottom-width: 0px;
+                    tr {
+                        .tagOn {
+                            text-align: left !important;
+                            background: black !important;
+                            color: white;
+                            .arrayIcon {
+                                border-radius: 50%;
+                                border: 1px solid black;
+                                height: 25px;
+                                width: 25px;
+                                font-size: 15px;
+                                color: white;
+                                line-height: 26px;
+                                text-align: center;
+                                background-color: black; 
+                            }
+                        }
+                        th,
+                        td {
+                            height: 55px;
+                            vertical-align: middle;
+                            .iconDownUp{
+                                float:right;
+                                margin-top: -10px;
+                            }
+                            .iconUp{
+                                color: #ccc;
+                                margin-top:-6px;
+                                font-size:14px;
+                            }
+                            .iconDown{
+                                 color: #ccc;
+                                 position: absolute;
+                                 padding: 10px;
+                                 margin-left: -24px;
+                                 margin-top:-4px;
+                                 font-size:14px;
+                            }
+                            .chkbox {
+                                display: none;
+                            }
+                            label {
+                                display: block;
+                            }
+                            .deleteProductnmuber{
+                                display: inline-block;
+                                border: 1px solid #929292;
+                                width: 10px;
+                                margin-bottom: 5px;
+                                margin-right: 10px;
+                            }
+                            .addProductnmuber{
+                                border: 1px solid #929292;
+                                display: inline-block;
+                                height: 40px;
+                                width: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                background: none;
+
+                            }
+      
+                             .addMoreProductnmuber{
+                               
+                                font-size: 27px;
+                                margin-left: 5px;
+                                line-height: 21px;
+                                display: inline-block;
+                            }
+                           
+                            .chkbox + label {
+                                border: 1px solid #979797;
+                                display: inline-block;
+                                height: 24px;
+                                width: 24px;
+                                line-height: 24px;
+                                text-align: center;
+                                background: none;
+                            }
+                            .chkbox:checked + label::after {
+                                content: "\2714";
+                                color: #008580;
+                                vertical-align: 5px;
+                            }
+
+                            .riskLevel4 {
+                                border-radius: 50%;
+                                border: 1px solid #f07e2e;
+                                height: 25px;
+                                margin: 20px auto;
+                                width: 25px;
+                                font-size: 15px;
+                                color: white;
+                                line-height: 26px;
+                                text-align: center;
+                                background-color: #f07e2e; 
+                            }
+                            .riskLevel3 {
+                                border-radius: 50%;
+                                border: 1px solid #7abb15;
+                                height: 25px;
+                                margin: 20px auto;
+                                width: 25px;
+                                font-size: 15px;
+                                color: white;
+                                line-height: 26px;
+                                text-align: center;
+                                background-color: #7abb15; 
+                            }
+                            .riskLevel2 {
+                                border-radius: 50%;
+                                border: 1px solid #73a898;
+                                height: 25px;
+                                margin: 20px auto;
+                                width: 25px;
+                                font-size: 15px;
+                                color: white;
+                                line-height: 26px;
+                                text-align: center;
+                                background-color: #73a898; 
+                            }
+                            .riskLevel1 {
+                                border-radius: 50%;
+                                border: 1px solid #6b89ad;
+                                height: 25px;
+                                margin: 20px auto;
+                                width: 25px;
+                                font-size: 15px;
+                                color: white;
+                                line-height: 26px;
+                                text-align: center;
+                                background-color: #6b89ad; 
+                            }
+                            .moreVertical {
+                                font-size: 25px;
+                            }
+                        }
+                        
+                        th {
+                            padding: 0 20px;
+                            font-size: 15px;
+                            background-color: #253038;
+                            color: #fff;
+                        }
+                        
+                        th:first-child,
+                        td:first-child {
+                            padding-left: 15px;
+                            width: 165px;
+                            text-align: left;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        td:first-child{
+                            div{
+                                height: 68px;
+                                width:185px;
+                                display:table-cell;
+                                vertical-align:middle;
+                            }
+                        }
+                        td:first-child,
+                        td:nth-child(2) {
+                            background: #f6f6f6;
+                        }
+                        th:nth-child(2),
+                        td:nth-child(2) {
+                            text-align: left;
+                            width: 1px;
+                            border-right: 1px solid #7c7c7c;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        th:nth-child(3){
+                            text-align: left;
+                            width:15px;
+                            padding: 0px;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        td:nth-child(3) {
+                            width:15px;
+                            padding: 0px;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        th:nth-child(5){
+                            text-align: center;
+                        }
+                        td:nth-child(4),
+                        td:nth-child(5) {
+                            padding-left: 15px;
+                            border-bottom: 1px solid #ccc;
+                             width: 195px;  
+                        }
+                        th:nth-child(6),
+                        td:nth-child(6) {
+                            width: 190px;
+                            text-align: center;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        th:nth-child(7),
+                        td:nth-child(7) {
+                            width: 210px;
+                            text-align: center;
+                            border-bottom: 1px solid #ccc;
+                        }
+                        th:last-child,
+                        td:last-child{
+                            width: 180px;
+                            text-align: center;
+                            div{
+                                height: 68px;
+                                width:180px;
+                                display:table-cell;
+                                vertical-align:middle;
+                                border-bottom: 1px solid #ccc;
+                            }
+                        }
+                        
+                        .iconConfirmation {
+                            color: #008580;
+                        }
+                        .iconDelete {
+                            color: #a7a7a7;
+                        }
+                    }
+                        tr:nth-child(2) td:nth-child(2) {
+                        //border-top: 1px solid #f07e2e;
+                    }
+                    tr:nth-child(2n + 1) {
+                        background: #f6f6f6;
+                    }
+                    .icon {
+                        font-size: 33px;
+                    }
+                }
+              
+            }
+            .disclaimer {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                
+                border-top: 1px solid #999;
+                border-bottom: 1px solid #999;
+                .chevron {
+                    margin: 0 0 0 5px;
+                    padding-top:10px;
+                    font-size: 30px;
+                    float:right;
+                    
+                }
+                .pointer {
+                    cursor:pointer;
+                    line-height:49px;
+                    font-size:16px;
+                }
+                .declareDetail {
+                    line-height: 16px;
+                    font-size: 12px;
+                }
+                
+            }
+            .footerSave {
+            
+            padding: 10px 25px;
+            font-size: 18px;
+            .button {
+                float: right;
+                a {
+                    display: inline-block;
+                    margin-top: 8px;
+                    padding: 15px 25px;
+                }
+                .saveProgress {
+                    color: #333;
+                    border: 1px solid #333;
+                    margin: 0 10px;
+                }
+                .review {
+                    background: #d80a1e;
+                    color: #fff;
+                }
+                 .forbidden {
+                    background: #999;
+                    color: #fff;
+                }
+            }
+            .back {
+                width:300px;
+                float:left;
+                line-height: 55px;
+                a {
+                    font-size: 18px;
+                    color: #333;
+                }
+                .icon {
+
+                }
+        }
+        }
+
+        }
+        
+        .pagenumber {
+            padding-top: 20px;
+            .show {
+                float:left;
+                line-height: 30px;
+                height: 30px;
+            }
+            .pagination{
+                float: right;
+                margin-top: -28px;
+            }
+        }    
+        
+        
+
+    }
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}
+.overflowHidden{
+    overflow:hidden;
+}
+.tooltipHandler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px  solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modalBoday{
+    background-color: #ffffff;
+    
+    .content{
+        font-size: 25px;
+
+        padding: 0px 0 15px 0 !important;
+    }
+}
+.btnArea{
+        text-align: right;
+        margin-top: 30px;
+    a{
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        margin-left: 20px;
+    }
+    .cancelBtn{
+        padding: 10px;
+    }
+    .subBtn{
+        padding: 10px;
+        color: #FFFFFF;
+        background-color: #DB0011;
+    }
+    
+}

@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+.fieldDescriptionSection {
+    margin-right: -10px;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: $normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: $left;
+    background: $white;
+    color: $color-6;
+}
+.description{
+    padding: 20px 0;
+}
+.padt {
+    font-weight: $bold;
+}
+
+.padb {
+    padding-bottom: $num-2;
+}
+
+.tipInfo {
+    margin-top: -70px;
+    color: #e7a418;
+    font-size: $font-size + 1px;
+}
+.tipIcon {
+    font-size: 20px;
+    vertical-align: -1px;
+}
+
+.content {
+    min-height: 380px;
+}

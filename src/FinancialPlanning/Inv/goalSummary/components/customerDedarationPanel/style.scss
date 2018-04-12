@@ -1,0 +1,136 @@
+.dedarationMain{
+     margin: 0px 20px 20px 20px;
+     padding: 20px;
+
+     span{
+          padding:  0px;
+          font-weight: 300;	
+          font-size:14px;
+          line-height: 22px;
+          color: #333333;
+     }
+     p{
+        padding-top:  20px ;
+        line-height: 18px;
+        font-size: 14px;
+     }
+
+     h6{
+          padding-top:  20px ;
+          padding-bottom: 8px;
+          font-size: 14px;
+          
+     }
+     .radioCheck {
+            float: left;
+            margin-right: 30px;
+            padding-bottom: 10px;
+        }
+        .question{
+            padding-top: 0px;
+        }
+        label.radiolabel {
+            display: inline-block;
+            font-weight: normal;
+            .wrapper {
+                position: relative;
+                top: 2px;
+                left: 0;
+                border-radius: 50%;
+                border: 1px solid #ccc;
+                box-sizing: content-box;
+                display: inline-block;
+                height: 23px;
+                width: 23px;
+                margin-right: 10px;
+                background-color: white;
+                span {
+                    display: inline-block;
+                    height: 15px;
+                    margin: 4px 0 0 4px;
+                    width: 15px;
+                    background-color: white;
+                }
+                .checked {
+                    border-radius: 50%;
+                    background: #1d262e;
+                }
+            }
+        }
+        .dedaration{
+            line-height: 20px;
+            float: right;
+            margin-top: -15px;
+            //margin-right:280px;
+            span{
+                font-size: 12px;
+            }
+        }
+        input[type='radio'] {
+            display: none;
+        }
+        .on {
+            input[type='radio'] + label .checked {
+                background: #008580;
+            }
+        }
+        .naconOne{
+            width: 600px;
+        }
+        .naconTwo{
+            width: 600px;
+            float: right;
+            margin-top: -200px;
+        }
+        .remarkContext{
+            padding: 0px 0px 10px 0px ;
+            width: 783px;
+            height: 88px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #333333;
+            font-family: "Univers Next for HSBC";
+        }
+        .textString {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            padding: 12px 10px 12px 15px;
+            font-family: inherit;
+            text-align: left;
+            height: 152px;	
+            width: 787px;	
+            border: 1px solid #979797;	
+            background-color: #FFFFFF;
+            margin-bottom: 20px;
+                    }
+        .textString::-ms-expand {
+            display: none;
+        }
+        .youKnowledge{
+            height: 123px;	
+            width: 755px;	
+            line-height: 20px;
+            span{
+                 font-size: 14px;	
+                 color: #333333;
+                 font-family: "Univers Next for HSBC";	
+                 margin-left: 10px;
+            }
+            
+        }
+        
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

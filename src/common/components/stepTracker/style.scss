@@ -1,0 +1,304 @@
+$splitWidth: 960px;
+$minWidth  : 480px;
+.stepTracker {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    // @media screen and (min-width: $splitWidth) {
+    //     li {
+    //         display: inline-block;
+    //         border-bottom: 4px solid #eee;
+    //         font-size: 0;
+    //         span {
+    //             font-size: 14px;
+    //             color: #999;
+    //             i {
+    //                 font-style: normal;
+    //             }
+    //             i::after {
+    //                 content: "．";
+    //             }
+    //             b {
+    //                 padding-left: 0;
+    //                 font-weight: normal;
+    //             }
+    //         }
+    //     }
+    //     .active {
+    //         border-bottom-color: #d60202;
+    //         span {
+    //             color: #333;
+    //         }
+    //     }
+    // }
+
+    // @media screen and (max-width: $splitWidth) {
+    //     float: right;
+    //     li {
+    //         display: block;
+    //         float: left;
+    //         width: 80px;
+    //         height: 40px;
+    //         line-height: 40px;
+    //         span {
+    //             position: relative;
+    //             display: block;
+    //             height: 6px;
+    //             margin-top: 25px;
+    //             background: #eee;
+    //             i {
+    //                 position: absolute;
+    //                 right: 0;
+    //                 top: -9px;
+    //                 display: block;
+    //                 width: 25px;
+    //                 height: 25px;
+    //                 border: 1px solid #eee;
+    //                 border-radius: 100%;
+    //                 line-height: 25px;
+    //                 text-align: center;
+    //                 font-style: normal;
+    //                 background: #fff;
+    //             }
+    //             b {
+    //                 display: none;
+    //             }
+    //         }
+    //     }
+    //     .active {
+    //         span {
+    //             background: #b1caab;
+    //             i {
+    //                 color: #fff;
+    //                 background: #d60202;
+    //             }
+    //         }
+    //     }
+    //     li:first-child {
+    //         width: 25px;
+    //     }
+
+    //     @media screen and (max-width: $minWidth) {
+    //         float: none;
+    //         li {
+    //             width: 60px;
+    //         }
+    //     }
+    // }
+}
+.largeSize {
+    ul,.stepTracker{
+        li {
+            display: inline-block;
+            border-bottom: 4px solid #eee;
+            font-size: 0;
+            span {
+                font-size: 14px;
+                color: #999;
+                i {
+                    font-style: normal;
+                }
+                i::after {
+                    content: "．";
+                }
+                b {
+                    padding-left: 0;
+                    font-weight: normal;
+                }
+            }
+        }
+        .active {
+            border-bottom-color: #d60202;
+            span {
+                color: #333;
+            }
+        }
+    }
+    h5{
+        display: none;
+    }
+}
+.mediumSize{
+    ul,.stepTracker{
+        float: right;
+        li {
+            display: block;
+            float: left;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            span {
+                position: relative;
+                display: block;
+                height: 6px;
+                margin-top: 25px;
+                background: #eee;
+                i {
+                    position: absolute;
+                    right: 0;
+                    top: -9px;
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid #eee;
+                    border-radius: 100%;
+                    line-height: 25px;
+                    text-align: center;
+                    font-style: normal;
+                    background: #fff;
+                }
+                b {
+                    display: none;
+                }
+            }
+        }
+        .active {
+            span {
+                background: #b1caab;
+                i {
+                    color: #fff;
+                    background: #d60202;
+                }
+            }
+        }
+        li:first-child {
+            width: 25px;
+        }
+    }
+    h5{
+        display: block;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 700;
+        float:left;
+    }
+}
+.minSize{
+    ul,.stepTracker{
+        float: none;margin-top:4px;
+        li {
+            display: block;
+            float: left;
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            span {
+                position: relative;
+                display: block;
+                height: 6px;
+                margin-top: 25px;
+                background: #eee;
+                i {
+                    position: absolute;
+                    right: 0;
+                    top: -9px;
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid #eee;
+                    border-radius: 100%;
+                    line-height: 25px;
+                    text-align: center;
+                    font-style: normal;
+                    background: #fff;
+                }
+                b {
+                    display: none;
+                }
+            }
+        }
+        .active {
+            span {
+                background: #b1caab;
+                i {
+                    color: #fff;
+                    background: #d60202;
+                }
+            }
+        }
+        li:first-child {
+            width: 25px;
+        }
+    }
+    h5{
+        position: absolute;
+        left: 10px;
+        top: 0px;
+    }
+}
+.stepTracker li{
+    cursor: pointer;
+}
+.registerStepHeader {
+    display: block;
+    height: 75px;
+    background: #fff;
+}
+
+.registerStepHeaderFixed {
+    position: fixed;
+    z-index: 999;
+    top: 34px;
+
+    @media screen and (min-width: 1120px) {
+        left: calc((100% - 1120px) / 2);
+        left: -webkit-calc((100% - 1120px) / 2);
+        width: 1120px;
+    }
+
+    @media screen and (max-width: 1120px) {
+        left: 0;
+        width: 100%;
+    }
+    box-shadow: 0 3px 6px rgba(10, 10, 10, 0.4);
+    transition: top 0.6s ease;
+}
+
+.stepTrackerContainer {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    height: 50px;
+    div {
+        display: block;
+        height: 50px;
+        position: relative;
+        overflow:hidden;
+        // @media screen and (min-width: $splitWidth) {
+        //     h5 {
+        //         display: none;
+        //     }
+        // }
+
+        // @media screen and (max-width: $splitWidth) {
+        //     h5 {
+        //         display: block;
+        //         margin-top: 20px;
+        //         font-size: 15px;
+        //         font-weight: 700;
+        //         float:left;
+        //         @media screen and (max-width: $minWidth) {
+        //             position: absolute;
+        //             left: 10px;
+        //             top: -10px;
+        //         }
+        //     }
+        // }
+    }
+}
+.stepHeader {
+    display: block;
+    padding: 0 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    height: 30px;
+    line-height: 30px;
+    div > span {
+        display: block;
+        padding-left: 8px;
+        border-left: 4px solid #d60202;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}

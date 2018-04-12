@@ -1,0 +1,20 @@
+.titleProgress{
+    height: 35px;	
+    color: #333333;	
+    font-family: "Univers Next for HSBC";	
+    font-size: 14px;	
+    font-weight: bold;	
+    line-height: 18px;
+    margin-left: 22px;
+    .stepProgressDone{
+        width: 49%;
+        border-top:4px solid #DA0011;
+        float: left;
+    }
+    .stepProgressUndone{
+        width: 49%;
+        border-top:4px solid #939193;
+        float: left;
+        margin-left: 10px;
+    }
+}

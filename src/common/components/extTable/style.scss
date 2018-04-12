@@ -1,0 +1,34 @@
+.extTable tr td,
+.extTable tr th {
+    padding: 4px 10px;
+    border-collapse: collapse;
+
+}
+.extTable {
+    display: inline-block;
+}
+.extTableHeader,
+.extTableHeader>div {
+    display: block;
+    min-height: 40px;
+    line-height: 40px;
+}
+.extTableHeader table {
+    background: #3a3e46;
+    color:#fff;
+}
+.extTableBody {
+    display: inline-block;
+}
+
+.extTableBody table,
+.extTable table {
+    border:0;
+    border-collapse: collapse;
+}
+.extTableBody table tbody tr:nth-child(2n+1) {
+    background:#fbfbfb;
+}
+.extTableHeaderFixed{
+    position: fixed;
+}

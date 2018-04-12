@@ -1,0 +1,7 @@
+export default {
+    "NOT_FOUND_ERROR" :"404",
+    "SERVER_INTETNAL_ERROR" :"500",
+    "NOT_FOUND_URL" :"NFURL404",
+    "NOT_FOUND_METHOD" :"NFM404",
+    "NOT_FOUND_SESSIONINFO":"NFS404"
+}

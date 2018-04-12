@@ -1,0 +1,152 @@
+/********************************  OrderInputPanel css  *******************************/
+@charset "utf-8";
+@import "../../../styles/trading/tradingVariable";
+.trading * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.buyholding {
+    margin: $num-0;
+    padding: $num-3 $num-0 $num-1 $num-0;
+    font-size: 26px;
+    font-weight: $normal;
+    .gra {
+        color: $color-9;
+    }
+}
+.cutoffTime {
+    margin: $num-0;
+    padding: 10px 0;
+    color: #6a8bb8;
+}
+.hidden {
+    display: $hidden;
+}
+li p.clear {
+    clear: both;
+    margin: 0px;
+}
+.underlyingLeft {
+    float: left;
+}
+.underlyingRight {
+    float: right;
+    padding-right: 3px;
+    text-align: right;
+    span {
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        padding-top: 8px;
+    }
+} 
+.red{
+    color: red;
+}
+.backButton{
+    display: inline-block;
+    margin: 18px 0 0 -54px;
+    cursor: pointer;
+}
+.holding-list {
+    padding: $num-0 $num-0 $num-0 16px;
+    p {
+        margin: 0 0 10px 0;
+    }
+    ul {
+        margin-right: 65px;
+        li {
+            border-top: $border-col;
+            padding: $num-1 0px;
+            width: $width;
+            position: $position-relative;
+            .item,
+            .item-1-line {
+                color: $color-3;
+                font-size: $font-size + 4px;
+            }
+            .item-m-line {
+                padding: 9px $num-0;
+            }
+            .summary {
+                color: $color-9;
+                font-size: $font-size;
+            }
+            .summary-m {
+                color: $color-3;
+                font-size: $font-size + 4px;
+            }
+            .link {
+                top: 19px;
+                position: $position-absolute;
+                right: 0px;
+                span {
+                    font-size: $font-size + 6px;
+                    font-weight: $bold;
+                }
+            }
+            .triangle-left {
+                position: $position-absolute;
+                top: 38%;
+                right: -20px;
+                border-bottom: 7px solid transparent;
+                border-right: 10px solid #1d262e;
+                border-top: 7px solid transparent;
+                height: $num-0;
+                width: $num-0;
+            }
+            .lcon {
+                margin-top: 8px;
+                color: #8c8c8c;
+            }
+            .lcon1 {
+                color: $color-6;
+
+                strong {
+                    color: $color-3;
+                    font-size: $font-size + 4px;
+                }
+            }
+        }
+
+        > li:last-child {
+            border-bottom: $border-col;
+        }
+
+        li.on {
+            background: #f6f6f6;
+        }
+    }
+}
+.holding-content {
+    padding: $num-0;
+    .disabled {
+        background: $color-3;
+        color: #929292;
+    }
+}
+
+/* overlay */
+.warning-title {
+    font-size: 26px;
+    color: $color-3;
+}
+.p-btn {
+    margin-top: $num-2;
+    a {
+        border: $border $color-6;
+        display: $inline-block;
+        float: $right;
+        margin-left: 8px;
+        max-width: 160px;
+        min-width: 55px;
+        padding: $num-1 15px;
+        color: $color-6;
+        text-align: center;
+        cursor: pointer;
+    }
+    a:hover {
+        text-decoration: $hidden;
+    }
+}

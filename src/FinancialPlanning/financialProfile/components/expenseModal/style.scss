@@ -1,0 +1,285 @@
+.expensePanel{
+    overflow: hidden;
+     h1{
+            font-size: 30px;
+        }
+        .description{
+            font-size: 15px;
+        }
+     table{
+             width: 100%;
+            margin-top: 20px;
+            font-size: 20px;
+            tr{
+                td{
+                    padding-top: 10px;
+                    position: relative;
+                     .educationDetailTip{
+                            position: absolute;
+                            display: none;
+                            top:-20px;
+                            left:200px;
+                            width: 200px;
+                            height: 20px;
+                            font-size: 12px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            border: 1px solid #bbb;
+                            -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            z-index: 1000;
+                            padding: 10px 10px;
+                            color: #4c4c4c;
+                           .arrowDown{
+                            position: relative;
+                            top: 8px;
+                            left: -40px;
+                            width: 0px;
+                            height: 0px;
+                            margin-left: 125px;
+                            margin-top: 10px;
+                            border-top: 10px solid #bbb;
+                            border-left: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            z-index: 1001;
+                            }
+                        }
+                        .mortgageRentalDetailTip,.rentalPaymentDetialTip,.otherDetailTip,.monthInsuranceDetailTip{
+                            position: absolute;
+                            display: none;
+                            top:-20px;
+                            left:200px;
+                            width: 200px;
+                            height: 20px;
+                            font-size: 12px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            border: 1px solid #bbb;
+                            -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            z-index: 1000;
+                            padding: 10px 10px;
+                            color: #4c4c4c;
+                           .arrowDown{
+                            position: relative;
+                            top: -3px;
+                            left: -40px;
+                            width: 0px;
+                            height: 0px;
+                            margin-left: 125px;
+                            margin-top: 10px;
+                            border-top: 10px solid #bbb;
+                            border-left: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            z-index: 1001;
+                            }
+                        }
+                      .personalDetailTip {
+                            position: absolute;
+                            display: none;
+                            top:-40px;
+                            left:200px;
+                            width: 200px;
+                            height: 40px;
+                            font-size: 12px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            border: 1px solid #bbb;
+                            -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            z-index: 1000;
+                            padding: 10px 10px;
+                            color: #4c4c4c;
+                           .arrowDown{
+                            position: relative;
+                            top: 5px;
+                            left: -40px;
+                            width: 0px;
+                            height: 0px;
+                            margin-left: 125px;
+                            margin-top: 10px;
+                            border-top: 10px solid #bbb;
+                            border-left: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            z-index: 1001;
+                            }
+                        }
+                        .personalDetailOverlay:hover+.personalDetailTip,
+                        .mortgageRentalDetailOverlay:hover+.mortgageRentalDetailTip,
+                        .educationDetailOverlay:hover+.educationDetailTip,
+                        .rentalPaymentDetialOverlay:hover+.rentalPaymentDetialTip,
+                        .otherDetailOverlay:hover+.otherDetailTip,
+                        .monthInsuranceDetailOverlay:hover+.monthInsuranceDetailTip
+                        {
+                            display: block;
+                        }
+                }
+            }
+              
+        }
+        .currencyType {
+            border: 1px solid #ccc;
+            float: left;
+            position: relative;
+            padding: 12px;
+            width: 260px;
+            margin-top: 10px;
+            span {
+                color: #666;
+            }
+            .num {
+                position: absolute;
+                top: 10px;
+                left: 60px;
+                border: none;
+            }
+           
+        }
+        .recordStyle{
+          border: 1px solid #ccc;
+          width: 180px;
+          height: 20px;
+          padding: 12px;
+          vertical-align: middle;
+          position: relative;
+           .num {
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                border: none;
+                width: 150px;
+            }
+             .num:disabled{
+                background-color: #fff
+            }
+        }
+         .iconEdit {
+            float: left;
+            margin: 15px 0 0 5px;
+            font-size: 30px;
+        }
+         .choose {
+            margin-top: 35px;
+            position: relative;
+            font-size: 20px;
+            .iconEdit {
+                margin: 0 0 0 5px;
+                font-size: 30px;
+            }
+            .radioCheck {
+                float: left;
+                margin-right: 30px;
+            }
+            .insuranceRadio{
+                margin-top: 20px;
+                span{
+                    font-size: 13px;
+                }
+            }
+            label{
+                       position: relative;
+                       display: inline-block;
+                       margin-right: 10px;
+                       padding-left: 40px;
+                    }
+                    label::before{
+                        content: "";
+                        width:30px;
+                        height: 30px;
+                        margin-right: 10px;
+                        border-radius: 50%;
+                        -webkit-border-radius:50%;
+                        border: 1px solid #ccc;
+                        display: inline-block;
+                        position: absolute;
+                        left: 0px;
+                        margin-right: 10px;
+                        bottom: -8px;
+                        
+                    }
+                    input[type='radio'] {
+                       display: none;
+                    }
+                    
+                   input[type='radio']:checked + label::before{
+                       content: "\2022";
+                       color: #008580;
+                       font-size: 50px;
+                       text-align: center;
+                       line-height: 32px;
+                       
+                   }
+            
+            
+            }
+        .premiums{
+            margin-bottom: 15px;
+            font-size: 20px;
+            .otherCompany{
+                clear: both;
+            }     
+        }
+        .line{
+            clear: both;
+            display: block;
+            border: 1px solid #ccc;
+            margin-top: 15px;
+        }
+    .footer{
+            margin-top: 20px;
+            font-size: 15px;
+            margin-bottom: 20px;
+            vertical-align: middle;
+            button{
+               background-color: transparent;
+               border:none;
+            }
+            .clearAll{
+               float: left;
+               input{
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+            }
+               
+            }
+            .btnCopySubmit{
+                float: right;
+                .copy{
+                    border:1px solid #000;
+                    height: 50px;
+                    width:80px;
+                    line-height: 50px;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+                .submit{
+                    width:80px;
+                    margin-left: 10px;
+                    background-color: #d80a1e;
+                    border: none;
+                    height: 50px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

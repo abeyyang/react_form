@@ -1,0 +1,437 @@
+.createRecordsPage{
+    //margin: 20px 0px;
+    .right{
+        color: #333333;
+        font-size: 14px;
+        float: right;
+        position: absolute;
+        margin-top: -85px;
+        margin-left: 1000px;
+        .iconClock{
+            font-size: 25px;
+            margin-left: 5px;
+        }
+    }
+    .rightDate{
+        color: #5C5C5C;
+        font-size: 12px; 
+        float: right;
+        position: absolute;
+        margin-top: -32px;
+        margin-left: 1160px;
+    }
+    .yourResult{
+        border: 1px solid #D7D8D6;	
+        background-color: #FFFFFF;
+        margin: 20px 0px;
+
+        h4{
+            background-color: #1D262C;
+            color: #FFFFFF;
+            font-size: 16px;	
+            font-weight: bold;	
+            line-height: 39px;
+            height: 39px;
+            vertical-align: middle;
+            padding-left: 15px;
+            .icon{
+                float: left;
+                position: absolute;
+                margin-top: -40px;
+                margin-left: 1250px;
+                .iconDown{
+                    color: #FFFFFF;
+                    font-size: 24px;
+                    
+                }
+            }
+        }
+        .resultContent{
+            color: #333333;
+            margin: 20px;
+            .contentTheme{
+                .themeDate{
+                    width: 270px;	
+                    color: #5C5C5C;
+                    font-size: 12px;
+                }
+                .chartDescription{
+                    float: right;
+                    margin-top: -10px;
+                    margin-left: 810px;
+                    position: absolute;
+                    .chartGreen,
+                    .chartOrange,
+                    .chartRed{
+                        width: 300px;
+                        button{
+                            height: 12px;
+                            width: 12px;
+                            padding: 0px;
+                            cursor: context-menu;
+                        }
+                        .well{
+                            position: absolute;
+                            float: right;
+                            margin-top: -13px;
+                            margin-left: 20px;
+                        }
+                    }
+                    .chartGreen{
+                        button{
+                            background-color: #269792;
+                            border: 1px solid #269792;
+                        }
+                    }
+                    .chartOrange{
+                        float: right;
+                        position: absolute;
+                        margin-top: -12px;
+                        margin-left: 144px;
+                        button{
+                            background-color: #E9A115;
+                            border: 1px solid #E9A115;
+                        }
+                    }   
+                    .chartRed{
+                        float: right;
+                        position: absolute;
+                        margin-top: -12px;
+                        margin-left: 266px;
+                        button{
+                            background-color: #E54D58;
+                            border: 1px solid #E54D58;
+                        }
+                    } 
+                }
+                .chartContent{
+                    margin: 20px 0px;
+                    .chartHeader{
+                        color: #333333;
+                        font-size: 14px;
+                        div{
+                            width: 200px;
+                            .iconHelp{
+                                font-size: 30px;
+                            }
+                            .iconSwitch{
+                                font-size: 25px;
+                            }
+                        }
+                        .headerRight{
+                            float: right;
+                            margin-top: -28px;
+                            margin-right: -70px;
+                        }
+                    }
+                    .chartMain{
+                        margin: 18px 0px;
+                        h2 {
+                            font-size: 12px;
+                            color:  #FFFFFF;
+                            .capital{
+                                font-size: 16px;
+                            }
+                            .lower{
+                                float: right;
+                                position: absolute;
+                                margin-top: -3px;
+                            }
+                        }
+                        ul{
+                            li{
+                                border: 1px solid #666;
+                                float: left;
+                                width: 377px;
+                                height: 120px;	
+                                background-color: #1D262C;
+                                position: relative;
+                                margin-left: 17px;
+                                margin-bottom: 8px;
+                                padding: 10px 10px;
+                                .picture {
+                                    float: left;
+                                    margin: 20px 0px 24px 81px;
+                                    text-align: right;
+                                    width: 30px;
+                                    img{
+                                        height: 64px;
+                                        width: 64px;
+                                    }
+                                    .circle{
+                                        margin-right: 5px; 
+                                        margin-bottom: -2px;    
+                                        height: 64px;
+                                        width: 64px;	
+                                        background-color: #2F3D46;
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                        -moz-border-radius:50%;
+                                        -webkit-border-radius:50%;
+                                    }
+                                    .iconStyle{
+                                        margin-top: -90px;
+                                        margin-left: 16px;
+                                        color: #FFFFFF;
+                                        font-size: 30px;
+                                    }
+                                    .icon {
+                                        height: 27px;	
+                                        width: 35px;	
+                                        color: #FFFFFF;
+                                        font-size: 30px;
+                                    }
+                                }
+                                .caption {
+                                    width: 162px;
+                                    float: right;
+                                    margin-top: 36px;
+                                    margin-right: 60px;
+                                    color: #FFFFFF;
+                                    font-size: 20px;	
+                                    font-weight: 300;
+                                    line-height: 30px;
+                                }
+                                .iconDown {
+                                    text-decoration: none;
+                                    position: absolute;
+                                    top: 8px;
+                                    right: 10px;
+                                    font-size: 24px;
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .resultSummary{
+                margin: 20px 0px;
+                .title{
+                    color: #333333;
+                    font-size: 22px;	
+                    font-weight: 300;
+                }
+                .summaryContent{
+                   margin: 20px 0px;
+                   .coverageTable,
+                   .savingTable{
+                        width: 650px;
+                        color: #333333;
+                        font-size: 14px;
+                        table{
+                            width: 600px;	
+                            tr:nth-child(2n) {
+                                background: #f6f6f6;
+                            }
+                            th{
+                                background-color: #2F3D46;
+                                color: #FFFFFF;	
+                                font-weight: bold;
+                                vertical-align: middle;
+                            }
+                            th:first-child,
+                            td:first-child{
+                                height: 32.25px;
+                                text-align: left;
+                                vertical-align: middle;
+                                width: 380px;
+                                padding-left: 30px;
+                            }
+                            th:last-child,
+                            td:last-child{
+                                text-align: right;
+                                vertical-align: middle;
+                                padding-right: 30px;
+                            }
+                            tr:last-child{
+                                th,td{
+                                    font-weight: bold;
+                                }
+                            }
+                        } 
+                   }
+                   .savingTable{
+                        float: right;
+                        position: absolute;
+                        margin-top: -128px;
+                        margin-left: 655px;
+                   }
+                }
+                .comment{
+                     margin: 20px 0px;
+                    .commentText{
+                        height: 80px;	
+                        width: 1250px;	
+                        border: 1px solid #929292;	
+                        background-color: #FFFFFF;
+                        color: #5C5C5C;
+                        font-size: 14px;
+                        margin-top: 15px;
+                        padding-left: 15px;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        h5{
+            color: #333333;
+            font-size: 16px;	
+            font-weight: bold;	
+            line-height: 44px;
+            margin: 0px 20px;
+            border-bottom: 1px solid #D7D8D6;
+            height: 44px;
+            vertical-align: middle;
+            .title{
+                padding-left: 10px;
+                border-left: 5px solid red;
+            }
+        }
+    }
+    .others{
+        color: #333;
+        .Indicates{
+            font-size: 12px;
+            color: #AF000D;
+            margin-bottom: 10px;
+            .IndicatesText{
+                color: #333;
+            }
+        }
+        .Expand{
+            font-size: 14px;
+            float: right;
+            position: absolute;
+            margin-top: -22px;
+            margin-left: 1200px;
+            .iconAdd{
+                font-size: 20px;
+            }
+        }
+        .panel{
+            border: 1px solid #D7D8D6;	
+            background-color: #FFFFFF;
+            height: 44px;
+            line-height: 44px;
+            margin-bottom: 5px;
+            h3{
+                color: #333333;
+                font-size: 22px;		
+                line-height: 18px;
+                height: 18px;
+                margin: 10px 20px;
+                vertical-align: middle;
+                .title{
+                    vertical-align: middle;
+                    height: 18px;
+                    padding-left: 10px;
+                    border-left: 5px solid #DB0011;
+                    .iconAgree{
+                        color: #008580;
+                        font-size: 30px;
+                    }
+                }
+                .icon{
+                    color: #333333;
+                    float: right;
+                    margin-top: -20px;
+                    .iconDown{
+                        font-size: 30px;
+                    }
+                }
+            }
+            
+            }
+        }
+    .popContent{
+        clear: both;
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 20px;
+        .popLife{
+            h3 {
+                color: #333333;
+                font-size: 18px;
+                .capital{
+                    color: #333333;	
+                    font-size: 22px;
+                    font-weight: 300;
+                }
+                .lower{
+                    color: #333333;
+                    float: right;
+                    position: absolute;
+                    margin-top: -3px;
+                }
+            }
+            .clearfix{
+                width: 300px;
+                .picture{
+                    margin: 0px 0px 24px 30px;
+                }
+                .caption {
+                    float: right;
+                    position: absolute;
+                    color: #333333;
+                    margin-top: -68px;
+                    margin-left: 120px;
+                }
+            }
+            .popTable{
+                width: 300px;
+                color: #333333;
+                font-size: 14px;
+                float: right;
+                position: absolute;
+                margin-top: -75px;
+                margin-left: 260px;
+                vertical-align: middle;
+                td:first-child{
+                    height: 18px;
+                    text-align: left;
+                    width: 135px;
+                    border-right: 1px solid #333333;
+                }
+                td:last-child{
+                    width: 140px;
+                    text-align: right;
+                    font-weight: bold;
+                }
+            }
+            .popText{
+                color: #333333;
+                font-size: 14px;	
+                line-height: 18px;
+            }
+            .start{
+                float: right;
+                height: 40px;
+                line-height: 40px;	
+                width: 150px;	
+                border: 1px solid #333333;
+                text-align: center;
+                a{
+                    color: #333333;
+                    font-size: 16px;
+                    text-decoration: none;
+                }
+                    
+            }
+        }
+    }
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

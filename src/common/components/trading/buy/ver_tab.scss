@@ -1,0 +1,144 @@
+/********************************  ver_tab css  *******************************/
+@charset "utf-8";
+@import "../../../styles/trading/tradingVariable";
+
+/********************************  verify  *******************************/
+.trading {
+    margin: $num-0 $auto;
+    max-width: $max-width;
+    width: $width;
+}
+.error{
+    padding-top: 10px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+article {
+    padding: $num-0 $num-10 120px;
+    .ver-tit {
+        margin: $num-0 $num-0 $num-0 $num-2;
+        padding: $num-3 $num-0 $num-1 $num-0;
+        font-size: 26px;
+        font-weight: $normal;
+    }
+    .cutoffTime {
+        margin-left: 5px;
+        padding-bottom: 20px;
+        color: #6a8bb8;
+    }
+    .can-tit {
+        margin: 22px 0 0 11px;
+        font-size: 26px;
+        font-weight: $normal;
+    }
+    .can-cutofftime {
+        margin: 57px 0 10px 24px;
+        color: #737cef;
+    }
+    .ver-market {
+        margin-left: 20px;
+        padding: 0 80px 20px 0;
+        font-size: 14px;
+    }
+    .can-market {
+        margin-left: 20px;
+        padding: 0 80px 20px 0;
+        font-size: 14px;
+    }
+    .fl {
+        float: $left;
+    }
+    .fr {
+        float: $right;
+    }
+    .clear {
+        clear: $clear;
+    }
+    .warning-title {
+        font-size: 26px;
+        color: $color-3;
+    }
+    .p-btn {
+        margin-top: $num-2;
+        a {
+            border: $border $color-6;
+            display: $inline-block;
+            float: $right;
+            margin-left: 8px;
+            max-width: 160px;
+            min-width: 55px;
+            padding: $num-1 15px;
+            color: $color-6;
+            text-align: center;
+        }
+        a:hover {
+            text-decoration: $hidden;
+        }
+    }
+    .verify-list {
+        padding: $num-0 $num-0 $num-0 $num-2;
+        ul {
+            border: $border-col;
+            margin-right: 65px;
+            li {
+                padding: $num-0;
+                width: $width;
+                position: $position-relative;
+
+                .vlist-li {
+                    padding: 17px 0 17px 8px;
+                    font-size: $font-size + 4px;
+                    color: $color-3;
+                    position: $position-relative;
+                }
+                .underlying-left {
+                    padding: 17px 0 17px 8px;
+                    font-size: $font-size + 4px;
+                    color: $color-3;
+                    float: left;
+                }
+                .underlying-right {
+                    padding: 17px 20px 7px 0px;
+                    text-align: right;
+                    float: right;
+                    span {
+                        padding-bottom: 10px;
+                        font-size: 16px;
+                        font-weight: $bold;
+                    }
+                }
+
+                .vlink {
+                    top: 30%;
+                    position: $position-absolute;
+                    right: $num-2;
+                    font-size: 16px;
+                    font-weight: $bold;
+                    // width: 220px;
+                    // text-align: right;
+                }
+            }
+
+            li:nth-child(2n) {
+                background: #f2f2f2;
+            }
+        }
+    }
+    .note_section{
+        margin-top: 30px;
+        font-size: 12px;
+        color: rgb(124, 124, 124);
+        line-height: 16.8px;
+        .note_icon{
+            font-size: 16px;
+            display: inline-block;
+            width:2%;
+            vertical-align: top;
+        }
+        .note_content{
+            display: inline-block;
+            width:97%;
+        }
+    }
+}

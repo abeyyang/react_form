@@ -1,0 +1,42 @@
+.productType {
+    .icon{
+        font-size: 22px;
+        
+    }
+    .icon:hover{
+        cursor: pointer;
+    }
+
+ }
+.producTypeSelect {
+    vertical-align: middle;
+    width:300px;
+    .selectleft{
+        //width:35px;
+        display: inline-block;
+    }
+    .selectright{
+        height: 40px;	
+        width: 229.24px;	
+        border: 1px solid #929292;	
+        background-color: #FFFFFF;
+        display: inline-block;
+        color: #333333;
+        font-size: 14px;	
+        line-height: 18px;
+    }
+    select {
+        //border: 1px solid #ccc;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        padding: 12px 40px 12px 20px;
+        font-family: inherit;
+        background: url('../images/down.png') no-repeat right center transparent;
+        background-color: white;
+        border: 1px solid black;
+    }
+    select::-ms-expand {
+        display: none;
+    }
+}

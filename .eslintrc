@@ -1,0 +1,24 @@
+{
+    "parser": "babel-eslint",
+
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "globals": {
+        "__DEV__"      : false,
+        "__TEST__"     : false,
+        "__PROD__"     : false,
+        "__COVERAGE__" : false,
+        "CONFIG"       : false
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+  
+    }
+}

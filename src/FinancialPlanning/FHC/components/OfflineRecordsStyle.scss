@@ -1,0 +1,130 @@
+.viewRecordsPage{
+    .Online{
+        border: 1px solid #D7D8D6;	
+        background-color: #FFFFFF;
+        h5{
+            color: #333333;
+            font-size: 16px;	
+            font-weight: bold;	
+            line-height: 44px;
+            margin: 0px 20px;
+            border-bottom: 1px solid #D7D8D6;
+            height: 44px;
+            vertical-align: middle;
+            .title{
+                padding-left: 10px;
+                border-left: 5px solid red;
+            }
+        }
+        table{
+           margin: 20px 20px;
+           color: #333333;
+           font-size: 14px;
+           tr:nth-child(2n) {
+             background: #f6f6f6;
+            } 
+           th{
+               	height: 45px;	
+                background-color: #2F3D46;
+                vertical-align: middle;
+                color: #D7D8D6;
+                div{
+                    margin-left: 35px;
+                    .icon{
+                        float: right;
+                        position: absolute;
+                        margin-top: -15px;
+                    }
+                }
+           } 
+           th:first-child,
+           td:first-child{
+               width: 90px;
+               text-align: center;
+               .circle{
+                    margin-right: 5px; 
+                    margin-bottom: -2px;    
+                    height: 12px;
+                    width: 12px;	
+                    background-color: #008580;
+                    border-radius: 50%;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                }
+           }
+           th:nth-child(2),
+           td:nth-child(2){
+                width: 400px;
+                text-align: left;
+           }
+           th:nth-child(3),
+           td:nth-child(3){
+                width: 250px;
+                text-align: left;
+           }
+           th:nth-child(4),
+           td:nth-child(4){
+                width: 450px;
+                text-align: right;
+                .iconArticles{
+                    font-size: 25px;
+                }
+                a{
+                    text-decoration:none;
+                    color: #333333;
+
+                }
+           }
+           
+           th:last-child{
+                width: 200px;
+                text-align: right;
+                padding-right: 80px;
+                .iconWindow{
+                    font-size: 25px;
+                }
+           }
+           td:last-child{
+                width: 200px;
+                text-align: right;
+                padding-right: 50px;
+                .iconWindow{
+                    font-size: 25px;
+                }
+           }
+           td{
+               height: 45px;
+               vertical-align: middle;
+           }
+        }
+        .pageNation{
+            margin-left: 20px;
+            margin-bottom: 20px;
+            .pageGroup{
+                color: #333333;
+                h1{
+                    font-size: 14px;
+                }
+                ul{
+                    float: right;
+                    position: absolute;
+                    margin-top: -30px;
+                    margin-left: 45px;
+                    li{
+                        width: 26px;
+                        margin-left: 8px;
+                        line-height: 26px;
+                        padding: 0px;
+                    }
+                }  
+            }
+            .pageDetail{
+                float: right;
+                margin-top: -30px;
+                margin-right: 20px;
+                
+            }
+        }
+    }
+}

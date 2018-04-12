@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+<body>
+<label for="svcSelector" >Service: </label>
+<select id="svcSelector">
+    <option value="online">Online</option>
+    <option value="stub">Stub</option>
+    <option value="">N/A</option>
+</select>
+<br/>
+
+<label for="channelCountryCode" >Channel CountryCode: </label>
+<!--<input type="text" value="FR"  maxlength="100" id="channelCountryCode">-->
+<input type="text" value="CA"  maxlength="100" id="channelCountryCode">
+<br/>
+
+<label for="channelGroupMember" >Channel Gromp Member: </label>
+<!--<input type="text" value="HBFR"  maxlength="100" id="channelGroupMember">-->
+<input type="text" value="HKBC"  maxlength="100" id="channelGroupMember">
+<br/>
+
+<label for="timezone" >Timezone: </label>
+<input type="text" value=""  maxlength="100" id="timezone">
+<br/>    
+
+<label for="lauchLocale" >Locale: </label>
+<!--<input type="text" value="en_US"  maxlength="100" id="launchLocale">-->
+<input type="text" value="en_CA"  maxlength="100" id="launchLocale">
+<br/>
+
+<label for="staffID" >Staff ID: </label>
+<input type="text" value="29000101"  maxlength="100" id="staffID">
+<br/>
+
+<label for="customerCountryCode" >Customer Country Code: </label>
+<!--<input type="text" value="FR"  maxlength="100" id="customerCountryCode">-->
+<input type="text" value="CA"  maxlength="100" id="customerCountryCode">
+<br/>
+
+<label for="customerGroupMember" >Customer Group Member: </label>
+<!--<input type="text" value="HBFR"  maxlength="100" id="customerGroupMember">-->
+<input type="text" value="HKBC"  maxlength="100" id="customerGroupMember">
+<br/>
+
+<label for="customerID" >Customer ID: </label>
+<!--<input type="text" value="FRHBFR001000001"  maxlength="100" id="customerID">-->
+<input type="text" value="CAHKBC001000001"  maxlength="100" id="customerID">
+<br/>
+
+<label for="prospectID" >Prospect ID: </label>
+<input type="text" value=""  maxlength="100" id="prospectID">
+<br/>
+
+<label for="customerType" >Customer Type: </label>
+<input type="text" value="CDM"  maxlength="100" id="customerType">
+<br/>
+
+<label for="leadID" >Lead ID: </label>
+<input type="text" value=""  maxlength="100" id="leadID">
+<br/>
+
+<label for="userLegacyId" >HSBC_OHD_USER_LEGACY_ID: </label>
+<input type="text" value="WD01"  maxlength="100" id="userLegacyId">
+<br/>
+
+<label for="userLegacyDeviceId" >HSBC_OHD_USER_LEGACY_DEVICE_ID: </label>
+<input type="text" value="WD01"  maxlength="100" id="userLegacyDeviceId">
+<br/>
+
+<label for="HSBC_OHD_CHANNEL_ID" >Channel Id: </label>
+<input type="text" value="OHB"  maxlength="100" id="HSBC_OHD_CHANNEL_ID">
+<br/>
+
+<label for="HSBC_OHD_CUSTOMER_BUSINESS_LINE" >Customer Business Line: </label>
+<input type="text" value="PFS"  maxlength="100" id="HSBC_OHD_CUSTOMER_BUSINESS_LINE">
+<br/>
+
+<label for="targetFunctionSelector" >targetFunction: </label>
+<select id="targetFunctionSelector">
+    <option value="sample">sample</option>
+    <option value="landing" selected>landing</option>
+    <option value="knowledgeAndExperience">knowledgeAndExperience</option>
+    <option value="affordability">affordability</option>
+    <option value="fhc">fhc</option>
+    <option value="goalSimulator">goalSimulator</option>
+    <option value="rtq">rtq</option>
+    <option value="financialProfile">financialProfile</option>
+    <option value="productSummary">productSummary</option>
+    <option value="recentPirority">recentPirority</option>
+    <option value="flowDemo">flowDemo</option>
+    <option value="invJourney">invJourney</option>
+    <option value="invProdSummary">invProdSummary</option>
+    <option value="meetingSummary">meetingSummary</option>
+    <option value="report">report</option>
+    <option value="orderPlacement">orderPlacement</option>
+    <option value="insJourney">insJourney</option>
+    <option value="insFinProfile">insFinProfile</option>
+    <option value="insProdSelection">insProdSelection</option>
+    <option value="insProdSummary">insProdSummary</option>
+
+<!--     <option value="modulerjourney">Moduler Journey</option>
+    <option value="landing" selected>Landing</option>
+    <option value="rtq">RTQ</option>
+    <option value="fna">FNA</option>
+    <option value="pas">PAS</option>
+    <option value="productallocation">Product Allocation</option>
+    <option value="goalsummary">Goal Summary</option>
+    <option value="ms">Managed Solution</option>
+    <option value="goalpreference">Goal Preference</option>
+    <option value="wa">WrapperAllocation</option>
+    <option value="educationplanning">Education</option>
+    <option value="protection">Protection</option>
+    <option value="planningretirement">PlanningRetirement</option>    
+    <option value="wealthaccumulation">GrowYourWealth</option>
+    <option value="livinginretirement">Living In Retirement</option>
+    <option value="assetalloc">Asset Allocation</option>
+    <option value="reviewinvestment">Review Investment</option>
+    <option value="meetsumm">Meeting Summary</option>
+    <option value="custdclr">Customer Declaration</option>
+    <option value="multipleengagement">Multiple Engagement</option>
+ 	<option value="leavelegacy">LeaveLegacy</option>
+    <option value="insurancequotation">Insurance Quotation</option>	   
+    <option value="productselection">Product Selection</option>
+    <option value="orderplacement">Order Placement</option>
+    <option value="existingholdings">Existing Holdings</option>
+    <option value="kne">Knowledge & Experience</option>
+    <option value="goaltagging">Goal Tagging</option>
+    <option value="reviewnotes">Review Notes</option>
+    <option value="investorprofilequestionnaire">Investor Profile Questionnaire</option>
+    <option value="investmentobjective">Investment Objective</option>
+    <option value="harvestillustrator">See My Financial Future</option> -->
+</select>
+<br/>
+<label for="URL_REDIRECT_ACTIONSelector">URL_REDIRECT_ACTION: </label>
+<select id="URL_REDIRECT_ACTIONSelector">
+    <option value=""></option>
+    <option value="UrlRedirectAction">UrlRedirectAction</option>
+</select>
+<br/>
+<label for="backActionURLSelector">backActionURL: </label>
+<select id="backActionURLSelector">
+    <option value=""></option>
+    <option value="PWS">PWS</option>
+    <option value="WD">WD</option>
+</select>
+<br/>
+<label for="continueActionURLSelector">continueActionURL: </label>
+<select id="continueActionURLSelector">
+    <option value=""></option>
+    <option value="PWS">PWS</option>
+    <option value="WD">WD</option>
+</select>
+<br/>
+	<label for="ManualTaggingStaffId" >Manual Tagging Staff Id: </label>
+	<input type="text" value="00000001"  maxlength="100" id="ManualTaggingStaffId">
+<br/>
+	<label for="ManualTaggingStaffName" >Manual Tagging Staff Name: </label>
+	<input type="text" value="Jamie Xavier"  maxlength="100" id="ManualTaggingStaffName">
+<br/>
+    <label for="planID" >planID: </label>
+    <input type="text" value=""  maxlength="100" id="planID">
+<br/>
+    <label for="goalID" >goalID: </label>
+    <input type="text" value=""  maxlength="100" id="goalID">
+<br/>
+    <label for="goalType" >goalType: </label>
+    <input type="text" value=""  maxlength="100" id="goalType">
+<br/>
+    <label for="sourcePage" >sourcePage: </label>
+    <input type="text" value=""  maxlength="100" id="sourcePage">
+<br/>
+<label for="enableMarkScreen">enableMarkScreen: </label>
+<input type="checkbox" value="Y" id="enableMarkScreen">
+<br/>
+<!-- <label for="cacheBust">cacheBust: </label>
+<input type="checkbox" value="Y" id="cacheBust">
+<br/> -->
+
+<button onclick="confirmAndStartApp()">Confirm and start app</button>
+<button onclick="confirmAndStartAppEncryped()">Confirm and start app (Encrypted)</button>
+<button onclick="healthcheck()">Health check</button>
+
+<script type="text/javascript">
+function confirmAndStartApp() {
+	var serviceMode = document.getElementById("svcSelector");
+	
+	var HSBC_OHD_CHANNEL_ID = document.getElementById("HSBC_OHD_CHANNEL_ID");
+	var channelCountryCode = document.getElementById("channelCountryCode");
+    var channelGroupMember = document.getElementById("channelGroupMember");
+	var staffID = document.getElementById("staffID");
+    
+	var HSBC_OHD_CUSTOMER_BUSINESS_LINE = document.getElementById("HSBC_OHD_CUSTOMER_BUSINESS_LINE");
+	var customerId = document.getElementById("customerID");
+	
+	var prospectId = document.getElementById("prospectID");
+	
+	var customerCountryCode = document.getElementById("customerCountryCode");
+    var customerGroupMember = document.getElementById("customerGroupMember");
+	
+	var customerType = document.getElementById("customerType");
+	var timezone = document.getElementById("timezone");
+    var locale = document.getElementById("launchLocale");
+    var LeadId = document.getElementById("leadID");
+    var userLegacyId = document.getElementById("userLegacyId");
+    var userLegacyDeviceId = document.getElementById("userLegacyDeviceId");
+    var targetFunctionSelector = document.getElementById("targetFunctionSelector");
+    
+    var ManualTaggingStaffId = document.getElementById("ManualTaggingStaffId");
+    var ManualTaggingStaffName = document.getElementById("ManualTaggingStaffName");
+
+    var planID = document.getElementById("planID");
+    var goalID = document.getElementById("goalID");
+    var goalType = document.getElementById("goalType");
+    var sourcePage = document.getElementById("sourcePage");
+    
+    var paramPairs = [];
+    paramPairs.push("serviceMode=" + serviceMode.value); 
+	paramPairs.push("ChannelID="+HSBC_OHD_CHANNEL_ID.value);
+    paramPairs.push("HSBC_OHD_CHANNEL_COUNTRY_CODE="+ channelCountryCode.value);
+    paramPairs.push("HSBC_OHD_CHANNEL_GROUP_MEMBER_ID="+ channelGroupMember.value);
+	paramPairs.push("HSBC_OHD_STAFF_ID=" + staffID.value);
+	
+	paramPairs.push("IPType="+ HSBC_OHD_CUSTOMER_BUSINESS_LINE.value);
+    paramPairs.push("IPID=" + $.trim($("#customerID")[0].value));
+    
+    paramPairs.push("PROSPECTID=" + $.trim($("#prospectID")[0].value));
+    
+    paramPairs.push("IPCC=" + customerCountryCode.value);
+    paramPairs.push("IPGMC=" + customerGroupMember.value);
+	
+	paramPairs.push("HSBC_OHD_CUSTOMER_TYPE=" + customerType.value);
+    paramPairs.push("HSBC_OHD_DISPLAY_TIMEZONE="+ timezone.value);
+    paramPairs.push("launchLocale="+ locale.value);
+    paramPairs.push("LEAD_ID=" + LeadId.value);
+	paramPairs.push("HSBC_OHD_USER_LEGACY_ID=" + userLegacyId.value);
+    paramPairs.push("HSBC_OHD_USER_LEGACY_DEVICE_ID=" + userLegacyDeviceId.value);
+    
+    paramPairs.push("MANUAL_TAGGING_STAFF_ID=" + ManualTaggingStaffId.value);
+    paramPairs.push("MANUAL_TAGGING_STAFF_NAME=" + ManualTaggingStaffName.value);
+    
+    paramPairs.push("planID=" + planID.value);
+    paramPairs.push("goalID=" + goalID.value);
+    paramPairs.push("goalType=" + goalType.value);
+    paramPairs.push("sourcePage=" + sourcePage.value);
+	
+    var URL_REDIRECT_ACTIONSelector = document.getElementById("URL_REDIRECT_ACTIONSelector");
+    paramPairs.push("URL_REDIRECT_ACTION="+URL_REDIRECT_ACTIONSelector.value);
+    var backActionURLSelector = document.getElementById("backActionURLSelector");
+    paramPairs.push("backActionURL="+backActionURLSelector.value);
+    var continueActionURLSelector = document.getElementById("continueActionURLSelector");
+    paramPairs.push("continueActionURL="+continueActionURLSelector.value);
+    
+    paramPairs.push("enableMarkScreen="+(document.getElementById("enableMarkScreen").checked? "Y": "N"));
+    // paramPairs.push("cacheBust="+(document.getElementById("cacheBust").checked? "Y": "N"));
+
+    paramPairs.push("targetFunction="+targetFunctionSelector.value);
+    window.open("/group-sfp-war/main" +"?"+paramPairs.join("&"), "fsa")
+}
+
+function confirmAndStartAppEncryped() {
+	var serviceMode = document.getElementById("svcSelector");
+		
+	var customerType = document.getElementById("customerType");
+	var timezone = document.getElementById("timezone");
+    var locale = document.getElementById("launchLocale");
+    var LeadId = document.getElementById("leadID");
+    var ManualTaggingStaffId = document.getElementById("ManualTaggingStaffId");
+    var ManualTaggingStaffName = document.getElementById("ManualTaggingStaffName");
+    
+    var targetFunctionSelector = document.getElementById("targetFunctionSelector");
+
+	var encryptedState = "NbyiCyktNM87Zpq4UEKhdHsIzNi7TvzLiOytTgftumxdmpbeTvPYTUu874WfcP2JgpCHr9adOVA2NebqYZGwFjP45SANhBlSOS3ZWulnYcOX9innBtOFLZoy+ZRvu5HVwoUGTl7G5lTbrA8UGjetPB1VfXEr4R8QYWA0BxGUganbW3Zv+5MYsua/ga5HanILsUudzfuAet0qNIEwl5mj2Tp+05N5T3kvYGdMAnWZrdn09XljjJgr0rUaZwy5ti4CaLTFe7R2Udg=";
+    
+    var paramPairs = [];
+    
+	paramPairs.push("serviceMode=" + serviceMode.value); 	
+	
+	paramPairs.push("encryptedState=" + encryptedState);
+	
+	paramPairs.push("HSBC_OHD_CUSTOMER_TYPE=" + customerType.value);
+    paramPairs.push("HSBC_OHD_DISPLAY_TIMEZONE="+ timezone.value);
+    paramPairs.push("launchLocale="+ locale.value);
+    paramPairs.push("LEAD_ID=" + LeadId.value);
+	
+    paramPairs.push("targetFunction="+targetFunctionSelector.value);
+    
+    paramPairs.push("MANUAL_TAGGING_STAFF_ID="+ ManualTaggingStaffId.value);
+    paramPairs.push("MANUAL_TAGGING_STAFF_NAME="+ ManualTaggingStaffName.value);
+    window.open("/group-sfp-war/main" +"?"+paramPairs.join("&"), "fsa")
+
+}
+
+function healthcheck() {
+    window.open("group/fsa/sfp/ui/desktop/healthcheck/healthcheck.html", "healthcheck");
+}
+
+</script>
+
+<style>
+.csHide {
+    display: none;
+}
+#cinPrefiller {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+#cinPrefiller span {
+    display: block;
+    cursor: pointer;
+    margin: 3px 0 0;
+}
+.hover {
+    background-color: #ccc;
+}
+</style>
+<div id="cinPrefiller" class="csHide">
+<strong>Click below lines to change customer</strong>
+    <span>FR-HBFR-FRHBFR002000271-en_US</span>
+    <span>CA-HKBC-CAHKBC123123123-en_CA</span>
+<!--     <span>BR-HBBR-BRHBBR001000001</span> -->
+    <span>VN-HSBC-VNHSBC123123123-en_VN</span>
+    <span class="defaultSelected">HK-HBAP-IF200106-en_GB</span>
+    <span>SG-HBSP-SGHBSP147873160-en_SG</span>
+    <span >SG-HBSP-SGHBSP152181558-en_SG</span>
+</div>
+
+<script type="text/javascript">
+function changeEntity(entityValue) {
+    var parts = entityValue.split("-");
+    
+    var launchLocale = document.getElementById("launchLocale");
+
+    var channelCountryCode = document.getElementById("channelCountryCode");
+    var channelGroupMember = document.getElementById("channelGroupMember");
+    
+    var customerId = document.getElementById("customerID");
+    var customerCountryCode = document.getElementById("customerCountryCode");
+    var customerGroupMember = document.getElementById("customerGroupMember");
+    
+    if (1===parts.length) {
+        parts = [entityValue.substr(0,2), entityValue.substr(2, 4), entityValue];
+    }
+    if (3<=parts.length) {
+        channelCountryCode.value = customerCountryCode.value = parts[0];
+        channelGroupMember.value = customerGroupMember.value = parts[1];
+        customerId.value = parts[2];
+        launchLocale.value = parts[3] || "en_"+channelCountryCode.value;
+    }    
+}
+$("#cinPrefiller").find("span").click(function() {
+    changeEntity($(this).text());
+}).mouseenter(function() {
+    $(this).addClass("hover");
+}).mouseleave(function() {
+    $(this).removeClass("hover");
+});
+
+var defaultCin = $("#cinPrefiller").find("span.defaultSelected").text();
+defaultCin && changeEntity(defaultCin)
+
+$(document.body).dblclick(function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $("#cinPrefiller").toggleClass("csHide");
+    return false;
+});
+</script>
+
+</body>
+</html>
+

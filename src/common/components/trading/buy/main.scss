@@ -1,0 +1,12 @@
+/********************************  main css  *******************************/
+@charset "utf-8";
+@import "../../../styles/trading/tradingVariable";
+
+.trading {
+    margin: $num-0 $auto;
+    max-width: $max-width;
+    width: $width;
+}
+article {
+    padding: $num-0 $num-10 120px;
+}

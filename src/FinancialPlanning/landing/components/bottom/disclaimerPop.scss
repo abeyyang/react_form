@@ -1,0 +1,97 @@
+.popup {
+    .popupContentContainer {
+        overflow-y: scroll;
+        height: 800px;
+        position: relative;
+        z-index: 1000;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 700px;
+        max-width: 98%;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 0px 50px 20px;
+        vertical-align: middle;
+        text-align: left;
+        white-space: normal;
+        background: #fff;
+    }
+    .title{
+        margin: 20px 0px;
+        h2{
+            font-size: 38px;
+            font-weight: 300;	
+        }
+    }
+    .ack{
+        margin-bottom: 30px;
+        .description{
+             color: #333333;
+             font-size: 14px;	
+             line-height: 18px;
+             margin-top: 30px;
+             margin-bottom: 20px;
+        }
+        .firstAck,.secondAck,
+        .thirdAck,.fourthAck,
+        .fiveAck,.sixthAck,
+        .sevenAck{
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 18px;
+            color:#333333; 
+            .ackTitle{
+                font-weight: bold;
+            }
+            .ackDetails{
+                padding-left: 14px;
+                line-height: 18px;
+            }
+            .mt20{
+                margin-top: 20px;
+            }
+        }
+    }
+    .line{
+            border: 1px solid #D7D8D6;
+            margin-top: 15px;
+        }
+    .footer{
+            margin-top: 40px;
+            font-size: 16px;
+            padding-bottom: 60px;
+            vertical-align: middle;
+        button{
+            background-color: transparent;
+            border:none;
+        }
+        .concel{
+            float: left;
+            input{
+                border:none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+        .btnConfirmSubmit{
+            float: right;
+            a{
+                text-decoration: none;
+                color: #000000;
+
+            }
+            .submit{
+                height: 40px;	
+                width: 93px;
+                margin-left: 15px;
+                padding: 10px 20px;
+                background-color: #DB0011;
+                border: 1px solid #DB0011;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+    
+
+}

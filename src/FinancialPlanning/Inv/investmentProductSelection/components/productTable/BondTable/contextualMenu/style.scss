@@ -1,0 +1,189 @@
+// Start: Import Global Scss library
+// @import "../../../../styles/fonts/fontIcon";
+// @import "../../../../styles/variable";
+// @import "../../../../styles/mixinStyles";
+
+// Start: Component variable values
+$contextualMenuBg: #1d262c;
+$menuPadding: 20px;
+$arrowSize: 28px;
+$arrowMargin: 10px;
+
+.contextualMenu {
+    display: block;
+    overflow: auto;
+    padding: 0 $menuPadding;
+    background-color: $contextualMenuBg;
+
+    //left right arrow
+    .icon {
+        color: #fff;
+        font-size: px-to-rem($arrowSize);
+
+        > * {
+            display: inline-block;
+            padding: 11px 15px;
+            color: white;
+            cursor: pointer;
+        }
+
+        &:first-child {
+            margin-right: $arrowMargin;
+        }
+
+        &:last-child {
+            margin-left: $arrowMargin;
+        }
+    }
+
+    .actions {
+        position: relative;
+        box-sizing: content-box;
+        display: inline-block;
+        height: 100%;
+        overflow-x: auto;
+        width: calc(100% - #{$arrowSize} * 2 - #{$arrowMargin} * 2);
+        vertical-align: middle;
+        white-space: nowrap;
+        background-color: $contextualMenuBg;
+        pointer-events: visible;
+
+        > * {
+            display: inline-block;
+            margin: 15px 20px;
+            color: white;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        &::before {
+            position: absolute;
+            z-index: 2;
+            top: -10px;
+            left: 151px;
+            border-color: transparent transparent $contextualMenuBg transparent;
+            border-style: solid;
+            border-width: 0 10px 10px;
+            height: 0;
+            width: 0;
+            content: "";
+        }
+
+        li {
+            cursor: pointer;
+
+            .title {
+                font-size: px-to-rem(14px);
+                font-weight: 300;
+            }
+
+            span:nth-child(1) {
+                font-size: px-to-rem(26px);
+            }
+
+            &.quickViewTab span:nth-child(1) {
+                margin-top: -5px;
+            }
+
+            &.quoteTab span:nth-child(1) {
+                margin-top: -5px;
+            }
+
+            &.buyTab span:nth-child(1) {
+                margin-top: -2px;
+                font-size: px-to-rem(29px);
+            }
+
+            &.sellTab span:nth-child(1) {
+                margin-top: -2px;
+                font-size: px-to-rem(29px);
+            }
+
+            &.quickTradeTab span:nth-child(1) {
+                margin-top: -2px;
+                font-size: px-to-rem(29px);
+            }
+
+            &.watchListTab span:nth-child(1) {
+                margin-top: -3px;
+                font-size: px-to-rem(32px);
+            }
+
+            &.newsTab span:nth-child(1) {
+                margin-top: -2px;
+            }
+        }
+    }
+}
+
+.newIcon {
+    font-family: "HSBCIcon-Font-STB";
+}
+
+.modifyTab,
+.cancelTab,
+.orderDetailsTab,
+.quoteTab {
+    span:first-child {
+        margin-bottom: 3px;
+        font-size: px-to-rem(24px);
+        vertical-align: middle;
+    }
+    span:last-child {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.buyTab {
+    span:first-child {
+        font-size: px-to-rem(27px);
+        vertical-align: middle;
+    }
+    span:last-child {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.watchListTab {
+    span:first-child {
+        font-size: px-to-rem(29px);
+        vertical-align: middle;
+    }
+    span:last-child {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.newsTab {
+    span:first-child {
+        font-size: px-to-rem(24px);
+        vertical-align: middle;
+    }
+    span:last-child {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.button {
+    border: 1px solid #1d262c;
+    background-color: #1d262c;
+}
+
+.active {
+    opacity: 1;
+}
+
+.inactive {
+    opacity: 0;
+}

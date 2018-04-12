@@ -1,0 +1,78 @@
+/********************************  PriceEditorPanel css  *******************************/
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+.timetable {
+    margin: $num-0 auto;
+    padding-top:$num-1;
+    width: 450px;
+}
+.less,
+.plus {
+    border: $border #f1f1f1;
+    display: $inline-block;
+    width: 46px;
+    font-size: 28px;
+    text-align: $center;
+    cursor: pointer;
+}
+.disableBtn {
+    border: 1px solid #929292;
+    color: #929292;
+    background: none;
+}
+
+.btnStyle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hidden {
+    display: $hidden;
+    background-color: tomato;
+}
+
+.num {
+    border-bottom: $border #f1f1f1;
+    margin: $num-0 $num-1;
+    width: 320px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: $center;
+
+    .amount {
+        border: $hidden;
+        outline: medium;
+        width: 80%;
+        line-height: 28px;
+        text-align: $center;
+        background: $hidden;
+        color: #fff;
+    }
+
+    ::-ms-clear {
+        display: $hidden;
+    }
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.fl {
+    float: $left;
+}
+
+.clear {
+    clear: $clear;
+}
+
+.error {
+    border-bottom: $border #b30000;
+
+    .amount {
+        color: #b30000;
+    }
+}

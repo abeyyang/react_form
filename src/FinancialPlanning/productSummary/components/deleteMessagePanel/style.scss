@@ -1,0 +1,28 @@
+.modalBoday{
+    background-color: #ffffff;
+    
+    .content{
+        font-size: 25px;
+
+        padding: 0px 0 15px 0 !important;
+    }
+}
+.btnArea{
+        text-align: right;
+        margin-top: 30px;
+    a{
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        margin-left: 20px;
+    }
+    .cancelBtn{
+        padding: 10px;
+    }
+    .subBtn{
+        padding: 10px;
+        color: #FFFFFF;
+        background-color: #DB0011;
+    }
+    
+}

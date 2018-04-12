@@ -1,0 +1,252 @@
+.AssetsModal{
+       h1{
+            font-size: 30px;
+        }
+        .description{
+            font-size: 15px;
+        }
+     table{
+             width: 100%;
+            margin-top: 20px;
+            font-size: 20px;
+            tr{
+                td{
+                    padding-top: 10px;
+                    position: relative;
+                    .investmentPropertyDetailTip,.savingCashDepositDetailTip{
+                            position: absolute;
+                            display: none;
+                            top:-40px;
+                            left:200px;
+                            width: 200px;
+                            height: 40px;
+                            font-size: 12px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            border: 1px solid #bbb;
+                            -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            z-index: 1000;
+                            padding: 10px 10px;
+                            color: #4c4c4c;
+                           .arrowDown{
+                            position: relative;
+                            top: 5px;
+                            left: -40px;
+                            width: 0px;
+                            height: 0px;
+                            margin-left: 125px;
+                            margin-top: 10px;
+                            border-top: 10px solid #bbb;
+                            border-left: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            z-index: 1001;
+                            }
+                        }
+                         .investmentDetailTip{
+                            position: absolute;
+                            display: none;
+                            top:-45px;
+                            left:200px;
+                            width: 200px;
+                            height: 45px;
+                            font-size: 12px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            border: 1px solid #bbb;
+                            -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            z-index: 1000;
+                            padding: 10px 10px;
+                            color: #4c4c4c;
+                           .arrowDown{
+                            position: relative;
+                            top: -3px;
+                            left: -40px;
+                            width: 0px;
+                            height: 0px;
+                            margin-left: 125px;
+                            margin-top: 10px;
+                            border-top: 10px solid #bbb;
+                            border-left: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            z-index: 1001;
+                            }
+                        }
+                        .otherLiquidDetailTip,.nonliquidTrustsDetailTip{
+                            position: absolute;
+                            display: none;
+                            top:-30px;
+                            left:200px;
+                            width: 200px;
+                            height: 30px;
+                            font-size: 12px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            border: 1px solid #bbb;
+                            -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            z-index: 1000;
+                            padding: 10px 10px;
+                            color: #4c4c4c;
+                           .arrowDown{
+                            position: relative;
+                            top: 6px;
+                            left: -40px;
+                            width: 0px;
+                            height: 0px;
+                            margin-left: 125px;
+                            margin-top: 10px;
+                            border-top: 10px solid #bbb;
+                            border-left: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            z-index: 1001;
+                            }
+                        }
+                        .oridinaryCPFDetailTip{
+                            position: absolute;
+                            display: none;
+                            top:-20px;
+                            left:200px;
+                            width: 200px;
+                            height: 20px;
+                            font-size: 12px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            border: 1px solid #bbb;
+                            -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.45);
+                            z-index: 1000;
+                            padding: 10px 10px;
+                            color: #4c4c4c;
+                           .arrowDown{
+                            position: relative;
+                            top: 8px;
+                            left: -40px;
+                            width: 0px;
+                            height: 0px;
+                            margin-left: 125px;
+                            margin-top: 10px;
+                            border-top: 10px solid #bbb;
+                            border-left: 10px solid transparent;
+                            border-bottom: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            z-index: 1001;
+                            }
+                        }
+                        .oridinaryCPFDetailOverlay:hover + .oridinaryCPFDetailTip,.nonliquidTrustsDetailOverlay:hover+.nonliquidTrustsDetailTip,
+                        .investmentPropertyDetailOverlay:hover+.investmentPropertyDetailTip,.otherLiquidDetailOverlay:hover+.otherLiquidDetailTip,
+                        .investmentDetailOverlay:hover+.investmentDetailTip,.savingCashDepositDetailOverlay:hover+.savingCashDepositDetailTip{
+                             display: block;
+                        }
+                }
+            }
+              
+        }
+        .currencyType {
+            border: 1px solid #ccc;
+            float: left;
+            position: relative;
+            padding: 12px;
+            width: 260px;
+            margin-top: 10px;
+            span {
+                color: #666;
+            }
+            .num {
+                position: absolute;
+                top: 10px;
+                left: 60px;
+                border: none;
+            }
+           
+        }
+        .recordStyle{
+          border: 1px solid #ccc;
+          width: 150px;
+          height: 20px;
+          padding: 12px;
+          vertical-align: middle;
+          position: relative;
+           .num {
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                border: none;
+                width: 150px;
+            }
+             .num:disabled{
+                background-color: #fff
+            }
+        }
+         .remarks{
+          border: 1px solid #ccc;
+          width: 520px;
+          height: 20px;
+          padding: 12px;
+          vertical-align: middle;
+          position: relative;
+           .remarksNum {
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                border: none;
+                width: 520px;
+            }
+        }
+         .iconEdit {
+            float: left;
+            margin: 15px 0 0 5px;
+            font-size: 30px;
+        }
+              .line{
+            border: 1px solid #ccc;
+            margin-top: 15px;
+        }
+        .footer{
+            margin-top: 20px;
+            font-size: 15px;
+             margin-bottom: 20px;
+             vertical-align: middle;
+            button{
+               background-color: transparent;
+               border:none;
+            }
+            .clearAll{
+            float: left;
+            input{
+               border: none;
+               background-color: transparent;
+               cursor: pointer;
+            }
+            }
+            .btnCopySubmit{
+                float: right;
+
+                .copy{
+                    border:1px solid #000;
+                    height: 50px;
+                    width:80px;
+                    line-height: 50px;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+                .submit{
+                    width:80px;
+                    margin-left: 10px;
+                    background-color: #d80a1e;
+                    border: none;
+                    height: 50px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+}

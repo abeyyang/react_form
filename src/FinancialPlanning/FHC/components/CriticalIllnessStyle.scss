@@ -1,0 +1,232 @@
+            .panel{
+                            border: 1px solid #D7D8D6;	
+                            background-color: #FFFFFF;
+                            line-height: 44px;
+                            margin-bottom: 5px;
+                            h3{
+                                color: #333333;
+                                font-size: 22px;		
+                                line-height: 18px;
+                                margin: 15px 20px;
+                                vertical-align: middle;
+                                .title{
+                                    vertical-align: middle;
+                                    padding-left: 10px;
+                                    border-left: 5px solid #DB0011;
+                                    .iconAgree{
+                                        color: #008580;
+                                        font-size: 30px;
+                                    }
+                                }
+                                .icon{
+                                    color: #333333;
+                                    float: right;
+                                    margin-top: -23px;
+                                    .iconDown{
+                                        font-size: 30px;
+                                    }
+                                }
+                            }
+                 } 
+            .results {
+                    padding: 20px;
+                    width:1210px;
+                    background: #FFFFFF;
+                    color: #fff;
+                    .lineCss{
+                        background-color: lightgray;
+                        height:1px;
+                        margin-top:-15px;
+                    }    
+                    .inputBoxCss{
+                            clear:left;
+                            margin-top: 10px;
+                            position: relative;
+                            .pCss{
+                                color:black;
+                                padding-bottom:10px;
+                            }
+                            .pCheckBoxCss{
+                                color:black;
+                            }
+                            .leftPositionCss{
+                                padding-left:18px;
+                            }                   
+                            .iconEdit {
+                                margin: 0px 0px 5px 5px;
+                                font-size: 25px;
+                                color:black;
+                            }   
+                            .assumptionHeadlineCss{
+                                background-color: lightgray;
+                                height:1px;
+                                margin-top:20px;
+                            }  
+                            .viewAssumptionCss{
+                                float:left;
+                                color:black;
+                                margin-top:10px;
+                                font-size: 30px;
+                            }
+                            .assumptionUnderlineCss{
+                                background-color: lightgray;
+                                height:1px;
+                                margin-bottom:20px;
+                                margin-top: 10px;
+                                clear:left;
+                            }                         
+                            .assumptionCss{
+                                line-height: 50px;
+                                margin-left: 40px;  
+                                .assumptionFontCss{
+                                    color:black;
+                                    font-weight: bold;
+                                } 
+                                .spanCss{
+                                    float:left;
+                                    color:black;
+                                } 
+                                .leftFloatCss{
+                                    float:left;
+                                }
+                                .icon{
+                                    color: #333333;
+                                    float: right;
+                                    margin-top: -50px;
+                                    .iconDown{
+                                        font-size: 30px;
+                                    }
+                                } 
+                                .padRightPositionCss{
+                                    margin-right:10px;
+                                } 
+                                .padLeftPositionCss{
+                                    margin-left:10px;
+                                }
+                                .redIcon{
+                                    color:red;
+                                    display: inline-flex;
+                                    vertical-align: 15px;
+                                    height: 5px;
+                                    margin-bottom: 40px;
+                                }
+                                .inlineInputDivCss{
+                                    display: inline-flex;
+                                    margin-left: 10px;
+                                    margin-right: 10px;               
+                                    .inlineInputCss{
+                                        width:50px;
+                                        text-align: center;
+                                        height:30px;
+                                    }               
+                                }                            
+                             }                                                            
+                        }           
+
+                }
+                    .clearfix {
+                        zoom: 1;
+                    }
+                    .clearfix::before,
+                    .clearfix::after {
+                        display: table;
+                        content: " ";
+                    }
+                    .clearfix::after {
+                        clear: both;
+                        overflow: hidden;
+                    } 
+                    // checkbox button
+                    .checkboxList {
+                        li {
+                            padding: 10px 17px;
+                            line-height: 25px;
+                        }
+                        .customCheckbox {
+                            margin-right: 10px;
+                            width: 22px;
+                            height: 22px;
+                            border: 1px solid #d7d8d6;
+                            background: #fff;
+                        }
+                        .icon {
+                            margin-left: -3px;
+                            margin-top: -3px;
+                            color: #008580;
+                            font-size: 1.75rem;
+                            font-weight: normal;
+                        }
+
+                        .labelText {
+                            display: inline-block;
+                            padding: 2px 0;
+                            font-size: 1rem;
+                            font-weight: normal;
+                            line-height: 1.13;
+                        }
+                        .agree::before {
+                            content: "\F00A";
+                        }
+                        .checkBoxfontCss{
+                            color:black;
+                            padding-left: 5px;
+                        }
+                    }  
+                .AmountInput {
+                    display: inline-block;
+                    padding-left: 60px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    position: relative;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -ms-box-sizing: border-box;
+                    box-sizing: border-box;
+                    & > span {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        padding: 0 5px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-size: 18px;
+                        color: #666;
+                        padding: 0 15px;
+                    }
+                    .AmountInputText {
+                        display: block;
+                        height: 100;
+                        & > input[type=text] {
+                            border: 0;
+                            width: 100%;
+                            height: 45px;
+                            line-height: 45px;
+                            padding: 2px 5px;
+                            padding-right: 10px;
+                            -webkit-box-sizing: border-box;
+                            box-sizing: border-box;
+                            background: transparent;
+                            color:#333;
+                        }
+                    }
+                }
+                .errorMessage {
+                    color: #83000A;
+                    position: absolute;
+                    top: 48px;
+                    left: 20px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    white-space: pre;
+                }
+                .errorMessageInLine {
+                    @extend .errorMessage;
+                    left: 0;
+                }  
+                .leftFloatCss{
+                    float:left;
+                }

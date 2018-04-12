@@ -1,0 +1,454 @@
+.mainBackground {
+    margin: 0 auto;
+    padding-bottom: 150px;
+    width: 1305px;
+    background-color: #EDEDED;
+    .orderPlacement{
+        padding: 20px;
+        .theme{
+            color: #333333;
+            .themeContent{
+                color: #333333;
+                font-size: 28px;	
+                font-weight: 300;	
+                line-height: 32px;
+            }
+            .themeText{
+                font-size: 14px;	
+                line-height: 32px;
+            }
+        }
+        .tableContent{
+            .titlte{
+                padding-top: 30px;
+                padding-right: 20px;
+                .icon{
+                    border-left: 5px solid red;
+                    padding-left: 10px;
+                    .iconInsurance{
+                        font-size: 26px;
+                        color: #333333;
+                    }
+                }
+                h2{
+                    margin-top: -21px;
+                    margin-left: 12px;
+                    color: #333333;
+                    font-size: 22px;	
+                    font-weight: 300;	
+                    line-height: 27px;
+                    font-weight: bold;
+                    .id{
+                        margin-left: 20px;
+                        color: #5C5C5C;
+                        font-size: 12px;	
+                        line-height: 14px;
+                    }
+                }
+                .titlteRight{
+                    float: right;
+                    margin-top: -28px;
+                    color: #333333;
+                    font-size: 14px;	
+                    line-height: 32px;
+                    a{
+                        color: #333333;
+                        text-decoration: none;
+                        .iconChart{
+                            font-size: 28px;	
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+            .tableBox{
+                background-color: #FFFFFF;
+                margin-top: 15px;
+                table{
+                    th{
+                       height: 72px;
+                       background-color: #2F3D46;   
+                       color: #fff;
+                       font-weight: bold;
+                       vertical-align: middle;
+                       padding-left: 20px;
+                       padding-right: 20px;
+                    }
+                    th:first-child{
+                        width: 200px;
+                    }
+                    th:nth-child(2){
+                        width: 260px;
+                    }
+                    th:nth-child(3){
+                        width: 100px;
+                    }
+                    th:nth-child(4){
+                        width: 100px;
+                    }
+                    th:nth-child(5){
+                        width: 200px;
+                    }
+                    th:last-child{
+                        width: 300px;
+                    }
+                    td{
+                        //border-bottom: 1px solid #C9C9C9;
+                        padding: 15px 0px 0px 20px;
+                        color: #333333;
+                        height: 72px;
+                        .prodName{
+                            font-size: 14px;	
+                            line-height: 18px;
+                        }
+                        .prodCode{
+                            color: #5C5C5C;
+                            font-size: 12px;	
+                            line-height: 14px;
+                        }
+                        .risk,
+                        .currency,
+                        .invest{
+                            color: #5C5C5C;
+                            font-size: 14px;	
+                            line-height: 18px;
+                        }
+                        .riskLevel{
+                            height: 23px;	
+                            width: 23px;	
+                            border-radius: 50%;
+                            display: inline-block;
+                            -moz-border-radius:50%;
+                            -webkit-border-radius:50%;
+                            color:#fff;
+                            line-height: 23px;
+                            text-align: center;
+                            margin-left: 20px;
+                        }
+                        .riskLevelOne{
+                            background-color: #547DA7;
+                        }
+                        .riskLevelTwo{
+                            background-color: #269792;
+                        }
+                        .riskLevelThree{
+                            background-color: #3B7522;
+                        }
+                        .riskLevelFour{
+                            background-color: #E9A115;
+                        }
+                        .currencyFlag,
+                        .investValue{
+                            font-size: 14px;	
+                            font-weight: bold;
+                            line-height: 18px;
+                        }
+                        .prodExplain{
+                            font-size: 12px;	
+                            line-height: 16px;	
+                            text-align: right;
+                        }
+                        .form{
+                            color: #333333;
+                            font-size: 14px;	
+                            line-height: 18px;
+                        }
+                        .iconRight{
+                            color: #333333;
+                            font-size: 23px;	
+                            line-height: 19px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: #333333;
+                        }
+                        .prefill{	
+                            height: 40px;
+                            padding-left: 20px;
+                            text-decoration: none;
+                            .prefillBtn{
+                                padding: 10px 20px;
+                                line-height: 40px;	
+                                background-color: #3E505D;
+                                font-size: 16px;
+                                color: #FFFFFF;
+                                text-align: center;
+                            }
+                        }
+                        .last{
+                            color: #5C5C5C;
+                            font-size: 12px;	
+                            line-height: 14px;
+                        }
+                        .chkbox {
+                            display: none;
+                        }
+                        .chkbox + label {
+                            border: 1px solid #7c7c7c;
+                            display: inline-block;
+                            height: 20px;
+                            width: 20px;
+                            line-height: 20px;
+                            text-align: center;
+                            background: none;
+                            margin-left: 60px;
+                        }
+                        .chkbox:checked + label::after {
+                            content: "\2714";
+                            color: #008580;
+                            vertical-align: 5px;
+                        }
+                    }
+                    td:first-child{
+                        width: 200px;
+                    }
+                    td:nth-child(2){
+                        width: 260px;
+                    }
+                    td:nth-child(3){
+                        width: 100px;
+                    }
+                    td:nth-child(4){
+                        width: 100px;
+                    }
+                    td:nth-child(5){
+                        width: 200px;
+                    }
+                    td:last-child{
+                        text-align: left;
+                        vertical-align: middle;
+                        width: 300px;
+                    }
+                    tr:nth-child(2n+1) {
+                        background: #f6f6f6;
+                    }
+                    tr:first-child{
+                        td:first-child,
+                        td:nth-child(2),
+                        td:nth-child(3){
+                            border-bottom-width: 0px;
+                        }
+                    }
+                    tr:last-child{
+                        td{
+                            border-bottom-width: 0px;
+                            vertical-align: baseline;
+                        }
+                    }
+                }
+            }
+        }
+    .bottom{
+        padding: 20px 0px;
+        .back {
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #333;
+            }
+        }
+        .decalration{
+            margin-top: 20px;
+            border-top: 1px solid #D7D8D6;
+            border-bottom: 1px solid #D7D8D6;
+            height: 42px;
+            line-height: 42px;
+            span{
+                color: #333333;
+                font-size: 16px;
+            }
+            .iconDown{
+                font-size: 25px;
+                float: right;
+                margin-top: 10px;
+                margin-right: -5px;
+            }
+        }
+    }
+    .buttonGroup{
+        text-align: right;
+        padding-top: 20px;
+        .prefill{
+            height: 40px;
+            text-decoration: none;
+            .prefillBtn{
+                margin-left: 20px;
+                padding: 10px 20px;
+                line-height: 40px;	
+                background-color: #929292;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+            .regularSavingBtn{
+                margin-right: 20px;
+                padding: 10px 20px;
+                line-height: 40px;	
+                background-color: #2F3D46;
+                font-size: 16px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        }
+    }
+    
+    /*overlay setting start*/
+    .popupContentContainer {
+        width: 1099px;
+        padding-bottom: 30px;
+    }
+    .popupContent {
+        padding-top: 10px;
+    }
+
+    .popContent{
+        clear: both;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 20px;
+        width:auto;
+        .popGenerate{
+            .popLeft{
+                width: 35%;
+                .chart{
+                    margin-left: 50px;
+                    height: 180px;	
+                    width: 180px;	
+                    background-color: #677B88;
+                    border-radius: 50%;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    color:#fff;
+                    line-height: 180px;
+                    text-align: center;
+                }
+                .chartContent{
+                    color: #333333;
+                    text-align: center;
+                    float: left;
+                    position: absolute;
+                    margin-left: 105px;
+                    margin-top: -130px;
+                    width: 50px;
+                    .contentComplation{
+                        font-size: 12px;	
+                        line-height: 14px;	
+                        text-align: center;
+                    }
+                    .contentWell{
+                        font-size: 16px;	
+                        font-weight: bold;	
+                        line-height: 20px;	
+                        text-align: center;
+                    }
+                }
+                .chartExplain{
+                    margin-left: 30px;
+                    li{
+                        float: left;
+                        width: 120px;
+                    }
+                    .explainContent{
+                        font-size: 12px;
+                        color: #333333;
+                    }
+                    .currency{
+                        color: #333333;
+                        font-size: 14px;	
+                        font-weight: bold;
+                    }
+                }
+            }
+            .popRight{
+                padding-right: 45px;
+                width: 65%;
+                clear: both;
+                float: right;
+                margin-top: -200px;
+                color: #333333;
+                .details{
+                    .title{
+                        font-size: 20px;	
+                        line-height: 18px;
+                    }
+                    .content{
+                        margin-top: 20px;
+                        font-size: 14px;	
+                        line-height: 20px;
+                        .ctn{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .middle{
+                    margin-top: 20px;
+                    table{
+                        color: #333333;
+                        tr:first-child{
+                            td{
+                                font-size: 14px;	
+                                line-height: 18px;
+                            }
+                        }
+                        tr:last-child{
+                            td{
+                                font-size: 20px;	
+                                line-height: 18px;
+                            }
+                        }
+                        td:first-child{
+                            border-right:1px solid #D7D8D6;
+                            padding-right: 15px;
+                        }
+                        td:last-child{
+                            padding-left: 15px;
+                        }
+                    }
+                }
+                .bottom{    
+                    padding: 10px 0px;
+                    margin-top: 11px;
+                    background-color: #F6F6F6;
+                     table{
+                        color: #333333;
+                         td{
+                            font-size: 14px;	
+                            line-height: 18px;
+                            width: 220px;
+                            text-align: center;
+                            height: 20px;
+                            border-right:1px solid #D7D8D6;
+                        }
+                        td:last-child{
+                            border-right-width: 0px;
+                        }
+                        tr:last-child{
+                            td{
+                                font-weight: bold;
+                                
+                            }
+                        }
+                     }
+                }
+            }
+        }
+    }
+    /*overlay setting end*/
+    }
+    .clearfix {
+    zoom: 1;
+    }
+    .clearfix::before,
+    .clearfix::after {
+    display: table;
+    content: " ";
+    }
+    .clearfix::after {
+    clear: both;
+    overflow: hidden;
+    }
+
+}
+
+

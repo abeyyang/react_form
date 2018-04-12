@@ -1,0 +1,306 @@
+
+.ProdCard{
+        border: 1px solid #D7D8D6;
+        margin: 20px 0px 0px 20px;
+        background-color: #fff;
+        h3 {
+            height: 44px;
+            //border-top: 5px solid #d80a1e;
+            line-height: 44px;
+            background-color: #fff;
+            position: relative;
+            border-bottom: 1px solid #D7D8D6;
+            .title {
+                margin-left: 20px;
+                padding-left: 15px;
+                color: #333333;	
+                font-size: 16px;	
+                font-weight: bold;	
+                line-height: 18px;
+                border-left: 5px solid #d80a1e; 
+            }
+            .icon{
+                padding-left: 5px;
+                padding-bottom: 5px;
+                font-size: 25px;
+                cursor:pointer;
+            }
+        }
+ .productCardMain {  
+     padding: 20px;
+     background-color: #fff;
+     margin-bottom: 20px;
+     h6{
+         padding:0px;
+         height: 42px;
+         .title{
+
+            padding: 0px 0px;
+            color: #333333;
+            font-size: 22px;	
+            font-weight: 300;	
+            line-height: 22px;
+         }
+         .icon{
+             font-size: 25px;
+             position:absolute;
+             cursor:pointer;
+             margin-left: 6px;
+         }
+     }
+    .table{
+    position: relative;
+    .tableRow,
+    .tableHead {
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+        color: white;
+        height: 55px;
+    }
+    .tableHead {
+        position: absolute;
+    }
+
+    .tableRow {
+        display: table;
+        padding-left: 10px;
+        background-color:#FFFFFF ;
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
+            font-size: 14px;
+            color:#000000;
+        }
+    }
+    
+    .tableRow:nth-child(2n + 1) {
+        display: table;
+        background-color: #f6f6f6;
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
+            font-size: 14px;
+            color:#000000;
+        }
+    }
+
+    .tableBody
+    {
+        -webkit-overflow-scrolling: touch;
+        padding-top: 55px;
+        position: relative;
+        overflow: auto;
+         .tableRow {
+            position: relative;
+        }
+    }
+
+    .minWidth {
+        > * {
+            border-bottom: 1px solid white;
+        }
+
+        > *:nth-child(1) {
+            min-width: 52px;
+            max-width: 52px;
+            text-align: left;
+        }
+
+        > *:nth-child(2) {
+            min-width: 30px;
+            max-width: 30px;
+            text-align: center;
+        }
+
+        > *:nth-child(3) {
+            min-width: 40px;
+            max-width: 40px;
+            text-align: center;
+        }
+         > *:nth-child(4) {
+            min-width: 40px;
+            max-width: 40px;
+            text-align: center;
+        }
+         > *:nth-child(5) {
+            min-width: 50px;
+            max-width: 50px;
+            text-align: center;
+        }
+         > *:nth-child(6) {
+            min-width: 100px;
+            max-width: 100px;
+            text-align: center;
+        }
+         > *:nth-child(7) {
+            min-width: 100px;
+            max-width: 100px;
+            text-align: center;
+        }
+
+       
+    }
+}  
+   
+     
+     .addition{
+         padding-top: 15px;
+         font-size: 12px;
+         line-height: 16px;
+         float: left;
+         margin-top: 20px;
+         span{
+             font-weight: bold;
+         }
+     }
+      .button {
+        float: right;
+        height: 40px;	
+        margin-top: 20px;
+        line-height: 40px;
+        width: 142px;	
+        background-color: #3E505D;
+        text-align: center;
+        margin-right: 20px;
+         cursor:pointer;
+        a {
+            display: inline-block;
+            //margin-top: 8px;
+            //margin-right: 10px;
+            //padding: 15px 25px;
+            background: #3E505D;
+            color: #FFFFFF;
+            font-size: 16px;
+        }
+        a:first-child {
+            margin-right: 10px;
+        }
+    }
+ }
+ .totalRow{
+     font-size: 15px;
+     font-weight: bold;
+     height: 55px;
+     line-height: 55px;
+     
+     .totalText{
+          float: left;
+         margin-left: 60px;
+     }
+     .monthlyAmount{
+         float: right;
+         margin-right: 130px;
+     }
+     .initialAmount{
+         float: right;
+         margin-right: 130px;
+     }
+ }
+
+ .reviewPlan{
+     clear: both;
+     height: 20px;
+     margin-bottom: 10px;
+     .noteIcon{
+        color:#8F1A22;
+        font-size: 20px;
+     }
+   
+ }
+   .reminder{
+        margin-top: 60px;
+        background-color: #FBF8F3;
+        border: 1px solid #EDB343;
+        padding: 0px 100px 0 50px;
+        height: 99px;
+        .tipIcon{
+            line-height: 99px;
+            height: 99px;
+            float: left;
+            text-align: center;
+            margin-right: 20px;
+            span{
+                width:25px;
+                height:25px;
+                border-radius: 50%;
+                background-color: #f47c2b;
+                display: inline-block;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
+                color:#fff;
+                line-height: 25px; 
+            }
+        }
+        .tipContent{
+            padding-top: 15px;
+            line-height: 22px;
+            vertical-align: middle;
+            height: 99px;
+            float: left;
+            .reminderTip{	
+                    width: 928px;
+                    color: #333333;	
+                    font-family: "Univers Next for HSBC";	
+                    font-size: 14px;	
+            } 
+        }
+        .tipClose{
+            line-height: 99px;
+            height: 99px;
+            float: right;
+            cursor:pointer;
+        }
+     }
+ }
+.circleRiskLevel4{
+                    width:25px;
+                    height:25px;
+                    border-radius: 50%;
+                    background-color: #f47c2b;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    color:#fff;
+                    line-height: 25px;
+                }
+.circleRiskLevel1{
+                    width:25px;
+                    height:25px;
+                    border-radius: 50%;
+                    background-color: #6989ab;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    color:#fff;
+                    line-height: 25px;
+                }
+.circleRiskLevel2{
+                    width:25px;
+                    height:25px;
+                    border-radius: 50%;
+                    background-color: #72a898;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    color:#fff;
+                    line-height: 25px;
+                }
+.circleRiskLevel3{
+                    width:25px;
+                    height:25px;
+                    border-radius: 50%;
+                    background-color: #78bc51;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    color:#fff;
+                    line-height: 25px;
+                } 
+ .text {
+         display: block;
+         margin-top: 10px;
+         font-size: 13px;
+      }

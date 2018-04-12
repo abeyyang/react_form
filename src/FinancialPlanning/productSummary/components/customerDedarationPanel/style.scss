@@ -1,0 +1,84 @@
+.dedarationMain{
+     margin: 0px 20px 20px 20px;
+     padding: 20px;
+
+     span{
+          padding:  0px;
+          font-size: 23px;
+          background-color:#eeeceb;
+     }
+     p{
+          padding-top:  20px ;
+     }
+
+     h6{
+          padding-top:  20px ;
+          
+     }
+       .prompt {
+                    position: relative;
+                    margin-top: 0px;
+                    overflow: hidden;
+                    padding: 20px 0 0 0;
+                    font-size: 18px;
+                    .chkbox {
+                        display: none;
+                    }
+                    label {
+                        display: block;
+                    }
+                    .chkbox + label {
+                        border: 1px solid #7c7c7c;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        background: none;
+                    }
+                    .chkbox:checked + label::after {
+                        content: "\2714";
+                        color: #008580;
+                        vertical-align: 5px;
+                    }
+                    .chkbox1 + label {
+                        border: 1px solid #7c7c7c;
+                        display: inline-block;
+                        height: 20px;
+                        width: 20px;
+                        line-height: 20px;
+                        text-align: center;
+                        background: none;
+                    }
+                    .chkbox1:checked + label::after {
+                        content: "\2714";
+                        color: #008580;
+                        vertical-align: 5px;
+                    }
+                    .description {
+                        margin-left: 5px;
+                        vertical-align: 5px;
+                        font-size: 16px;
+                    }
+                }
+        .dedarationP{
+             padding: 10px 0 0 25px ;
+
+        }
+        
+
+        .textString {
+                        border: 1px solid #ccc;
+                        -moz-appearance: none;
+                        -webkit-appearance: none;
+                        appearance: none;
+                        padding: 12px 10px 12px 15px;
+                        font-family: inherit;
+                        text-align: left;
+                        width:600px;
+                        height:300px;
+                     }
+        .textString::-ms-expand {
+                        display: none;
+                    }
+}

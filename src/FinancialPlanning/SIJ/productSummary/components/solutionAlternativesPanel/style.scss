@@ -1,0 +1,189 @@
+   .ProdCard{
+                border: 1px solid #D7D8D6;
+                margin: 20px 20px 0px 20px;
+                h3 {
+                    height: 44px;
+                    //border-top: 5px solid #d80a1e;
+                    line-height: 44px;
+                    background-color: #fff;
+                    position: relative;
+                    border-bottom: 1px solid #D7D8D6;
+                    .title {
+                        margin-left: 20px;
+                        padding-left: 15px;
+                        color: #333333;	
+                        font-size: 16px;	
+                        font-weight: bold;	
+                        line-height: 18px;
+                        border-left: 5px solid #d80a1e; 
+                    }
+                    .icon{
+                        padding-left: 5px;
+                        padding-bottom: 5px;
+                        font-size: 25px;
+                    }
+                }
+  .table{
+    position: relative;
+    .fixedHead,
+    .tableRow,
+    .tableHead {
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+        color: white;
+        line-height: 55px;
+        height: 55px;
+    }
+
+    .tableHead,
+    .fixedHead {
+        z-index: 4;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-clip: content-box;
+    }
+
+    .tableHead {
+        position: absolute;
+    }
+
+    .fixedHead {
+        position: fixed;
+        left: 14px;
+        width: calc(100% - 40px);
+
+        .scrollHead {
+            width: 100%;
+        }
+    }
+
+    .tableRow {
+        display: table;
+        padding-left: 20px;
+        background-color:#FFFFFF ;
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
+            font-size: 14px;
+            color:#000000;
+        }
+    }
+    
+    .tableRow:nth-child(2n + 1) {
+        display: table;
+        background-color: #f6f6f6;
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
+            font-size: 14px;
+            color:#000000;
+        }
+    }
+
+    .tableBody,
+    .fixedColumn {
+        -webkit-overflow-scrolling: touch;
+        padding-top: 55px;
+    }
+
+    .tableBody {
+        position: relative;
+        overflow: auto;
+
+        .tableRow {
+            position: relative;
+        }
+    }
+
+    .fixedColumn,
+    .fixedHeaderColumn {
+        overflow: hidden;
+        .minWidth {
+            > * {
+                visibility: hidden;
+                pointer-events: none;
+            }
+            > *:nth-child(1) {
+                visibility: visible;
+                pointer-events: visible;
+            }
+        }
+        .tableRow {
+            background-color: transparent;
+        }
+    }
+
+    .fixedColumn {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .fixedHeaderColumn {
+        .scrollHead {
+            background-color: transparent;
+        }
+    }
+
+    .fixedHeaderColumn {
+        z-index: 5;
+    }
+    .minWidth {
+        > * {
+            border-bottom: 1px solid white;
+        }
+
+        > *:nth-child(1) {
+            min-width: 100px;
+            max-width: 100px;
+            text-align: left;
+        }
+
+        > *:nth-child(2) {
+            min-width: 100px;
+            max-width: 100px;
+            text-align: left;
+        }
+
+        > *:nth-child(3) {
+            min-width: 100px;
+            max-width: 100px;
+            text-align: center;
+        }
+       
+    }
+}         
+ .solutionMain {
+     //border: 1px solid #ccc;
+     //margin: 0px 20px 20px 20px;
+     padding: 20px 20px 40px 20px;
+     background-color: #fff;
+
+    .noteAdd{
+          font-size: 12px;
+          color: #4A4A4A;
+          float: left;
+          font-family: "Univers Next for HSBC";
+          span{
+             font-weight: bold;
+            }
+         }
+     .Add{
+        float:right;
+        text-align: right;
+        color: #333333;	
+        font-family: "Univers Next for HSBC";
+     }
+ }
+}
+
+.wd150{
+    width:150px;
+}
+
+

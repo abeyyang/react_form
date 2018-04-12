@@ -1,0 +1,167 @@
+/********************************  ver_con css  *******************************/
+@charset "utf-8";
+@import "../../../styles/trading/tradingVariable";
+
+/*********  verify right  *********/
+.v-result {
+    margin-bottom: $num-2;
+    font-size: 16px;
+
+    span {
+        display: $inline-block;
+    }
+    .v-circle {
+        font-size: 46px;
+        color: $green;
+        vertical-align: top;
+        width: 5%;
+    }
+    .v-txt {
+        margin: $num-0 $num-0 $num-0 8px;
+        font-family: UniversNextforHSBCW02;
+        width: 90%;
+    }
+}
+.verify-content {
+    margin-left: -35px;
+    padding: $num-0;
+    font-size: 16px;
+    .v-con {
+        border-top: $border-col;
+        padding: 15px $num-1;
+        .importantDocuments{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        p {
+            margin: 0 0 10px 0;
+            line-height: 20px;
+            a {
+                cursor: pointer;
+                font-size: 14px;
+                text-decoration: none;
+                color: black;
+                .vred {
+                    color: $red;
+                }
+            }
+        }
+        .m20 {
+            margin: $num-2 $num-0;
+        }
+        .prompt {
+            overflow: hidden;
+            font-size: 14px;
+            .title{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .chkbox {
+                z-index: 10;
+                display: $hidden;
+                width: $num-2;
+            }
+            label {
+                display: $block;
+            }
+            .chkbox + label {
+                border: $border $color-6;
+                display: $inline-block;
+                height: $num-2;
+                width: $num-2;
+                line-height: $num-2;
+                text-align: $center;
+                background: $hidden;
+            }
+            .chkbox:checked + label::after {
+                content: "\2714";
+            }
+            .chk-description {
+                width: 96%;
+            }
+        }
+        .v-icon {
+            color: #888;
+            display: $block;
+            float: $left;
+            height: $num-3;
+            width: $num-2;
+        }
+    }
+    .v-last {
+        border-bottom: $border-col;
+    }
+}
+.verify-back {
+    margin-top: $num-4;
+    .vred {
+        color: $red;
+    }
+    a {
+        cursor: pointer;
+    }
+}
+.verify-confirm {
+    margin: 35px $num-0 $num-0 $num-3;
+    background: $red;
+    color: $white;
+    width: 110px;
+    height: 36px;
+    text-align: center;
+    a {
+        display: inline-block;
+        width: 110px;
+        line-height: 36px;
+        cursor: pointer;
+        color: $white;
+    }
+    .cover {
+        z-index: 10;
+        position: $position-absolute;
+        right: $num-0;
+        bottom: $num-0;
+        height: 50px;
+        width: 120px;
+        text-indent: -9999px;
+        cursor: auto;
+        background: #fff;
+        opacity: 0.4;
+    }
+}
+.verify-confirm-orderStatus {
+    width:160px;
+    a {
+        width:160px;
+    }
+}
+
+.padding_10{
+    padding-left: 10px;
+}
+
+@media (max-width: 992px) {
+    article {
+        min-width: 600px;
+        .verify-list {
+            margin-bottom: $num-2;
+            padding: $num-0;
+
+            ul {
+                margin: $num-0 $auto;
+            }
+        }
+        .ver-tit {
+            margin: $num-0;
+        }
+        .v-result {
+            padding: $num-0;
+
+            .v-txt {
+                margin: $num-0 $num-0 $num-0 $num-2;
+            }
+        }
+        .verify-content {
+            margin: $num-0 $auto;
+        }
+    }
+}

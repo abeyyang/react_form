@@ -1,0 +1,33 @@
+.popup {
+
+
+    .popupContentContainer {
+        position: relative;
+        z-index: 1000;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 1000px;
+        height: auto;
+        max-width: 98%;
+        max-width: calc(100% - 20px);
+        margin: 50px auto;
+        padding: 50px 50px 20px;
+        vertical-align: middle;
+        text-align: left;
+        white-space: normal;
+        background: #fff;
+    }  
+    .closeButton {
+        position: absolute;
+        right: 20px;
+        top: 50px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+        background: none;
+    }
+}

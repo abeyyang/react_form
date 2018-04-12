@@ -1,0 +1,118 @@
+
+.stickyHeader {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    display: table;
+    height: 56px;
+    width: 1270px;
+    font-size: 14px;
+    //cursor: pointer;
+
+    > * {
+        display: table-cell;
+        vertical-align: middle;
+        background-color: #2f3d46;
+        color:white;
+    }
+
+    > *:nth-child(1) {
+        .arrow {
+            
+            text-align: center;
+        }
+    }
+    > *:nth-child(2) {
+        .arrow {
+            
+            text-align: center;
+        }
+    }
+    > *:nth-child(3) {
+        .arrow {
+            margin-right: -62px;
+            margin-top: 1px;
+        }
+    }
+
+    > *:nth-child(4) {
+        .arrow {
+            margin-right: -77px;
+            margin-top: 1px;
+        }
+    }
+
+    > *:nth-child(5) {
+        .arrow {
+            margin-right: -63px;
+            margin-top: 1px;
+        }
+    }
+    
+    > *:nth-child(6) {
+        .arrow {
+            margin-right: -66px;
+            margin-top: 1px;
+        }
+    }
+    > *:nth-child(7) {
+        .arrow {
+            margin-right: -42px;
+            margin-top: 1px;
+        }
+    }
+    > *:nth-child(8) {
+        .arrow {
+            margin-right: -48px;
+            margin-top: 1px;
+        }
+    }
+    > *:nth-child(9) {
+        .arrow {
+            margin-right: -47px;
+            margin-top: 1px;
+        }
+    }
+    > *:nth-child(10) {
+        .arrow {
+            margin-right: -64px;
+            margin-top: 1px;
+        }
+    }
+}
+
+.stickyHeaderItem {
+    position: relative;
+}
+
+.active {
+    color: #fff;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 6;
+    top: 21px;
+    right: 50%;
+    height: 55px;
+    width: 10px;
+    color: #b6b7b6;
+}
+
+.ascArrow {
+    border-bottom: 4px solid;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    height: 0px;
+    margin-bottom: 3px;
+    width: 0px;
+}
+
+.descArrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+    height: 0px;
+    width: 0px;
+}

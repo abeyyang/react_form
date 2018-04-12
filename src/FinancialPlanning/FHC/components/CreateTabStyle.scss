@@ -1,0 +1,93 @@
+.createRecordsPage{
+    //margin: 20px 0px;
+    background-color: #EDEDED;
+    padding: 1px 22px;
+    .right{
+        color: #333333;
+        font-size: 14px;
+        float: right;
+        margin-top: -85px;
+        .iconClock{
+            font-size: 25px;
+            margin-left: 5px;
+        }
+    }
+    .rightDate{
+        color: #5C5C5C;
+        font-size: 12px; 
+        float: right;
+        margin-top: -32px;
+    }
+    .others{
+        color: #333;
+        .Indicates{
+            font-size: 12px;
+            color: #AF000D;
+            margin-bottom: 10px;
+            .IndicatesText{
+                color: #333;
+            }
+        }
+        .Expand{
+            font-size: 14px;
+            float: right;
+            position: absolute;
+            margin-top: -22px;
+            margin-left: 1160px;
+            .iconAdd{
+                font-size: 20px;
+            }
+        }
+    }
+    .back {
+            padding: 20px 0px 20px 0px;
+            a {
+                font-size: 18px;
+                color: #333;
+                text-decoration: none;
+            }
+            .icon {
+                color: #d80a1e;
+            }
+            .calculateLink{
+                float: right;
+                background: #d80a1e;
+                color: #fff;
+                border: 1px solid #d80a1e;
+                padding: 15px 25px;
+                margin-top: -15px;
+            }
+            .saveLink{
+                float: right;
+                background: #d80a1e;
+                color: #fff;
+                border: 1px solid #d80a1e;
+                padding: 15px 25px;
+                margin-top: -15px;
+                margin-right: 10px;
+            }
+            .saveLinkDisabled{
+                float: right;
+                background: gray;
+                color: #fff;
+                border: 1px solid, gray;
+                padding: 15px 25px;
+                margin-top: -15px;
+                margin-right: 10px;
+                cursor: not-allowed;
+            }
+        }
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

@@ -1,0 +1,121 @@
+recordGoalSolutionDetailRequest:{
+        subserviceId:[],
+        actualPortfolioAllocation:[{
+            allocationInvestmentAmount:0, //BigDecimal
+            allocationInvestmentAmountCurrency:"", //String
+            allocationInvestmentPercent:0, //BigDecimal
+            allocationInvestmentPieChartPercent:0, //BigDecimal
+            allocationInvestmentPieChartPercentLongShortIndicator:"",//String
+            assetClassGroupCode:"",//String
+            assetClassGroupName:""//String
+        }], // nillable = true
+        Affordability:[
+            {
+                affordabilityRate:0//BigDecimal
+            }
+        ],//nillable = true
+        AffordabilityValidation:[{
+            exceedThresholdIndicator:"",//String
+            thresholdValue:0//BigDecimal
+        }],//nillable = true
+        alternativeProduct:[{
+            alternativeProductAttribute:[
+                {
+                    alternativeProductAttributeCode:"",//String
+                    alternativeProductAttributeValue:""//String
+                }
+            ],
+            ProductId:[
+                {
+                    countryProductTradableCode:"",//String
+                    productAlternativeNumber:"",//String
+                    productCodeAlternativeClassificationCode:"",//String
+                    productTypeCode:""//String
+                }
+            ],
+            goalSolutionRiderInformationList:[{
+                riderCode:"",//String
+                goalSolutionRiderAttribute:{
+                    riderAttributeCode:"",//String
+                    riderAttributeValue:""//String
+                }
+            }]
+        }],//nillable = true
+        assetConcentration:[{
+            assetConcentrationRate:0//BigDecimal
+        }],
+        assetConcentrationValidation:[{
+            exceedThresholdIndicator:"",//String
+            thresholdValue:0//BigDecimal
+        }],
+        cacheDataToken:[{
+            //(String)
+        }],
+        cacheIndicator:{
+            requestIdentificationNumber:""//String
+        },
+        comment:[{
+            commentDatetime:"",//dateTime String javascript new date();
+            commentKey:"",//String
+            commentText:"",//String
+            commentType:"",//String
+            isCurrent:"",//String
+            staffName:""
+        }],
+        commentAction:[{
+            action:"",//String
+            commentType:""//String
+        }],
+        controlAdviceJourney:{
+            controlAdviceJourneyIndicator:""//String
+        },
+        coreReserveArea:[
+            {
+                coreReserveArea:""//String
+            }
+        ],
+        currentPortfolioAllocation:[{
+            allocationInvestmentAmount:0,//BigDecimal
+            allocationInvestmentAmountCurrency:"",//String
+            allocationInvestmentPercent:0,//BigDecimal
+            allocationInvestmentPieChartPercent:0,//BigDecimal
+            allocationInvestmentPieChartPercentLongShortIndicator:"",//String
+            assetClassGroupCode:"",//String
+            assetClassGroupName:""
+        }],
+        customers:[{
+            countryISOCode:"",//String
+            customerAttribute:[{
+                attributeKey:"",
+                attributeValue:""
+            }],
+            groupMemberCode:"",//String
+            rolePlayerIdentificationNumber:"",//String
+            sourceSystemRolePlayerCode:""//String
+        }],
+        declaration:[],
+        existingHolding:[],
+        goalAttribute:[],
+        goalKey:{},
+        goalLocalFields:[],
+        investmentAppropriateness:[],
+        investorIndicator:[],
+        leadId:{},
+        localFieldsArea:[],
+        modelPortfolioAssetClassAllocationList:[],
+        multipleAdviceStyleDetails:[],
+        needEvaluation:[],
+        notes:[],
+        optOutDetails:[],
+        packageKey:[],
+        piqAnswerValidationInfo:[],
+        piqQuestAndAnsDetails:[],
+        portfolioCalculationResult:{},
+        productList:[],
+        productTable:[],
+        purposeBuyingProduct:[],
+        selectedProduct:[],
+        staffAdviseSeg:{},
+        suitability:[],
+        taxOptimizationDetails:[]
+}

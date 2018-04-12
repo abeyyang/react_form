@@ -1,0 +1,14 @@
+
+ .tooltip {
+        width:600px;
+        .tooltipContent {
+            background:#fff !important;
+        }
+        .detail{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .tooltip.placeBottom::before {
+        border-bottom-color: #fff !important;
+     }

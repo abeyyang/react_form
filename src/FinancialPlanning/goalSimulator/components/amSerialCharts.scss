@@ -1,0 +1,309 @@
+.emptyChartDiv {
+    padding-left: 20px;
+    height: 430px;
+    background-color:#263039;
+    .picShow {
+        padding-top: 120px;
+        color: #FFFFFF;
+        .warning{
+            text-align: center;
+            .erroIcon{
+                font-size: 60px;
+            }
+            .warningMsg{
+                font-size: 18px;
+                font-weight: 200;
+                line-height: 22px;
+            }
+        }
+    }
+}
+.chartDiv {
+    padding-left: 20px;
+    height: 430px;
+    background-color:#263039;
+    .amSerialChart {
+        width: 800px;
+        height: 279px;
+        position: relative;
+        top: -86px;
+    }
+    .chartdivHeader {
+        width: 780px;
+        //background-color: #282f33;
+        background-color: #2F3D46;
+        height: 43px;
+        margin-top: 20px;
+        position: relative;
+        top: -42px;
+        .chartdivYearBox {
+            width: 32px;
+            height: 5px;
+            background-color: #db0011;
+            position: relative;
+            opacity: 1;
+            left: 700px;    // dynamically set
+        }
+        .chartdivYearLabel {
+            font-size: 0.9em;
+            font-weight: 500;
+            position: relative;
+            padding-top: 12px;
+            float: right;
+            right: 711px;
+        }
+        .chartdivLumpsumLabel {
+            font-size: 0.9em;
+            font-weight: 500;
+            position: relative;
+            float: right;
+            right: 665px;
+            top: 266px;
+        }
+    }
+    .chartdivTimeLabel{
+        position: relative;
+        top: -43px;
+        width: 120px;
+        height: 0;
+        font-size: 0.8em;
+        color: #FFFFFF;
+        padding-top: 10px;
+        margin-top: -58px;
+        margin-left: 665px;    // dynamically set
+    }
+    .chartdivLegend {
+        padding-top: 20px;
+        text-align: left;
+        font-size: 0.75em;
+        .legendItem {
+            display: -webkit-inline-box;
+            width: 140px;
+            min-width: 140px;
+            text-align: left;
+            img {
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .dash {margin-right: 8px; margin-top: 5px;  opacity: 0.7; height: 2px; width: 25px; border-top: 2px dashed #FFFFFF;}
+            .greenBox {margin-right: 8px; height: 12px;	width: 12px; background: linear-gradient(0deg, #458239 0%, #29393C 100%);}
+            .redBox {margin-right: 8px; height: 12px; width: 12px; background: linear-gradient(0deg, #25343D 0%, #902431 100%);}
+        }
+        
+    }
+    .zoomWindowTop {
+        height: 40px;
+        text-align: left;
+        font-size: 0.6em;
+        //float: right;
+        color: white;
+        position: relative;
+        left: 800px;
+        margin-right: 20px;
+        padding-right: 10px;
+        padding-left: 15px;
+        border: solid #2F3D46;
+        background: #2F3D46;
+        border-width: 0;
+        width: 360px;
+        top: -10px;
+        .zoomWindowTiltle {
+            font-size: 2em;
+            padding-top: 20px;
+            text-align: left;
+            padding-left: 10px;
+        }
+    }
+    .zoomWindow:before {
+        content:"";
+        position: absolute;
+        right: 100%;
+        top: 100px;
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-right: 15px solid #2F3D46;;
+        border-bottom: 15px solid transparent;
+    }
+    .zoomWindow {
+        height: 271px;
+        text-align: left;
+        font-size: 0.6em;
+        float: right;
+        color: white;
+        position: relative;
+        margin-right: 20px;
+        padding-right: 10px;
+        padding-left: 15px;
+        border: solid #2F3D46;
+        background: #2F3D46;
+        border-width: 0;
+        width: 360px;
+        top: -10px;
+        .zoomRightPanel {
+            // dynamically set this background
+            background: linear-gradient(#2F3D46 7%, #458239 25%, #458239 61%, #902431 60%, #2F3D46 93%);
+            
+
+            height: 271px;
+            float: right;
+            padding: 0px 10px;
+            width: 55%;
+            >div {
+                position: relative;
+                height: 100%;
+                padding: 10px 0px;
+                width: 50%;
+                float: right;
+            }
+            .zoomCenterLine {
+                width: 2px;
+                height: 271px;
+                position: absolute;
+                background-image: -webkit-gradient(linear,left top,left bottom,color-stop(10%,rgba(255,0,0,0)),color-stop(23%,hsla(0,0%,100%,.5)),color-stop(88%,hsla(0,0%,100%,.5)),color-stop(90%,rgba(255,0,0,0)));
+                background-image: -webkit-linear-gradient(top,rgba(255,0,0,0) 10%,hsla(0,0%,100%,.5) 23%,hsla(0,0%,100%,.5) 88%,rgba(255,0,0,0) 90%);
+                background-image: -o-linear-gradient(top,rgba(255,0,0,0) 10%,hsla(0,0%,100%,.5) 23%,hsla(0,0%,100%,.5) 88%,rgba(255,0,0,0) 90%);
+                background-image: linear-gradient(180deg,rgba(255,0,0,0) 10%,hsla(0,0%,100%,.5) 23%,hsla(0,0%,100%,.5) 88%,rgba(255,0,0,0) 90%);
+                top: 0;
+                left: 20px;
+                margin-left: -100%;
+            }
+            .zoomCenterDot {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                position: absolute;
+                background-color: #FFFFFF;
+                border: 8px solid rgba(211, 211, 211, 0.4);
+                top: 40%;
+                left: 6px;
+                opacity: 0.95;
+                background-clip: padding-box;
+                margin-left: -100%;
+            }
+            .zoomUpperDot {
+                width: 13px;
+                height: 13px;
+                border-radius: 100%;
+                position: absolute;
+                background-color: #FFFFFF;
+                top: 15%;
+                left: 15px;
+                margin-left: -100%;
+            }
+            .zoomLowerDot {
+                width: 13px;
+                height: 13px;
+                border-radius: 100%;
+                position: absolute;
+                background-color: #FFFFFF;
+                top: 67.5%;
+                left: 15px;
+                margin-left: -100%;
+            }
+            .zoomUpperLimit,
+            .zoomLowerLimit {
+                width: 200%;
+                white-space: nowrap;
+                position: absolute;
+                text-align: left;
+                font-size: 1.35em;
+                border-style: solid;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                margin: -15px -20px -15px -60px;
+                border-width: 15px 20px 15px 50px;
+                border-color: transparent;
+                margin-left: -100%;
+            }
+            .zoomUpperLimit {
+                top: 13%;
+            }
+            .zoomLowerLimit {
+                top: 57%;
+            }
+            .zoomAverage {
+                white-space: nowrap;
+                position: relative;
+                top: 35%;
+                font-size: 1.35em;
+                border-style: solid;
+                -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+                margin: 5px 0px;
+                border-width: 5px 20px 5px 50px;
+                border-color: transparent;
+                margin-left: -100%;
+                .zoomAverageValue {
+                    text-align: left;
+                    font-size: 1.85em;
+                }
+            }
+        }
+        .zoomLeftPane {
+            width: 40%;
+            height: 271px;
+            right: 200px;
+            text-align: left;
+            font-size: 12px;
+            float: right;
+            //background-color: #253038;
+            bottom: 271px;
+            position: relative;
+            .zoomContribution {
+                font-size: 1.35em;
+                border-style: solid;
+                border-color: transparent;
+                border-width: 5px 0px 0px 5px;
+                margin: 110px 10px 10px 5px;
+                white-space: nowrap;
+                .zoomContributionValue {
+                    text-align: left;
+                    font-size: 1.5em;
+                    font-weight: 400;
+                    vertical-align: sub;
+                }
+            }
+        }
+        .zoomContributionDash {
+            width: 100%;
+            height: 2px;
+            border-top: 2px dashed #FFFFFF;
+            position: relative;
+            opacity: .7;
+            top: 52%;
+            left: 0;
+        }
+    }
+}
+.disclaimer{
+    height: 42px;
+    width: 1185px;
+    border-top:1px solid #3A4A56;
+    border-bottom:1px solid #3A4A56;
+    //top: -15px;
+    //position: relative;
+    .declara {	
+        height: 19px;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin-top: 14px;
+        font-weight: 300;
+    }
+}
+.icon{
+    float: right;
+    margin-top: -32px;
+    margin-right: 20px;
+    font-family: HSBCIcon-Font;
+    .iconDown{
+        color: #FFFFFF;
+        font-size: 25px;   
+        line-height: 21px;
+    }
+}
+.disclaimerContent{
+    display: none;
+    line-height: 16px;
+    padding-top: 5px;
+}

@@ -1,0 +1,33 @@
+/********************************  LoadingPanel css  *******************************/
+
+@charset "utf-8";
+@import "../../../common/styles/trading/tradingVariable";
+.modal-loading {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: $width;
+    background-color: $color-c;
+    opacity: 0.8;
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: $font-size*3;
+        .loading {
+            animation: refreshRotation 1s linear 1000 normal;
+        }
+    }
+
+    @keyframes refreshRotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}

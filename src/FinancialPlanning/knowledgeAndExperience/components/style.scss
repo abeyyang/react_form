@@ -1,0 +1,276 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        //padding: 20px;
+        width: 1305px;
+        //background-color: #666;
+        .knowledgeExperiencePage {
+            background-color: #eeeceb;
+            padding-bottom: 20px;
+            h4 {
+                //height: 80px;
+                padding: 20px 25px;
+                //line-height: 80px;
+                //background-color: #fff;
+                position: relative;
+                .title {
+                    //border-left: 5px solid #d80a1e;
+                    margin-right: 10px;
+                    //padding-left: 25px;
+                    font-size: 30px;
+                    color: #333;
+                }
+                .icon,.iconHelp {
+                    font-size: 26px;
+                    vertical-align: 0;
+                }
+                .iconHelp {
+                    cursor: pointer;
+                }
+                .detailHide {
+                    display: none;
+                    .detailText {
+                        border: 1px solid #333;
+                        padding: 20px;
+                        background: #fff;
+                        p {
+                            color: #333;
+                            margin: 0;
+                            padding-top: 10px;
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+                .detail:hover .detailHide{
+                    display: block;
+                }
+                p.link {
+                    z-index: 2;
+                    top: 60px;
+                    left: 380px;
+                    border-bottom: 15px solid #333;
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;
+                    margin: 0 auto;
+                    width: 0;
+                    position: absolute;
+                }
+                p.link1 {
+                    z-index: 3;
+                    top: 61px;
+                    left: 381px;
+                    border-bottom: 14px solid #fff;
+                    border-left: 14px solid transparent;
+                    border-right: 14px solid transparent;
+                    margin: 0 auto;
+                    width: 0;
+                    position: absolute;
+                }
+                .knowledgeOverlay {
+                    position: absolute;
+                    z-index: 1;
+                    top: 74px;
+                    left: 125px;
+                    width: 500px;
+                    text-align: left;
+                    .knowledgeText {
+                        border: 1px solid #333;
+                        padding: 20px;
+                        background: #fff;
+                        p {
+                            color: #333;
+                            margin: 0;
+                            padding-top: 10px;
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+            .updateTime{
+                padding-left: 20px;
+            }
+            .iconConfirmation {
+                            color: #008580;
+                        }
+            .iconDelete {
+                color: #a7a7a7;
+            }
+            .highlight {
+                border: 1px solid #FFFF00;
+               
+               height: 90% !important;
+               padding: 2px;
+               width: 121px !important;
+          } 
+          .unhighlight {
+                background-color: #fff;
+         
+               height: 90% !important;
+               padding: 2px;
+               width: 121px !important;
+          }
+
+            .knowMain {
+                //border: 1px solid #ccc;
+                margin: 20px;
+                //padding: 20px;
+                table {
+                    background-color: #fff;
+                    //border: 1px solid #ccc;
+                    tr {
+                        th,
+                        td {
+                            height: 55px;
+                            vertical-align: middle;
+                        }
+                        th {
+                            padding: 0 20px;
+                            font-size: 15px;
+                            background-color: #253038;
+                            color: #fff;
+                        }
+                        th:first-child,
+                        td:first-child {
+                            padding-left: 15px;
+                            width: 315px;
+                            text-align: left;
+                        }
+                        
+                        th,
+                        td {
+                            width: 223px;
+                            text-align: center;
+                        }
+                        
+                    }
+                    tr:nth-child(2n+1) {
+                        background: #f6f6f6;
+                    }
+                 
+                    .icon {
+                        font-size: 33px;
+                    }
+                }
+                .remark {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    
+                }
+
+                .choose {
+                    margin-top: 35px;
+                    .iconEdit {
+                        margin: 0 0 0 5px;
+                        font-size: 30px;
+                    }
+                    .radioCheck {
+                        float: left;
+                        margin-right: 30px;
+                    }
+                    label {
+                        font-weight: normal;
+                        .wrapper {
+                            position: relative;
+                            top: 5px;
+                            left: 0;
+                            border-radius: 50%;
+                            border: 1px solid #ccc;
+                            box-sizing: content-box;
+                            display: inline-block;
+                            height: 30px;
+                            margin-right: 10px;
+                            width: 30px;
+                            .checked {
+                                border-radius: 50%;
+                                display: inline-block;
+                                height: 15px;
+                                margin: 8px 0 0 8px;
+                                width: 15px;
+                                background: #1d262e;
+                            }
+                        }
+                    }
+                    input[type='radio'] {
+                        display: none;
+                    }
+                    .on {
+                        input[type='radio'] + label .checked {
+                            background: #008580;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            bottom: 0;
+            left: 9.6%;
+            padding: 10px 25px;
+            width: 1300px;
+            font-size: 18px;
+            background: #fff;
+            position: fixed;
+            .button {
+                float: right;
+                a {
+                    display: inline-block;
+                    margin-top: 8px;
+                    padding: 15px 25px;
+                }
+                .close {
+                    color: #333;
+                    border: 1px solid #333;
+                    margin: 0 10px;
+                }
+                .save {
+                    background: #d80a1e;
+                    color: #fff;
+                }
+            }
+        }
+        .back {
+            padding: 20px 20px;
+            a {
+                font-size: 18px;
+                color: #333;
+            }
+            .icon {
+                //color: #d80a1e;
+            }
+            .button {
+                float: right;
+                a {
+                    display: inline;
+                    margin-top: 8px;
+                    padding: 15px 25px;
+                }
+                .close {
+                    color: #333;
+                    border: 1px solid #333;
+                    margin: 0 10px;
+                }
+                .save {
+                    background: #d80a1e;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

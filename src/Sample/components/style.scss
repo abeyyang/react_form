@@ -1,0 +1,153 @@
+@import "./variable.scss";
+
+
+
+
+    $arrow-width: 50px;
+    $arrow-height: 80px;
+    $tooltip-background-color: $slate;
+    $tooltip-font-color: $silver;
+
+.inportShort > input  {
+    border: 1px solid #ccc;
+    height: 20px;
+    padding: 12px;
+    width: 100px;
+}
+
+
+.tooltip {
+    position: relative;
+    min-width: 300px;
+
+    &:not(.hasHandler) {
+        margin: 20px 0;
+    }
+
+    .tooltipContent {
+        color: $tooltip-font-color;
+        background: $tooltip-background-color;
+    }
+
+    $arrow-width-half: $arrow-width / 2;
+    $arrow-height-half: $arrow-height / 2;
+    &.placeRight::before,
+    &.placeLeft::before {
+        margin-top: -$arrow-width-half;
+    }
+    &.placeRight {
+        padding-left: $arrow-height-half;
+    }
+    &.placeRight::before {
+        left: -$arrow-height-half;
+        border-right-color: $tooltip-background-color;
+        border-width: $arrow-width-half $arrow-height-half;
+    }
+    &.placeLeft {
+        padding-right: $arrow-height-half;
+    }
+    &.placeLeft::before {
+        right: -$arrow-height-half;
+        border-left-color: $tooltip-background-color;
+        border-width: $arrow-width-half $arrow-height-half;
+    }
+
+    &.placeBottom::before,
+    &.placeTop::before {
+        margin-left: -$arrow-width-half;
+    }
+    &.placeBottom {
+        padding-top: $arrow-height-half;
+    }
+    &.placeBottom::before {
+        top: -$arrow-height-half;
+        border-bottom-color: $tooltip-background-color;
+        border-width: $arrow-height-half $arrow-width-half;
+    }
+    &.placeTop {
+        padding-bottom: $arrow-height-half;
+    }
+    &.placeTop::before {
+        bottom: -$arrow-height-half;
+        border-top-color: $tooltip-background-color;
+        border-width: $arrow-height-half $arrow-width-half;
+    }
+}
+
+.tooltipHandler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border: 2px $black solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.bodyBackground {
+    background-color: #000;
+    
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        padding: 20px;
+        width: 1270px;
+        background-color: rgba(237, 237, 237, 1);
+        font-size:  #333;
+
+    }
+}
+
+.num {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 5px;
+}
+.num2 {
+    background-color: green;
+}
+
+.num3 {
+    background-color: blue;
+}
+
+.errorMessage {
+    display: block;
+    min-height: 20px;
+    position: relative;
+    padding-left: 30px;
+    margin: 10px 0;
+    span{
+        display: block;
+        line-height: 20px;
+        color:red;
+    }
+    &::before{
+        content: "×";
+        display: block;
+        width: 20px;
+        height: 20px;
+        line-height: 16px;
+        text-align: center;
+        border:1px solid #bd3f3f;
+        color:#bd3f3f;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+    }
+}

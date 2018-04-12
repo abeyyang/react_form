@@ -1,0 +1,29 @@
+.showResultContent{
+    height: 50px;
+    margin-top: 10px;
+        ul li{
+            margin-left: 10px;
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 29px;
+            border: 1px solid #979797;
+            text-align: center;
+            line-height: 29px;
+            float: left;
+        span{
+            font-weight: bold;
+        }
+    }
+}
+.mainShowResult{
+    padding-top:10px;
+    background-color: #fff;
+    padding-left:30px;
+    color:#333;
+    border:1px solid #999;
+    .showResultTitle{
+        font-size: 20px;
+        cursor:pointer;
+    }
+}

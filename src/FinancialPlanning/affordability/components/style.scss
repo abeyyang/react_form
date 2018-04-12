@@ -1,0 +1,240 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 40px auto;
+        width: 1305px;
+        .affordabilityPage {
+            background-color: #eeeceb;
+            padding: 20px;
+            h4 {
+                color: #333333;
+                font-size: 32px;	
+                font-weight: 300;	
+                line-height: 32px;
+            }
+            .smallHeader{
+                margin-top: 25px;
+                font-size: 14px;
+                color: #000000;
+                .indicates {
+                    font-size: 12px;
+                    span{
+                        color: #AF000D;
+                    }
+                }
+                .collapse{
+                    text-align: right;
+                    margin-top: -20px;
+                    cursor: pointer;
+                    .collapseShow{
+                        color: #000000;
+                        .icon{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .affordabilityCtn{
+                 color: #333333;
+                 margin-top: 15px;
+                .affordabilityInfor,.affordabilityDeclaration,
+                .protectionGap,.affordabilityRemark{
+                    background-color: #FFFFFF;
+                    margin: 20px 0px;
+                    .affordabilityInforHeader,.affordabilityDeclarationHeader,
+                    .protectionGapHeader,.affordabilityRemarkHeader{
+                        padding: 0px 20px;
+                        height: 44px;
+                        line-height: 44px;
+                        h2{
+                            font-size: 22px;
+                            .header{
+                                border-left: 5px solid #AF000D;
+                                padding-left: 10px;
+                            }
+                        }
+                        .showIconDownUp{
+                            font-size: 30px;
+                            float: right;
+                            margin-top: -45px;
+                        }
+                    }
+                    .affordabilityInforDetail,.affordabilityDeclarationDetail,
+                    .protectionGapDetail,.affordabilityRemarkDetail{
+                        margin: 0px 20px;
+                        border-top: 1px solid #D7D8D6;
+                        color: #333333;
+                        padding-bottom: 20px;
+                        .theme,.title{
+                            padding-top: 20px;
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                        .input {
+                            margin: 5px 0px;
+                            border: 1px solid #ccc;
+                            height: 14px;
+                            padding: 12px;
+                            width: 325px;
+                        }
+                        .explain,.explainAnswer{
+                            color: #5C5C5C;
+                            font-size: 12px;	
+                            line-height: 14px;
+                        }
+                        .textarea {
+                            margin-top: 8px;
+                            height: 134px;	
+                            width: 675px;	
+                            border: 1px solid #929292;	
+                            background-color: #FFFFFF
+                        }
+                        .boldFont{
+                            font-weight: bold;
+                        }
+                        .selectId{
+                            padding: 10px;
+                            color: #FFFFFF;
+                            font-size: 16px;
+                            height: 40px;	
+                            width: 142px;	
+                            background-color: #3E505D;
+                            margin: 0px 15px;
+                        }
+                    }
+                    .affordabilityDeclarationDetail{
+                        .questionOne,.questionTwo,.questionThree,.questionFour{
+                            line-height: 22px;
+                            //width: 510px;
+                            .input {
+                                margin: 0px;
+                                margin-left: 34px;	
+                                width: 252px;	
+                                border: 1px solid #929292;
+                            }
+                        }
+                        .affordabilityAssessment{
+                            margin-top: 20px;
+                            background-color: #eeeceb;
+                            padding: 10px 20px;
+                            .affordabilityAssessmentHeader{
+                                h2{
+                                    font-size: 22px;
+                                    line-height: 24px;
+                                    margin-bottom: 18px;
+                                }
+                                .assess{
+                                    color: #000;
+                                    height: 30px;
+                                    line-height: 30px;
+                                }
+                            }
+                            .affordabilityAssessmentResult{
+                                .resultHeader{
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                    padding: 18px 0px;
+                                }
+                                table{
+                                    border: 0.5px solid #ccc;
+                                    width: 100%;
+                                    th,td{
+                                        border: 0.5px solid #ccc;
+                                        vertical-align: top;
+                                        width: 50%;
+                                        padding: 10px 0px;
+                                        padding-left: 5px;
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                    }
+                                    th{
+                                        font-weight: bold;
+                                    }
+                                    td{
+                                        .resultCnt{
+                                            padding-top: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .questionFour{
+                            .input{
+                                margin-left: 0px; 
+                            }
+                        }
+                        .answers{
+                            margin: 10px 0px;
+                            .premiumAddtional,.sourcesAddtional,
+                            .reasonAddtional{
+                                .theme{
+                                    padding-top: 0px;
+                                    padding-bottom: 20px;
+                                }
+                                .input{
+                                    margin-left: 0px;
+                                }
+                                .labelText{
+                                    display: initial;
+                                }
+                            }
+                            .sourcesAddtional{
+                                .amountDetail{
+                                    margin: 20px 0px;
+                                    padding: 20px;
+                                    background-color: #eeeceb;
+                                    .theme{
+                                        padding-bottom: 5px;
+                                        line-height: 24px;
+                                    }
+                                    .input{
+                                        margin: 5px 0px;
+                                    }
+                                }
+                            }
+                        }
+                        .answersAddtional{
+                            .theme{
+                                padding-top: 0px;
+                                line-height: 24px;
+                            }
+                            .themeRemarks{
+                                padding-top: 10px; 
+                            }
+                        }
+                        .questionThree{
+                            //float: right;
+                            //position: absolute;
+                            //margin-top: -612px;
+                            //margin-left: 680px;
+                            .explainAnswer{
+                                line-height: 0px;
+                                padding-left: 40px;
+                            }
+                        }
+                    }
+                    .affordabilityDeclarationDetail,
+                    .protectionGapDetail{
+                        .acknowledge{
+                            padding-top: 20px;
+                            font-size: 14px;	
+                            line-height: 18px;
+                        }
+                        .title{
+                            .flag{
+                                color: #AF000D;
+                                font-size: 15px;
+                            }
+                            .iconHelp{
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

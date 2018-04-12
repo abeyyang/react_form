@@ -1,0 +1,117 @@
+.stepTracker {
+    
+    height: 39px;
+    padding: 20px 20px 0 20px;
+    ul {
+            list-style: none;
+            width:100%;
+            height: 50px;
+            font-size: 14px;
+        li {
+            list-style: none;
+           
+            color: #333333;
+	        line-height: 18px;
+            float:left;
+            width:33%;
+            margin:2px;
+            
+        }
+       .currentStatus {
+            font-weight: bold;
+            border-bottom:4px solid #DB0011;
+        }
+        .doneStatus {
+
+            border-bottom:4px solid #DB0011;
+        }
+        .undoneStatus{
+            border-bottom: 4px solid #929292;
+            padding-top: 18px;
+        }     
+    }
+
+
+}
+
+.goalDetail {
+
+    height: 55px;
+    margin: 20px;
+    background: #fff;
+    ul {
+            list-style: none;
+            width:100%;
+            font-size: 14px;
+        li {
+            list-style: none;
+            color: #333333;
+	        line-height: 50px;
+            float:left;
+            
+            margin:2px;
+            
+        }
+       .goalName {
+            
+            color: #333333;
+            font-size: 20px;
+            width:33%;
+	        margin-left:20px;
+            
+
+            .goalNameInner {
+                border-left: 4px solid #DB0011;
+
+                .goalNameIcon {
+                    font-size: 32px;
+                    padding:0px 10px;
+                 }
+            }
+            
+        }
+        .goalRTQ {
+            color: #333333;
+            font-size: 14px;
+            border-left:2px solid #DDDDDD;
+          .goalRTQIcon {
+                padding:0px 10px 0px 20px;
+                
+            }
+	       
+        }
+        
+        .goalOpera{
+           font-size: 14px;
+           width: 160px;
+           float:right;
+           margin-right:20px;
+           cursor: pointer;
+
+           .goalOperaIcon {
+
+                font-size: 25px;
+                padding:0px 10px;
+            }
+        }     
+    }
+
+}
+.rectangle-5 {
+	height: 4.01%;
+	width: 96.72%;
+	background-color: #FFFFFF;
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

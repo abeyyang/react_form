@@ -1,0 +1,622 @@
+.bodyBackground {
+    background-color: #000;
+    opacity: 1;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        //padding: 20px;
+        width: 1305px;
+        .rationalTeamConcertPage {
+            background-color: #eeeceb;
+            padding-bottom: 20px;
+            h4 {
+                padding: 20px 0px 0px 20px;
+                .title {
+                    font-size: 30px;
+                    color: #333;                    
+                }
+            }
+            .rtcMain {
+                margin: 20px;
+                padding: 20px;
+                background-color: #fff;
+                .rtcTitle {
+                    padding: 20px 0;
+                    .title {
+                        float: left;
+                        width: 50%;
+                        font-size: 22px;
+                    }
+                    .date {
+                        float: right;
+                        //width: 50%;
+                        font-size: 14px;
+                        span {
+                            border-right: 1px solid #333;
+                            padding: 0 20px;
+                        }
+                        .icon {
+                            padding: 0;
+                            font-size: 26px;
+                        }
+                        span:last-child {
+                            border-right: none;
+                        }
+                    }
+                    .dateExpire {
+                        float: left;
+                        width: 50%;
+                        font-size: 14px;
+                        span {
+                            border-right: 1px solid #333;
+                            padding: 0 15px;
+                           
+                        }
+                        .icon {
+                            padding: 0;
+                            font-size: 26px;
+                        }
+                        span:last-child {
+                            border-right: none;
+                        }
+                    }
+                }
+                .selectPart{
+                    clear: both;
+                    float: right;
+                    position: absolute;
+                    margin-top: 300px;
+                    margin-left: 1041px;
+                    .select{
+                        width: 400px;
+                        height: 40px;
+                        border: 1px solid #ccc;
+                        background: #F6F6F6;
+                        padding: 10px 20px;
+                        font-size: 18px;
+                        -webkit-border-radius: 6%;
+                        color: #333;
+                        .iconDown{
+                            margin-left: 10px;
+                            color: red;
+                            font-size: 20px;
+                        }
+                    }
+                    .dropDown{
+                       // display: none;
+                        overflow:scroll;
+                        background-color: #fff;
+                        //width: 348px;
+                        border: 1px solid #d4d2d2;
+                        float: right;
+                        position: absolute;
+                        margin-top: 0px;
+                        margin-left: -456px;
+                        .dropDownInner{
+                            height: 300px; 
+                            padding: 15px 20px 20px;                          
+                            .dropDownLevel{
+                                width: 520px;
+                                border-bottom: 1px solid #d4d2d2;
+                                a{  
+                                    text-decoration: none;
+                                    padding: 10px 10px 10px 10px;
+                                    display: block;
+                                    .icon{
+                                        font-size: 44px;
+                                    }
+                                    .detail{
+                                        strong{
+                                            padding-bottom: 5px;
+                                            line-height: 24px;
+                                            font-size: 18px;
+                                        }
+                                        //position: absolute;
+                                        margin-left: 60px;
+                                        margin-top: -32px;
+                                    }
+                                    .showDetail{
+                                        margin-top: 15px;
+                                        margin-left: 8px;
+                                        line-height: 16px;
+                                        font-size: 12px;
+                                    }
+                                }
+                                a:hover{
+                                    background-color: #fcfce6;
+                                    strong{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            .riskLevel0 {
+                                border-radius: 50%;
+                                border: 6px solid #E6E6E6;
+                                height: 24px;
+                                // margin: 35px auto 15px;
+                                width: 24px;
+                                font-size: 20px;
+                                color: #E6E6E6;
+                                line-height: 24px;
+                                text-align: center;
+                                margin-left: 5px;
+                         }
+                        .riskLevel1{
+                            border-radius: 50%;
+                                border: 6px solid #6E86AC;
+                                height: 24px;
+                                // margin: 35px auto 15px;
+                                width: 24px;
+                                font-size: 20px;
+                                color: #6E86AC;
+                                line-height: 24px;
+                                text-align: center;
+                                margin-left: 5px;
+            
+                        }
+                        .riskLevel2 {
+                            border-radius: 50%;
+                                border: 6px solid #6FA897;
+                                height: 24px;
+                                // margin: 35px auto 15px;
+                                width: 24px;
+                                font-size: 20px;
+                                color: #6FA897;
+                                line-height: 24px;
+                                text-align: center;
+                                margin-left: 5px;
+
+                         }
+                         .riskLevel3 {
+                            border-radius: 50%;
+                                border: 6px solid #82B864;
+                                height: 24px;
+                                // margin: 35px auto 15px;
+                                width: 24px;
+                                font-size: 20px;
+                                color: #82B864;
+                                line-height: 24px;
+                                text-align: center;
+                                margin-left: 5px;
+    
+                        }
+                        .riskLevel4 {
+                            border-radius: 50%;
+                                border: 6px solid #f07e2e;
+                                height: 24px;
+                                // margin: 35px auto 15px;
+                                width: 24px;
+                                font-size: 24px;
+                                color: #f07e2e;
+                                line-height: 24px;
+                                text-align: center;
+                                margin-left: 5px;
+
+                        }
+                        .riskLevel5 {
+                           border-radius: 50%;
+                           border: 6px solid #FF0303;
+                           height: 24px;
+                                // margin: 35px auto 15px;
+                           width: 24px;
+                           font-size: 20px;
+                           color: #FF0303;
+                           line-height: 24px;
+                           text-align: center;
+                           margin-left: 5px;
+  
+                        }
+                            }
+                        }
+                    } 
+                }
+                .rtcCont {
+                    .rtcNum {
+                        float: left;
+                        width: 15%;
+                        .selectBox{
+                            margin-left: 40px;
+                            margin-top: 10px;
+                            width: 100px;
+                        }
+                        .riskLevel0 {
+                            border-radius: 50%;
+                            border: 6px solid #E6E6E6;
+                            height: 100px;
+                            margin: 35px auto 15px;
+                            width: 100px;
+                            font-size: 80px;
+                            color: #E6E6E6;
+                            line-height: 100px;
+                            text-align: center;
+                            margin-left: 35px;
+                         }
+                        .riskLevel1{
+                            border-radius: 50%;
+                            border: 6px solid #6E86AC;
+                            height: 100px;
+                            margin: 35px auto 15px;
+                            width: 100px;
+                            font-size: 80px;
+                            color: #6E86AC;
+                            line-height: 100px;
+                            text-align: center;
+                            margin-left: 35px;
+            
+                        }
+                        .riskLevel2 {
+                            border-radius: 50%;
+                            border: 6px solid #6FA897;
+                            height: 100px;
+                            margin: 35px 0 15px 45px;
+                            width: 100px;
+                            font-size: 80px;
+                            color: #6FA897;
+                            line-height: 100px;
+                            text-align: center;
+                            margin-left: 35px;
+
+                         }
+                         .riskLevel3 {
+                            border-radius: 50%;
+                            border: 6px solid #82B864;
+                            height: 100px;
+                            margin: 35px 0 15px 45px;
+                            width: 100px;
+                            font-size: 80px;
+                            color: #82B864;
+                            line-height: 100px;
+                            text-align: center;
+                            margin-left: 35px;
+    
+                        }
+                        .riskLevel4 {
+                            border-radius: 50%;
+                            border: 6px solid #f07e2e;
+                            height: 100px;
+                            margin: 35px 0 15px 45px;
+                            width: 100px;
+                            font-size: 80px;
+                            color: #f07e2e;
+                            line-height: 100px;
+                            text-align: center;
+                            margin-left: 35px;
+
+                        }
+                        .riskLevel5 {
+                            border-radius: 50%;
+                            border: 6px solid #FF0303;
+                            height: 100px;
+                            margin: 35px 0 15px 45px;
+                            width: 100px;
+                            font-size: 80px;
+                            color: #FF0303;
+                            line-height: 100px;
+                            text-align: center;
+                            margin-left: 35px;
+  
+                        }
+                        .riskLevelExpire {
+                            display: none;
+                        }
+                        .adventurous {
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+                    }
+                    .riskTxt {
+                        float: right;
+                       // margin-top: 42px;
+                        width: 83%;
+                        font-size: 15px;
+                        line-height: 18px;
+                        p {
+                            margin: 20px 0;
+                        }
+                        p.specailTxt {
+                            font-size: 13px;
+                            color: #888;
+                        }
+                        p.specailDisTxt{
+                            font-size: 13px;
+                            //color: #888;
+                            width:700px;
+                        }
+                        p.notes{
+                            font-size: 13px;
+                            color: #888;
+                        }                
+                    }
+                    .overridenRiskTxt {
+                        float: right;
+                        //margin-top: 42px;
+                        width: 83%;
+                        font-size: 15px;
+                        line-height: 18px;
+                        .rtcNum {
+                            float: left;
+                            width: 15%;
+                            .riskLevel0 {
+                                border-radius: 50%;
+                                border: 6px solid #E6E6E6;
+                                height: 100px;
+                                margin: 35px auto 15px;
+                                width: 100px;
+                                font-size: 80px;
+                                color: #E6E6E6;
+                                line-height: 100px;
+                                text-align: center;
+                                margin-left: 35px;
+                            }
+                            .riskLevel1{
+                                border-radius: 50%;
+                                border: 6px solid #6E86AC;
+                                height: 100px;
+                                margin: 35px auto 15px;
+                                width: 100px;
+                                font-size: 80px;
+                                color: #6E86AC;
+                                line-height: 100px;
+                                text-align: center;
+                                margin-left: 35px;
+                
+                            }
+                            .riskLevel2 {
+                                border-radius: 50%;
+                                border: 6px solid #6FA897;
+                                height: 100px;
+                                margin: 35px 0 15px 45px;
+                                width: 100px;
+                                font-size: 80px;
+                                color: #6FA897;
+                                line-height: 100px;
+                                text-align: center;
+                                margin-left: 35px;
+
+                            }
+                            .riskLevel3 {
+                                border-radius: 50%;
+                                border: 6px solid #82B864;
+                                height: 100px;
+                                margin: 35px 0 15px 45px;
+                                width: 100px;
+                                font-size: 80px;
+                                color: #82B864;
+                                line-height: 100px;
+                                text-align: center;
+                                margin-left: 35px;
+        
+                            }
+                            .riskLevel4 {
+                                border-radius: 50%;
+                                border: 6px solid #f07e2e;
+                                height: 100px;
+                                margin: 35px 0 15px 45px;
+                                width: 100px;
+                                font-size: 80px;
+                                color: #f07e2e;
+                                line-height: 100px;
+                                text-align: center;
+                                margin-left: 35px;
+
+                            }
+                            .riskLevel5 {
+                                border-radius: 50%;
+                                border: 6px solid #FF0303;
+                                height: 100px;
+                                margin: 35px 0 15px 45px;
+                                width: 100px;
+                                font-size: 80px;
+                                color: #FF0303;
+                                line-height: 100px;
+                                text-align: center;
+                                margin-left: 35px;
+    
+                            }
+                            .overrideTitle {
+                                font-size: 20px;
+                               // font-weight: bold;
+                                text-align: center;
+                                margin-left: 25px;
+                            }
+                        }
+
+                        p {
+                            margin: 20px 0;
+                        }
+                        .texts{
+                            width: 1100px;
+                            float: right;
+                            position: absolute;
+                            margin-top: -140px;
+                            margin-left: -95px;
+                            line-height: 18px;
+                            
+                            p.specailTxt {
+                                margin-top: -5px;
+                                font-size: 14px;
+                                color: black;
+                                margin-left: 300px;
+                                line-height: 17px;
+                            }
+                        }
+                        p.specailDisTxt{
+                            font-size: 13px;
+                            color: #888;
+                            width:700px;
+                        }
+                        p.notes{
+                            width:1000px;                           
+                            font-size: 21px;
+                            color: black;                    
+                       }                
+                    }
+                    .riskExpireTxt {
+                        margin-left: 100px;
+                        width: 83%;
+                        font-size: 15px;
+                        line-height: 18px;
+                        p {
+                            margin: 20px 0;
+                        }
+                        p.specailTxt {
+                            font-size: 16px;
+                            color: #888;
+                        }
+                    }
+                }
+            }
+        }
+        .expire{
+            display:inline-block;
+            background-color: #eeeceb;
+        }
+        .staff{
+            margin-left: 210px;
+            font-size: 13px;
+            color: #888;
+        }
+        .button {
+            padding:20px;
+            a {
+                font-size: 18px;
+                color: #333;
+            }
+            .print {
+                float: right;
+                color: #fff;
+                border: 1px solid #3e505d;
+                background-color: #3e505d;
+                padding: 15px 25px;
+                margin-top: -14px;
+            }
+            .assesse {
+                float: right;
+                //background: #d80a1e;
+                color: #333;
+                border: 1px solid #3e505d;
+                padding: 15px 25px;
+                margin-top: -14px;
+                margin-right: 15px;
+            }
+            .conAndPrint{
+                clear: both;
+                float: right;
+                margin-right: 235px;
+                margin-top: -10px;
+                background: #d80a1e;
+                color: #fff;
+                padding: 15px 20px;
+            }
+            .hiddeButton{
+                float:right;
+                
+            }
+            .reassesse {
+                clear: both;
+                float: left;
+                background: #d80a1e;
+                color: #fff;
+                border: 1px solid #d80a1e;
+                padding: 15px 25px;
+                margin-top: -14px;
+                margin-right: 15px;
+            }
+            .continue {
+                clear: both;
+                float: left;
+                color: #d80a1e;
+                border: 1px solid #d80a1e;
+                padding: 15px 25px;
+                margin-top: -14px;
+            }
+            .icon{
+                //color: #d80a1e;
+            }
+            .continueElement{
+                .continue{
+                    clear: both;
+                    cursor: pointer;
+                    float: right;
+                    background: #d80a1e;
+                    color: #fff;
+                    border: 1px solid #d80a1e;
+                    padding: 15px 25px;
+                    margin-right: 15px;
+                    margin-top: -47px;
+                }
+                .popaContent{
+                    // position: relative;
+                    padding: 30px;
+                    .detailHide {
+                        display: none;
+                        padding: 20px;
+                        width: 300px;
+                        position: absolute;
+                        background-color: #fff;
+                        border: 1px solid #999;
+                        top:40px;
+                    }
+                    h2{
+                        line-height: 26px;
+                        margin-bottom:18px;
+                        font-size: 34px;
+                        line-height: 42px;
+                        color: #333;
+                    }
+                    .detail:hover .detailHide {
+                        display: block;
+                    }
+                    p{
+                        line-height: 24px;
+                    }
+                    textarea{
+                        margin: 15px 0px;
+                        width: 100%;
+                        height: 80px;
+                    }
+                    .iconHelp{
+                        font-size: 26px;
+                        //margin-top: -110px;
+                        //margin-left: 515px;
+                    }
+                    .confirm{
+                        text-align: right;
+                        margin: 8px 15px;
+                        a{
+                            background-color: #d80a1e;
+                            color: #fff;
+                            padding: 15px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}
+
+.popup .popupContentContainer{
+    width: 800px !important;
+    padding: 20px !important;
+}
+.closeButton{
+    top: 15px !important;
+    span{
+        font-size: 26px;
+    }
+}

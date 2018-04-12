@@ -1,0 +1,43 @@
+/* UI examples styles */
+.example {
+    padding: 20px;
+    h2 {
+        font-size: 2em;
+        padding: 15px 0 10px;
+        color: red;
+    }
+    p {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+.num {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    background-color: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 5px;
+}
+.num2 {
+    background-color: green;
+}
+
+.num3 {
+    background-color: blue;
+}
+
+.dropDownParent {
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 10;
+}
+.dropDownChild {
+    position: relative;
+    z-index: 9;
+}
+

@@ -1,0 +1,447 @@
+@import "../../../common/styles/fonts/fontIcon";
+@import "../../../common/styles/variable";
+@import "../../../common/styles/mixinStyles";
+
+$navPriamaryClr: #1d262e;
+$navSecondaryClr: $foot-note-text;
+$borderPriamaryClr: $graphite;
+$rollOutClr: #a7a7a7;
+
+.navWrap {
+    @include clearfix();
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 0 16px;
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        .section {
+            float: right;
+            margin-top: 6px;
+        }
+    }
+
+    .navList {
+        display: inline-block;
+
+        > li {
+            float: left;
+
+            a,
+            a span,
+            a:hover,
+            a span:hover {
+                @include transition(color, background-color);
+            }
+        }
+    }
+
+    .leftCol,
+    .rightCol {
+        min-height: 58px;
+        padding-top: 8px;
+        box-sizing: border-box;
+    }
+
+    // Left nav column
+    .leftCol {
+        display: inline-block;
+        float: left;
+        width: 85%;
+        // fix UI align
+        padding-top: 12px;
+
+        p {
+            line-height: 1.4;
+            a {
+                text-decoration: underline;
+            }
+        }
+        .equities {
+            position: relative;
+            border-left: 1px solid $borderPriamaryClr;
+            border-right: 1px solid $borderPriamaryClr;
+            box-sizing: border-box;
+            float: left;
+            height: 100%;
+            margin-right: 15px;
+            padding: 22px 35px 20px 13px;
+            color: $white;
+
+            @include mediaQuery("", "tablet-small", max) {
+                margin-right: 10px;
+                padding: 23px 35px 23px 13px;
+                font-size: px-to-rem(14px);
+            }
+
+            &::before {
+                position: absolute;
+                top: 18px;
+                right: 8px;
+                font-family: "HSBCIcon-Font-STB", "HSBCIcon-Font";
+                font-size: px-to-rem(20px);
+                content: "\E003";
+
+                // Responsive styling
+                @include mediaQuery("", "main-wrapper-width", max) {
+                    //top: 20px;
+                }
+
+                @include mediaQuery("", "tablet-large", max) {
+                    top: 19px;
+                }
+
+                @include mediaQuery("", "tablet-small", max) {
+                    top: 18px;
+                    right: 11px;
+                    font-size: px-to-rem(20px);
+                }
+            }
+        }
+
+        //IE 10 & 11 CSS fix
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            .equities {
+                &::before {
+                    top: 24px;
+
+                    // Responsive styling
+                    @include mediaQuery("", "main-wrapper-width", max) {
+                        top: 23px;
+                    }
+
+                    @include mediaQuery("", "tablet-large", max) {
+                        top: 20px;
+                    }
+
+                    @include mediaQuery("", "tablet-small", max) {
+                        top: 19px;
+                        right: 11px;
+                        font-size: px-to-rem(20px);
+                    }
+                }
+            }
+        }
+
+        .navList {
+            li {
+                //padding: 22px 0;
+                padding: 5px 0;
+
+                @include transition(all);
+
+                // Responsive styling
+                @include mediaQuery("", "main-wrapper-width", max) {
+                    margin-right: 20px;
+                }
+
+                @include mediaQuery("", "tablet-small", max) {
+                    margin-right: 10px;
+                    font-size: px-to-rem(14px);
+                }
+
+                &:last-child {
+                    a {
+                        &::before {
+                            border-right: none;
+                        }
+                    }
+                }
+
+                a {
+                    position: relative;
+                    display: inline-block;
+                    text-transform: capitalize;
+
+                    &::before {
+                        position: absolute;
+                        top: 2px;
+                        right: -5px;
+                        border-right: 1px solid $borderPriamaryClr;
+                        height: 23px;
+                        width: 2px;
+                        content: "";
+
+                        // Responsive styling
+                        @include mediaQuery("", "tablet-small", max) {
+                            right: 0;
+                            height: 21px;
+                        }
+                    }
+
+                    span {
+                        margin-right: 20px;
+                        vertical-align: bottom;
+
+                        &.icon,
+                        &.newIcon {
+                            margin-top: -4px;
+                            color: $white;
+                            font-size: px-to-rem(25px);
+
+                            // Responsive styling
+                            @include mediaQuery("", "main-wrapper-width", max) {
+                                display: none;
+                            }
+                        }
+
+                        &.sectionName {
+                            //float: right;
+                            margin-top: 5px;
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.active,
+                &:hover {
+                    a {
+                        span {
+                            &.icon,
+                            &.newIcon,
+                            &.sectionName {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+
+                &.sectWatchlist {
+                    a {
+                        span {
+                            &.icon,
+                            &.newIcon {
+                                margin-top: -6px;
+                                font-size: px-to-rem(30px);
+                            }
+                        }
+                    }
+                }
+
+                &.sectNews {
+                    a {
+                        span {
+                            &.icon,
+                            &.newIcon {
+                                margin-top: 1px;
+                            }
+                        }
+                    }
+                }
+
+                //IE 10 & 11 CSS fix
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    a {
+                        span {
+                            &.icon,
+                            &.newIcon {
+                                margin-top: 1px;
+                            }
+                        }
+                    }
+
+                    &.sectWatchlist {
+                        a {
+                            span {
+                                &.icon,
+                                &.newIcon {
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    // Right nav column
+    .rightCol {
+        display: inline-block;
+        float: right;
+        padding-top: 23px;
+        .icon,
+        .newIcon {
+            margin-right: 22px;
+            color: $rollOutClr;
+            font-size: px-to-rem(25px);
+        }
+        .down{
+            img{
+                vertical-align: middle;
+                height: 24px;
+                width: 24px;
+            }
+            .accountsIcon{
+                font-size: 24px;
+                margin-right: 5px;
+            }
+            span{
+                font-size: 14px;
+                color: #FFFFFF;
+                margin-right: 5px;
+            }
+            .downIcon{
+                font-size: 20px;
+            }
+            .renewIcone{
+                margin-left: 30px;
+                font-size: 25px;
+            }
+        }
+        .navList {
+            > li {
+                position: relative;
+                padding: 5px 0;
+
+                @include transition(all);
+
+                // Responsive styling
+                @include mediaQuery("", "main-wrapper-width", max) {
+                    margin-right: 14px;
+                }
+
+                @include mediaQuery("", "desktop-small", max) {
+                    margin-right: 16px;
+                }
+
+                @include mediaQuery("", "tablet-small", max) {
+                    margin-right: 10px;
+                }
+
+                > a {
+                    // Responsive styling
+                    @include mediaQuery("", "desktop-small", max) {
+                        border: none;
+                    }
+                }
+
+                > a {
+                    display: inline-block;
+
+                    span {
+                        margin-right: 5px;
+                        vertical-align: bottom;
+
+                        // Responsive styling
+                        @include mediaQuery("", "desktop-small", max) {
+                            margin-right: 0;
+                        }
+                    }
+                    // IE 10 and 11 CSS hack
+                    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                        span {
+                           vertical-align: middle;
+                        }
+                    }
+                }
+
+                & {
+                    &.active,
+                    &:hover {
+                        a {
+                            span {
+                                &.icon,
+                                &.newIcon,
+                                &.sectionName {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+
+                    a {
+                        // Responsive styling
+                        @include mediaQuery("", "tablet-large", max) {
+                            padding-top: 3px;
+                        }
+
+                        span {
+                            &.icon {
+                                display: inline-block;
+                                float: left;
+
+                                // Responsive styling
+                                @include mediaQuery("", "tablet-large", max) {
+                                    margin-top: 0;
+                                }
+                            }
+
+                            &.sectionName {
+                                display: inline-block;
+                                margin-top: 9px;
+                                color: $rollOutClr;
+
+                                @include mediaQuery("", "tablet-large", max) {
+                                    display: none;
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & {
+                    a {
+                        // Responsive styling
+                        @include mediaQuery("", "tablet-large", max) {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                    }
+                }
+
+                //IE 10 & 11 CSS fix
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                    & {
+                        a {
+                            span {
+                                &.sectionName {
+                                    margin-top: 6px;
+                                }
+                            }
+                        }
+                    }
+
+                    & {
+                        //Responsive Styling
+                        @include mediaQuery("", "tablet-large", max) {
+                            padding-top: 9px;
+                        }
+
+                        a {
+                            height: 20px;
+
+                            span {
+                                float: left;
+
+                                &.icon {
+                                    //line-height: 1.3;
+                                    line-height: 1.2;
+                                }
+
+                                &.sectionName {
+                                    line-height: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Embed New Icon
+.icon,
+.newIcon {
+    font-family: "HSBCIcon-Font-STB", "HSBCIcon-Font";
+    font-size: px-to-rem(30px);
+}

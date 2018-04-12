@@ -1,0 +1,22 @@
+.popup {
+
+
+    .popupContentContainer {
+        position: relative;
+        z-index: 1000;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 900px;
+        height: auto;
+        max-width: 98%;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 0px 50px 20px;
+        vertical-align: middle;
+        text-align: left;
+        white-space: normal;
+        background: #fff;
+    }
+
+    
+}

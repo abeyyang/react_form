@@ -1,0 +1,243 @@
+@import "./variable";
+
+// Start: Default @mixin styles setup
+
+// Media query breakpoints map key
+$breakpoints: (
+    "zero": 0px, // Zero for between case
+    "handset": 600px, // Small handset devices (phones, less than 768px)
+    "tablet-small": 768px, // Small tablet devices (tablets, 768px and up)
+    "handset-large": 840px, // Large tablet devices (desktops, 840px and up)
+    "tablet-large": 960px, // Large tablet devices (desktops, 960px and up)
+    "desktop-small":  1024px, // Medium devices (Small desktops, 1024px and up)
+    "main-wrapper-width": 1190px, // site main wrapper width
+    "desktop-small-medium": 1280px, // Medium devices (Medium desktops, 1280px and up)
+    "desktop-medium": 1366px, // Large devices (large desktops, 1366px and up)
+    "desktop-large": 1600px // Large devices (large desktops, 1600px and up)
+);
+
+// Create mixin media query
+@mixin mediaQuery($minWidth, $maxWidth, $type: min) {
+    $minWidth: map_get($breakpoints, $minWidth);
+    $maxWidth: map_get($breakpoints, $maxWidth);
+    // Max-width media query
+    @if $type == max {
+        @media only screen and (max-width: $maxWidth) {
+            @content;
+        }
+    }
+
+    // Min-width and Max-width media query
+    @else if $type == between {
+        @media only screen and (min-width: #{$minWidth} + 1) and (max-width: #{$maxWidth} - 1) {
+            @content;
+        }
+    }
+
+    @else {
+        // Min-width media query
+        @media only screen and (min-width: $minWidth) {
+            @content;
+        }
+    }
+}
+
+// End: Default breakpoints setup
+
+// Start: Transition Mixin Sass
+@mixin transition($transitions...) {
+    $unfoldedTransitions: ();
+
+    @each $transition in $transitions {
+        $unfoldedTransitions: append($unfoldedTransitions, unfoldtransition($transition), comma);
+    }
+
+    -webkit-transition: $unfoldedTransitions;
+    transition: $unfoldedTransitions;
+}
+
+@function unfoldtransition ($transition) {
+    // Default values
+    $property: all;
+    $duration: 0.2s;
+    $easing: cubic-bezier(0, 0, 0, 0.74); // Gus standard default easing
+    $delay: null; // Browser default is 0, which is what we want
+    $defaultProperties: ($property, $duration, $easing, $delay);
+
+    // Grab transition properties if they exist
+    $unfoldedTransition: ();
+
+    @for $i from 1 through length($defaultProperties) {
+        $p: null;
+
+        @if $i <= length($transition) {
+            $p: nth($transition, $i);
+        } @else {
+            $p: nth($defaultProperties, $i);
+        }
+
+        $unfoldedTransition: append($unfoldedTransition, $p);
+    }
+
+    @return $unfoldedTransition;
+}
+// End: Transition Mixin Sass
+
+// Start: All border style include
+@mixin borderAllStyle($width, $style, $color) {
+    border-color: $color;
+    border-style: $style;
+    border-width: $width;
+}
+// End: All border style include
+
+// Start: Function calculate px to rem
+@function px-to-rem($px) {
+    @return $px / $font-size-default * 1rem;
+}
+// End: Function calculate px to rem
+
+// Start: Mixin Sass include
+@mixin clearfix {
+
+    &::after,
+    &::before {
+        display: table;
+        content: "";
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+// End: Mixin Sass include
+
+/* ========================================
+Start: CTA GUS Standard Sass include
+======================================== */
+// Buttons & Links
+@mixin ctaStandardStyle($type) {
+    /*
+    General styling
+    */
+    display: inline-block;
+    text-decoration: none;
+
+    /* ========================================
+    Buttons:
+    _GUS master page.73-94
+    _GUS call to action definition page.4-29
+    ======================================== */
+    @if $type == button {
+        box-sizing: border-box;
+
+        // 1180 or above screen size
+        padding: 15px 20px;
+
+        // Medium screen size
+        @media only screen and (max-width: 734px) {
+            padding: 17px 18px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* ========================================
+    Links:
+    _GUS master page.96-110
+    _GUS call to action definition page.4-29
+    ======================================== */
+    @else if $type == link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@mixin ctaButtonStyle($type:primary, $theme:null) {
+    /* ========================================
+    Guideline from:
+    _GUS call to action definition page.4-29
+    ======================================== */
+
+    // General style
+    $disableAlpha: 0.5;
+
+    // State: primary button
+    $defaultColor: #db0011;
+    $borderColor: $defaultColor;
+    $hoverColor: #a4000d;
+    $borderHoverColor: $hoverColor;
+    $textColor: #fff;
+
+    // State: secondary button
+    @if $type == secondary {
+        // Theme: slate option
+        $defaultColor: #4d6474;
+        $borderColor: $defaultColor;
+        $borderHoverColor: $borderColor;
+        $hoverColor: #3e505d;
+
+        //Theme: jade option
+        @if $theme == jade {
+            $defaultColor: #008580;
+            $borderColor: $defaultColor;
+            $borderHoverColor: $borderColor;
+            $hoverColor: #00716c;
+        }
+
+        // Theme: outline option
+        @else if $theme == outline {
+            $defaultColor: transparent;
+            $borderColor: #333;
+            $borderHoverColor: $borderColor;
+            $hoverColor: transparentize(#000, 0.95);
+            $textColor: $borderColor;
+        }
+
+        // Theme: outline with dark background option
+        @else if $theme == outlineDark {
+            $defaultColor: transparent;
+            $borderColor: #fff;
+            $borderHoverColor: $borderColor;
+            $disableAlpha: 0.4;
+            $hoverColor: transparentize($borderColor, 0.9);
+            $textColor: $borderColor;
+        }
+    }
+
+    @include borderAllStyle(1px, solid, $borderColor);
+
+    box-sizing: border-box;
+    font-weight: normal;
+    color: $textColor;
+    background-color: $defaultColor;
+
+    &,
+    &:hover {
+        @include transition(background-color, color);
+    }
+
+    // On rollover color
+    &:hover {
+        @include borderAllStyle(1px, solid, $borderHoverColor);
+
+        background-color: $hoverColor;
+    }
+
+    // Case for disable
+    &.disabled {
+        opacity: $disableAlpha;
+
+        &:hover {
+            cursor: default;
+            background-color: $defaultColor;
+        }
+    }
+}
+
+/* ========================================
+End: CTA GUS Standard Sass include
+======================================== */

@@ -1,0 +1,75 @@
+.popup {
+     margin-top: 40px;
+    .popupContentContainer {
+         padding-top: 20px;
+        position: relative;
+        z-index: 1000;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 500px;
+        height: 150px;
+        max-width: 98%;
+        max-width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 0px 50px 20px;
+        vertical-align: middle;
+        text-align: left;
+        white-space: normal;
+        background: #fff;
+    }
+    .descriptionCustomer {
+        height: 22px;
+        width: 224px;
+        color: #333333;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 20px 0 20px 0;
+        
+    }
+    .description{
+        font-size: 14px;
+        line-height: 18px;
+        color:#333333; 
+        
+    }
+    .line{
+            border: 1px solid #ccc;
+            margin-top: 15px;
+        }
+    .footer{
+        font-size: 15px;
+            margin-bottom: 20px;
+            vertical-align: middle;
+        button{
+            background-color: transparent;
+            border:none;
+        }
+        .concel{
+            float: left;
+            input{
+                border:none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+        .btnConfirmSubmit{
+            float: right;
+            .copy{
+                border:1px solid #000;
+                height: 45px;
+                width:70px;
+                line-height: 40px;
+            }
+            .submit{
+                width:70px;
+                margin-left: 10px;
+                background-color: #d80a1e;
+                height: 40px;
+                color: #fff;
+            }
+        }
+    }
+    
+
+}

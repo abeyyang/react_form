@@ -1,0 +1,490 @@
+.bodyBackground {
+    background-color: #000;
+    
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        padding: 20px;
+        width: 1270px;
+        background-color: rgba(237, 237, 237, 1);
+        font-size:  #333;
+        .titleProgress{
+        	height: 35px;	
+            color: #333333;	
+            font-family: "Univers Next for HSBC";	
+            font-size: 14px;	
+            font-weight: bold;	
+            line-height: 18px;
+            margin-left: 22px;
+            .stepProgressDone{
+                width: 49%;
+                border-top:4px solid #DA0011;
+                float: left;
+            }
+            .stepProgressUndone{
+                width: 49%;
+                border-top:4px solid #939193;
+                float: left;
+                margin-left: 10px;
+            }
+        }
+        .editGoal{
+            background-color: #fff;
+            margin: 0 auto;
+            width: 1195px;
+            height: 55px;
+            margin-top: 10px;
+            padding: 0 20px;
+            line-height:55px;
+            
+            span,b{
+                margin-right: 10px;
+            }
+            .goalName{
+                float: left;
+            }
+            .editGoalName{
+                float: right;
+                font-size: 14px;
+                font-family: "Univers Next for HSBC";
+                color: #333333;
+                cursor:pointer;
+                line-height: 55px;
+                height: 55px;
+                .iconEdit{
+                    font-size: 25px;
+                }
+            }
+            .circleRiskLevel4{
+                    width:25px;
+                    height:25px;
+                    margin-left:10px;
+                    border-radius: 50%;
+                    background-color: #E9A115;
+                    display: inline-block;
+                    -moz-border-radius:50%;
+                    -webkit-border-radius:50%;
+                    color:#fff;
+                    text-align: center;
+                    line-height: 25px;
+                }
+        }
+        .saveGoal{
+            background-color: #fff;
+            margin: 0 auto;
+            width: 1220px;
+            height: 100px;
+            margin-top: 10px;
+            padding: 0 20px;
+            line-height:55px;
+                div{
+                    float: left;
+                    font-size: 14px;
+                    margin-left: 20px;
+                    p{
+                        margin-top: -20px;
+                       input,.select{
+                                height: 40px;	
+                                width: 260px;	
+                                border: 1px solid #929292;	
+                                background-color: #FFFFFF;
+                                font-size: 14px;	
+                                line-height: 18px;
+                                margin-bottom: 10px;
+                                color: #333;
+                       }
+                    }
+                }
+                .saveGoalModule{
+                    height: 55px;
+                    line-height: 55px;
+                   text-align: right;
+                   float: right;
+                   margin-right: 20px;
+                   margin-top: 20px;
+                   .iconEdit{
+                    font-size: 25px;
+                    cursor: pointer;
+                }
+                }
+            }
+        .financialProfile {
+            clear: both;
+            h4 {
+                height: 80px;
+                padding: 0 25px;
+                line-height: 80px;
+                position: relative;
+                .title {
+                    font-size: 32px;
+                    font-weight: 300px;
+                    color: #333;
+                }
+            }
+            h5{
+                padding-bottom:10px; 
+               .title {
+                    font-size: 20px;
+                    color: #333;
+                } 
+            }
+                .mainShowResult{
+                padding-top:10px;
+                background-color: #fff;
+                padding-left:30px;
+                color:#333;
+                border:1px solid #999;
+                .showResultTitle{
+                    font-size: 20px;
+                    cursor:pointer;
+                }
+            }
+            .salesMain {
+                margin: 0px 20px 0px 20px;
+                padding: 20px;
+                background-color: #fff;
+                .expand{
+                    text-align: right;
+                    .iconAdd{
+                        font-size: 20px;
+                        line-height: 15px;
+                        color: #333333;
+                    }
+                    .expandCnt{
+                        font-size: 16px;
+                        color: #000000;
+                        line-height: 20px;
+                        cursor: pointer;
+                    }
+                }
+                h6 {
+                    border-bottom: 1px solid #ccc;
+                    border-left: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    border-top: 3px solid #d80a1e;
+                    padding: 20px;
+                    font-size: 18px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    background: #f2f2f2;
+                }
+                li{
+                    border-top-width: 0px;
+                    padding-bottom:0px;
+                    padding-top:0px;
+                }
+                .question {
+                    cursor:context-menu;
+                    margin-top: 20px;
+                    padding-top: 0px;
+                    background: #fff;
+                    border-bottom: 1px solid #ccc;
+                    .next {
+                        padding-bottom:20px;
+                        padding-right:20px;
+                        a {
+                            border: 1px solid #d80a1e;
+                            float: right;
+                            color: #d80a1e;
+                            padding: 15px 20px;
+                            margin-top: 20px;
+                        }
+                    }
+                     .needAnalysisMain {
+                        border: 1px solid #D7D8D6;
+                        border-bottom-width: 0px;
+                        //padding: 0 20px;
+                        h3 { 
+                            height: 45px;
+                            line-height: 45px;
+                            background-color: #FFFFFF;
+                            position: relative;
+                            .agree{
+                                font-size: 30px;
+                                color: #008580;
+                            }
+                            .title {
+                                margin-left: 35px;
+                                padding-left: 25px;
+                                border-left: 5px solid #d80a1e; 
+                                font-size: 20px;
+                                font-weight: bold;
+                            }
+                            .icon{
+                                font-size: 26px;
+                                position: absolute;
+                                right: 30px;
+                                margin-top: 10px;
+                                color: #333;
+                            }
+                        }
+                        .nacon {
+                            padding: 20px 20px 20px 45px;
+                            background: #fff;
+                            h5 {
+                                font-size: 16px;
+                            }
+                            .naconQuestion{
+                                font-size: 14px;
+                                line-height: 18px;
+                                padding-bottom: 10px;
+                            }
+                            select{
+                                width: 262px;
+                                height: 40px;
+                                padding-left: 10px;
+                                border: 1px solid #929292;
+                            }
+                        }
+                        .favorite{
+                            font-size: 16px;	
+                            line-height: 19px;
+                            color: #333333;
+                            .subTitle{
+                                font-weight: bold;	
+                            }
+                            .favEven{
+                                float: right;
+                                margin-top: -85px;
+                                margin-right: 80px;
+                                position: relative;
+                                .iconDownInput{
+                                    position: absolute;
+                                    left:310px;
+                                    top:55px;
+                                    cursor: pointer;
+                                }
+                                ul{
+                                    position: absolute;
+                                    top:84px;
+                                    width: 510px;
+                                    border: 1px solid #929292;
+                                    background-color: #fff;
+                                }
+                                ul li{
+                                   float: left;
+                                    width: 130px;
+                                    font-size: 14px;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    border-bottom: 1px solid #D7D8D6;
+                                    margin-left: 30px;
+                                    font-weight: bold;
+                                   label{
+                                        position: relative;
+                                        display: inline-block;
+                                        margin-right: 9px;
+                                        padding-left: 42px;
+                                        }
+                                    label::before{
+                                        content: "";
+                                        width:20px;
+                                        height: 20px;
+                                        border-radius: 50%;
+                                        -webkit-border-radius:50%;
+                                        border: 1px solid #ccc;
+                                        display: inline-block;
+                                        position: absolute;
+                                        left: 5px;
+                                        bottom: 7px;
+                                        
+                                    }
+                                    input[type='radio'] {
+                                        display: none;
+                                    }
+                    
+                                    input[type='radio']:checked + label::before{
+                                        content: "\2022";
+                                        color: #008580;
+                                        font-size: 35px;
+                                        text-align: center;
+                                        line-height: 22px;
+                                        
+                                    }
+                                }
+                            }
+                            ul li .input,.select{
+                                height: 40px;	
+                                width: 325px;	
+                                border: 1px solid #929292;	
+                                background-color: #FFFFFF;
+                                font-size: 14px;	
+                                line-height: 18px;
+                                margin-bottom: 10px;
+                                color: #333;
+                            }
+                            .select{
+                               width: 335px;
+                               height: 44px;  
+                            }
+                            .iconHelp{
+                                padding-left: 5px;	
+                                color: #333333;	
+                                font-size: 25px;	
+                            }
+                            .iconDelete{
+                                padding-left: 5px;
+                                font-size: 14px;
+                                color: #333;
+                                height: 18px;
+                            }
+                            .favAdd{
+                                .favCnt{
+                                    line-height: 20px;
+                                    padding: 5px 0px;
+                                .chkbox {
+                                    display: none;
+                                }
+                                label.boxlabel {
+                                    display: block;
+                                }
+                                .chkbox + label {
+                                    border: 1px solid #7c7c7c;
+                                    display: inline-block;
+                                    height: 20px;
+                                    margin-right: 10px;
+                                    width: 20px;
+                                    line-height: 20px;
+                                    text-align: center;
+                                    vertical-align: -5px;
+                                    background: none;
+                                }
+                                .chkbox:checked + label::after {
+                                    content: "\2714";
+                                    color: #008580;
+                                    vertical-align: 6px;
+                                }
+                            }
+                        }
+                        .searchBottom{
+                            padding-top: 0px;
+                            margin-top: 20px;
+                            line-height: 45px;
+                            height: 45px;
+                            width: 1100px;
+                            border-bottom:  1px solid #D7D8D6;
+                            border-top:1px solid #D7D8D6;
+                            text-align: center;
+                            font-size: 14px;
+                            .iconDown{
+                                cursor:pointer;
+                                height: 19px;	
+                                width: 23px;	
+                                color: #333333;	
+                                font-family: HSBCIcon-Font;	
+                                font-size: 25px;	
+                                line-height: 21px;
+                            }
+                        }
+                        .all{
+                            .rightLi{
+                                float: right;
+                                margin-top: -95px;
+                                margin-right: 105px; 
+                            }
+                        }
+                    }
+            } 
+            .favorite{
+                padding: 20px 40px;
+                h3 {
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                li{
+                    line-height: 40px;
+                    span{
+                        vertical-align: middle;
+                    }
+                    .input,.select{
+                        height: 35px;
+                        width: 320px;
+                        font-size: 23px;
+                        padding-left: 8px;
+                    }
+                    .select{
+                        height: 40px;
+                        width: 330px;
+                        font-size: 20px;
+                        padding-left: 8px;
+                        color: #ccc;
+                    }
+                    .iconEdit {
+                        font-size: 30px;
+                        padding-left: 5px;
+                        vertical-align: middle;
+                    }
+                    .iconDelete {
+                        font-size: 30px;
+                        vertical-align: middle;
+                    }
+                }
+                .searchBottom{
+                    padding-top: 20px;
+                    .icon{
+                        color: #c6131e;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .all{
+                margin-top:15px;
+                .rightLi{
+                    float: right;
+                    margin-top: -80px;
+                } 
+            }
+            .footer {
+                font-size: 16px;	
+                line-height: 19px;
+                float: right;
+                padding-right: 85px;
+            }
+        }
+    }
+}
+        .back {
+            clear: both;
+            padding: 0 20px 20px;
+            margin-top: 15px;
+            height: 30px;
+            a {
+                font-size: 14px;
+                color: #333;
+            }
+            .icon {
+                color: #333333;
+            }
+            .buttonSave{
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #333333;
+                text-align: center;
+                width: 145px;
+                margin-right: 15px;
+                .save{
+                    color: #333333;	
+                    text-align: center;
+                }
+            }
+            .buttonSearch{
+                border: 1px solid #DB0011;
+                background-color: #DB0011;
+                line-height: 40px;
+                height: 40px;	
+                width: 87px;	
+                text-align: center;
+                float: right;
+                .search{
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+    .mt20 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,372 @@
+// Start: Import Global Scss library
+@import "../../../common/styles/variable";
+@import "../../../common/styles/mixinStyles";
+
+// Start: Nav component styling
+.nav {
+    min-width: $minWidth;
+    width: 100%;
+    color: $white;
+    font-weight: $font-light;
+    background-color: $black;
+
+    @include transition(all);
+
+    // Sticky Nav
+    &.sticky {
+        // position: fixed;
+        z-index: 90;
+        -webkit-backface-visibility: hidden;
+        // -webkit-transform: translateZ(0);
+    }
+
+    // Non-Sticky Nav
+    &.nonSticky {
+        // position: fixed;
+        z-index: 90;
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+.errorDiv{
+    background:black;
+    .errorHandle{
+        background:black;
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 1305px;
+        .notification{
+            margin-bottom:15px;
+        }
+    }
+}
+
+
+.black{
+    background:black;
+}
+
+#hsbcGspHeader{
+    width: 100%;
+    z-index: 99;
+    top: 0;
+    height: 62px;
+    max-height: 62px;
+    background-color: #fff;
+}
+
+// doormate styling
+.doormate{
+    color: rgb(113,113,113);
+    background-color: #000;
+    a {
+        color: rgb(113,113,113);
+        text-decoration: none;
+    }
+    .topNavigation{
+        height: 62px;
+        width: 100%;
+        font-size: 14px;
+        background-color: #000;
+        .navContent{
+            line-height: 62px;
+            height: 62px;
+            width: 1265px;
+            margin: 0 auto;
+            background-color:#FFFFFF;
+            padding: 0px 20px;
+            >ul {
+                padding: 10px 0;
+                li {
+                    float: left;
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                    border-right: 1px solid #4c4c4c;
+                    .arrow {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .left {
+                float: left;
+                .brandLogo{
+                    height: 22px;
+                    vertical-align: middle;
+                }
+                .businessLinkWrapper{
+                    font-size: 15px;
+                    display: inline-block;
+                    margin-left: 40px;
+                }
+            }
+            .right {
+                float: right;
+                padding: 0;
+                li {
+                    padding: 0;
+                    border: none;
+                }
+                .languageList {
+                    .dropDownPicker {
+                        box-sizing: border-box;
+                        display: inline-block;
+                        width: 145px;
+                        color: rgb(113,113,113);
+                        font-size: 14px;
+                        font-weight: 300;
+                        text-align: center;
+                        cursor: pointer;
+                        background-color: inherit;
+
+                        .current {
+                            position: relative;
+                            box-sizing: border-box;
+                            border: none;
+                            display: inline-block;
+                            width: 100%;
+
+                            @include mediaQuery("", "medium", max) {
+                                padding: 20px 18px;
+                            }
+
+                            @include mediaQuery("", "small", max) {
+                                padding: 20px 14px;
+                            }
+
+                            &::after {
+                                position: absolute;
+                                top: 20px;
+                                right: 44px;
+                                height: calc(100% - 40px);
+                                width: 0;
+                                content: "";
+                                background-color: $graphite;
+                            }
+
+                            .selectedOption {
+                                margin-left: 10px;
+                                font-weight: normal;
+                            }
+
+                            .arrow {
+                                position: absolute;
+                                top: 50%;
+                                right: 15px;
+                                transform: translateY(-50%);
+
+                                @include mediaQuery("", "medium", max) {
+                                    right: 18px;
+                                }
+
+                                @include mediaQuery("", "small", max) {
+                                    right: 14px;
+                                }
+                            }
+
+                            > * {
+                                display: inline-block;
+                                vertical-align: middle;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .dropDown {
+                            position: relative;
+                            z-index: 1;
+                            float: left;
+                            border: 1px solid #ededed;
+                            box-sizing: border-box;
+                            padding-right: 0px;
+                            padding-left: 0px;
+                            width: 100%;
+                            overflow: auto;
+                            background-color: #fff;
+                            li {
+                                border-bottom: 1px solid #ededed;
+                                border-top: 1px solid #ededed;
+                                box-sizing: border-box;
+                                padding: 0 20px;
+                                width: 100%;
+                                line-height: 3;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+
+                                + li,
+                                &:first-child {
+                                    border-top: none;
+                                }
+
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+
+                                &.selected,
+                                &:hover {
+                                    background-color: #ededed;
+                                }
+
+                                .arrowLeft,
+                                .arrowRight {
+                                    margin: 20px 0;
+                                    font-size: 24px;
+                                }
+
+                                .arrowLeft {
+                                    float: left;
+                                    margin-right: 8px;
+                                }
+
+                                .arrowRight {
+                                    float: right;
+                                }
+
+                                > * {
+                                    vertical-align: middle;
+                                }
+                                >span {
+                                    display: none;
+                                }
+                            }
+
+                            .subMenu {
+                                position: absolute;
+                                left: -1px;
+                                top: -1px;
+                                height: 100%;
+                                width: calc(100% + 2px);
+                                background-color: $dark-slate;
+                            }
+                        }
+                    }
+                }
+
+                .logOn {
+                    background: #db0011;
+                    margin-top: 15px;
+                    line-height: 36px;
+                    height: 36px;
+                    a {
+                        color: #fff;
+                        display: inline-block;
+                        width: 75px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+       
+    }
+    .navList{
+        width: 100%;
+        height: 80px;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        .mainMenu{
+            width: 1180px;
+            height: 80px;
+            margin: 0 auto;
+            color: black;
+            >li {
+                float: left;
+                height: 80px;
+                padding-top: 20px;
+                box-sizing: border-box;
+                font-size: 20px;
+                >div {
+                    padding: 0 20px;
+                    border-right: 1px solid #ccc;
+                    .subMenu {
+                        display: block;
+                        margin-top: 5px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .company {
+                padding-top: 0;
+                margin-right: 100px;
+                font-size: 36px;
+                line-height: 80px;
+            }
+            .invest{
+                position: relative;
+                ul {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    bottom: -60px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    z-index: 100;
+                    background: #ededed;
+                    li {
+                        padding: 20px;
+                    }
+                }
+            }
+            .invest:hover {
+                ul {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.bold {
+    font-weight: bold;
+}
+
+.footerPage {
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    background: #fff;
+    position: fixed;
+    .pirorities {
+        float: left;
+        .item {
+            margin-left: 10px;
+            vertical-align: 25px;
+        }
+        .image {
+            margin: 0 10px;
+        }
+        a.viewEdit {
+            color: #333;
+            vertical-align: 25px;
+            .icon {
+                color: #d80a1e;
+            }
+        }
+    }
+    .button {
+        float: right;
+        a {
+            display: inline-block;
+            margin-top: 8px;
+            margin-right: 10px;
+            padding: 15px 25px;
+            background: #273038;
+            color: #fff;
+        }
+        a:first-child {
+            margin-right: 10px;
+        }
+    }
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

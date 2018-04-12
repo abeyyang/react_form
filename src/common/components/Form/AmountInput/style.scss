@@ -1,0 +1,78 @@
+.AmountInput,
+.AmountInput > span {
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.AmountInput {
+    display: inline-block;
+    padding-left: 60px;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    & > span {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding: 0 5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 18px;
+        color: #666;
+        padding: 0 15px;
+    }
+    .AmountInputText {
+        display: block;
+        height: 100;
+        & > input[type=text] {
+            display: block;
+            border: 0;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            padding: 2px 5px;
+            padding-right: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background: transparent;
+            color:#333;
+        }
+    }
+}
+
+.AmountInputError {
+    border: 1px solid #bd3f3f;
+}
+
+.AmountInputStart::after {
+    content: "*";
+    display: block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    position: absolute;
+    right: 5px;
+    top: 18px;
+    font-size: 18px;
+    color:red;
+}
+.AmountInputStart {
+    padding-right: 10px;
+}
+.AmountInputNoneSymbol{
+    padding-left: 0;
+    & > span {
+        display: none;
+    }
+    & > div > input[type=text] {
+        padding: 0 10px !important;
+    }
+}

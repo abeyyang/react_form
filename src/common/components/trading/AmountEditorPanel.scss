@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+.fieldDescriptionSection {
+    margin-right: -10px;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: $normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: $left;
+    background: $white;
+    color: $color-6;
+}
+.padt {
+    font-weight: $bold;
+}
+.padb {
+    padding-bottom: $num-2;
+}
+.schedule {
+    padding-top: $num-2;
+    min-height: 380px;
+    .detail {
+        position: relative;
+        padding: $num-1 0 0 0;
+        width: 100%;
+        text-align: $center;
+        .average {
+            .left{
+                display: inline-block;
+                width: 45%;
+                text-align: right;
+                span{
+                   color: #ccc; 
+                }
+            }
+            .right{
+                padding-left: 3px;
+                display: inline-block;
+                width: 42%;
+                text-align: left;
+                span{
+                   color: #ccc; 
+                }
+            }
+        }
+    }
+    .caution-panel {
+        margin: 0 auto;
+        padding: 20px 0 0 40px;
+        width: 60%;
+        color: #d3404c;
+        text-align: left;
+        h4 {
+            position: relative;
+            margin-bottom: 15px;
+            .caution {
+                position: absolute;
+                top: -5px;
+                left: -40px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+.disableBtn {
+    color: #929292;
+}
+.hidden {
+    display: $hidden;
+}

@@ -1,0 +1,35 @@
+.productCodeName{
+    padding-left: 35px;
+    width: 108px;
+    .delete{
+        width: 25px;
+        float: left;
+        height: 25px;
+        border: 1px solid red;
+
+    }
+    .product{
+        float: left;
+        width: 70px;
+        border: 1px solid burlywood;
+        height: 55px;
+    }
+    .icon{
+        float: left;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: -28px;
+        font-size: 22px;
+        
+    }
+    .icon:hover{
+        cursor: pointer;
+    }
+    h5{
+        color: #333333;	
+    }
+    span{
+        // color: #5C5C5C;
+        font-size: 12px;	
+    }
+}

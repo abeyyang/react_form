@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "HSBCIcon-Font-STB";
+    font-style: normal;
+    font-weight: normal;
+    src: url("common/styles/fonts/HSBCIcon-Font-STB.eot");
+    src: url("common/styles/fonts/HSBCIcon-Font-STB.eot?#iefix") format("embedded-opentype");
+    src: url("common/styles/fonts/HSBCIcon-Font-STB.woff") format("woff");
+    src: url("common/styles/fonts/HSBCIcon-Font-STB.ttf") format("truetype");
+}
+
+/* New font icon */
+.logout::before {
+    content: "\e806";
+}
+
+.news::before {
+    content: "\e807";
+}
+
+.quick-buy::before {
+    content: "\e809";
+}
+
+.quick-sell::before {
+    content: "\e80a";
+}
+
+.sell::before {
+    content: "\e80b";
+}
+
+.table::before {
+    content: "\e80c";
+}
+
+.watch-list::before {
+    content: "\e800";
+}
+
+.alert::before {
+    content: "\e801";
+}
+
+.buy::before {
+    content: "\e802";
+}
+
+.full-screen::before {
+    content: "\e803";
+}
+
+.graph::before {
+    content: "\e804";
+}
+
+.logon::before {
+    content: "\e805";
+}
+
+.quick-view::before {
+    content: "\e808";
+}

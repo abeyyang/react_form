@@ -1,0 +1,154 @@
+// checkbox button
+.dropdownBox {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    &.opened {
+        .MultiCheckbox {
+            height: auto;
+            opacity: 1;
+        }
+    }
+    .dropdownBoxDisplayValue {
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+        padding: 12px 15px;
+        padding-right: 62px;
+        font-size: 16px;
+        line-height: 1.15;
+        border: 1px #929292 solid;
+        box-sizing: border-box;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &::after {
+            position: absolute;
+            right: 2px;
+            top: 50%;
+            margin-top: -12px;
+            border: none;
+            border-left: 1px #929292 solid;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+            font-family: "HSBCIcon-Font";
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+            vertical-align: middle;
+            content: "\F055";
+        }
+    }
+}
+
+.MultiCheckbox {
+    background: #fff;
+    border: 1px #929292 solid;
+    margin-top: -1px;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    z-index: 99;
+    .MultiCheckboxUl {
+        width: 530px;
+        clear: both;
+        overflow: hidden;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+    .MultiCheckboxLi {
+        float:left;
+        height: 42px;
+        padding: 8px 0;
+        width: 150px;
+        box-sizing: border-box;
+        margin: 5px 10px 0;
+        border-bottom: 1px solid #d7d8d6;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &>label{
+            display: block;
+            position: relative;
+            height: 42px;
+            max-width: 130px;
+            line-height: 42px;
+            padding-left: 30px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            .customCheckbox {
+                position: absolute;
+                left: 0;
+                top:4px;
+                line-height: 24px;
+            }
+        }
+        .labelText {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            display:inline-block;
+            height: 25px;line-height: 25px;
+        }
+    }
+    .customCheckbox {
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #d7d8d6;
+        background: #fff;
+        vertical-align: middle;
+    }
+    .icon {
+        margin-left: -3px;
+        margin-top: -3px;
+        color: #008580;
+        font-size: 1.75rem;
+        font-weight: normal;
+    }
+    .agree::before {
+        content: "\F00A";
+    }
+    .labelText {
+        display: inline-block;
+        padding: 2px 0;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.13;
+    }
+    .selectAll {
+        padding: 10px;
+        line-height: 25px;
+        text-align: right;
+        .button {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 10px 0 0 20px;
+            width: 100px;
+        }
+    }
+    
+    .img {
+        padding: 3px 5px;
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        float:left;
+        img {   
+            width: 25px;
+            height: 25px;
+            vertical-align: middle;
+        }
+    }
+} 
+
+.disabled>div {
+    background: #ddd;
+}

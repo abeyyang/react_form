@@ -1,0 +1,306 @@
+/* UI styles */
+//input 
+.input {
+    border: 1px solid #ccc;
+    height: 20px;
+    padding: 12px;
+    width: 200px;
+}
+// checkbox button
+.checkboxList {
+    li {
+        padding: 5px 0;
+        line-height: 24px;
+    }
+    .customCheckbox {
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #d7d8d6;
+        background: #fff;
+        input[type="checkbox"] {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            opacity: 0;
+        }
+    }
+    .icon {
+        margin-left: -3px;
+        margin-top: -3px;
+        color: #008580;
+        font-size: 1.75rem;
+        font-weight: normal;
+    }
+
+    .labelText {
+        display: inline-block;
+        padding: 2px 0;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.13;
+    }
+} 
+
+.agree::before {
+    content: "\F00A";
+}
+// radioButton
+.radioButtonLabel {
+    .formFieldInput.customRadioButton {
+        float: left;
+        border: 1px solid #d7d8d6;
+        background-color: #fff;
+        input[type="radio"] {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        input[type="radio"] + .radioChecked {
+            margin: 6px;
+            width: 15px;
+            height: 15px;
+            min-width: 15px;
+            min-height: 15px;
+        }
+        input[type="radio"]:checked + .radioChecked {
+            background-color: #008580;
+        }
+    }
+    .labelText {
+        display: inline-block;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+}
+.radioButtonList li {
+    padding: 5px 0;
+}
+
+//NumericInput
+.container {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+    border: 1px #ccc solid;
+    white-space: nowrap;
+    background-color: #fff;
+    .prefix {
+        margin-right: 15px;
+        font-size: 18px;
+    }
+}
+/** DropdownRiskLevel **/
+.dropdownContainer {
+    width: 100%;
+    max-width: 360px;
+    .dropdownBox {
+        width: 100%;
+        padding: 0;
+        color: #333;
+        background-color: #fff;
+        .dropdownBoxItemList {
+            width: 100%;
+        }
+        .dropdownBoxItem {
+            border-bottom: 1px solid #d7d8d6;
+            padding: 15px;
+            background: #fff;
+            &:hover {
+                background: #ededed;
+            }
+            &.selected {
+                color: #333;
+            }
+        }
+        .dropdownBoxDisplayValue {
+            padding: 12px 15px;
+            padding-right: 62px;
+            font-size: 16px;
+            line-height: 1.15;
+            &::after {
+                position: absolute;
+                right: 1;
+                top: 50%;
+                margin-top: -12px;
+                border: none;
+                border-left: 1px #929292 solid;
+                display: inline-block;
+                width: 44px;
+                height: 24px;
+                font-family: "HSBCIcon-Font";
+                font-size: 24px;
+                line-height: 24px;
+                text-align: center;
+                vertical-align: middle;
+                content: "\F055";
+            }
+        }
+    }
+}
+// button
+button {
+    &.btnDefault, &:nth-child(1) {
+        color: #333;
+        border-color: #333;
+        background: white;
+    }
+
+    &.btnDanger, &:nth-child(2){
+        color: #fff;
+        border-color: red;
+        background: red;
+    }
+}
+//slier
+.slider {
+    .rail {
+        background: #007a74;
+    }
+    .handle {
+        background: #ffffff;
+    }
+}
+//spinner
+.spinner {
+    height: 42px;
+    a {
+        flex: 1.5 28%;
+    }
+}
+//tooltip
+.tooltip {
+    $lineColor: #999;
+    .tooltipContent {
+        border: 1px solid $lineColor;
+        color: #333;
+        background: #fff;
+    }
+    &.hasHandler {
+        &,
+        &::after {
+            pointer-events: none;
+        }
+        &::before,
+        &::after {
+            opacity: 0;
+        }
+
+        &.rendered {
+            &::before,
+            &::after {
+                transition: all 0.2s ease-in-out;
+            }
+        }
+
+        $animation-offset: 20px;
+
+        &.placeRight {
+            &::before,
+            &::after {
+                transform: translateX(-$animation-offset) translateY(0);
+            }
+        }
+        &.placeLeft {
+            &::before,
+            &::after {
+                transform: translateX($animation-offset) translateY(0);
+            }
+        }
+        &.placeBottom {
+            &::before,
+            &::after {
+                transform: translateX(0) translateY(-$animation-offset);
+            }
+        }
+        &.placeTop {
+            &::before,
+            &::after {
+                transform: translateX(0) translateY($animation-offset);
+            }
+        }
+        &.show {
+            pointer-events: auto;
+            &::before,
+            &::after {
+                opacity: 1;
+                transform: translateX(0) translateY(0);
+            }
+        }
+    }
+
+    &.placeTop::before,
+    &.placeTop::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid $lineColor;
+        content: "";
+        left: 50%;
+        margin-left: -8px;
+        position: absolute;
+        bottom: -8px; 
+    }
+    &.placeTop::after {
+        border-top-color: white;
+        bottom: 4px;
+    }
+
+    &.placeRight::before,
+    &.placeRight::after {
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid $lineColor;
+        content: "";
+        top: 50%;
+        margin-top: -8px;
+        position: absolute;
+        left: -8px; 
+    }
+    &.placeRight::after {
+        border-right-color: white;
+        left: 4px;
+    }
+
+    &.placeBottom::before,
+    &.placeBottom::after {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid $lineColor;
+        content: "";
+        left: 50%;
+        margin-left: -8px;
+        position: absolute;
+        top: -8px; 
+    }
+    &.placeBottom::after {
+        border-bottom-color: white;
+        top: 4px;
+    }
+
+    &.placeLeft::before,
+    &.placeLeft::after {
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid $lineColor;
+        content: "";
+        top: 50%;
+        margin-top: -8px;
+        position: absolute;
+        right: -8px; 
+    }
+    &.placeLeft::after {
+        border-left-color: white;
+        right: 4px;
+    }
+}
+

@@ -1,0 +1,10 @@
+/* Formatted number default style */
+.AmountDisplay {
+    font-size: 16px;
+    font-weight: 600;
+    .formattedNumber {
+        color: #333;
+        padding-left: 5px;
+        font-size: bold;
+    }
+}

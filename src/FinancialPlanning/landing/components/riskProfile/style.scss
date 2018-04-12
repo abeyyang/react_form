@@ -1,0 +1,682 @@
+.riskProfilePage {
+    padding: 20px;
+    background-color: #eeeceb;
+    .moduleOne p,
+    .moduleTwo p {
+        color: #444;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    p.mt20 {
+        margin-top: 30px;
+    }
+    a.viewEdit {
+        color: #333;
+    }
+    .moduleOne {
+        .contLeft,
+        .contMiddle,
+        .contright {
+            //border: 1px solid #ccc;
+            height: 320px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .riskProfile {
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 27px;
+            color: #333333;
+            a{
+                color: #333333;
+                text-decoration: none;
+            }
+            .icon {
+                font-size: 22px;
+                vertical-align: 0;
+            }
+            .viewEdit {
+                color: #DB0011;
+            }
+            .erroIconSolid{
+                font-size: 28px;
+                color: #f07e2e;
+                margin-left: 37px;
+            }
+            .confirmIconSolid{
+                font-size: 30px;
+                color: #008580;
+                margin-left: 37px;
+            }
+        }
+        .expiryDate,
+        .lastDate{
+            color: #5C5C5C;
+            font-size: 12px;	
+            line-height: 14px;
+            margin: 0px;
+        }
+        .warning{
+            color: #a7a7a7;
+            text-align: center;
+            margin-top: 30px;
+            .erroIcon{
+                font-size: 52px;
+            }
+            .warningMsg{
+                font-size: 18px;
+                color: #a7a7a7;
+                line-height: 24px;
+                margin: 0px;
+            }
+        }
+        table {
+
+            margin-top: 20px;
+           
+            tr {
+                th,
+                td {
+                    height: 41px;
+                    vertical-align: middle;
+                    font-size: 14px;	
+                    line-height: 18px;
+                }
+                th {
+                    background-color: #2F3D46;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                th:first-child,
+                td:first-child {
+                    padding-left: 15px;
+                    width: 215px;
+                    text-align: left;
+                }
+                th,
+                td:nth-child(2n),
+                td:last-child {
+                    width: 110px;
+                    text-align: center;
+                }
+                .iconConfirmation,.agree {
+                    color: #008580;
+                }
+                .iconDelete {
+                    color: #929292
+                }
+            }
+            tr:nth-child(2n+1) {
+                background: #f6f6f6;
+            }
+            .icon,.agree {
+                font-size: 26px;
+            }
+        }
+        .indicator {
+            height: 420px;
+            padding: 20px;
+            background-color: #fff;
+            .riskProfile {
+                font-size: 24px;
+                .icon {
+                    font-size: 22px;
+                    vertical-align: 0;
+                }
+                .viewEdit {
+                    color: #d80a1e;
+                }
+            }
+            table {
+                margin-top: 33px;
+            
+                tr {
+                
+                    th,
+                    td {
+                        height: 60px;
+                        vertical-align: middle;
+                    }
+                    th {
+                        background-color: #2F3D46;
+                        color: #fff;
+                    }
+                    th:first-child,
+                    td:first-child {
+                        padding-left: 15px;
+                        width: 340px;
+                        text-align: left;
+                    }
+                    th,
+                    td:nth-child(2n),
+                    td:last-child {
+                        width: 155px;
+                        text-align: center;
+                    }
+                    .agree {
+                        font-size: 33px;
+                        color: #008580;
+                    }
+                    .iconDelete {
+                        color: #a7a7a7;
+                    }
+                }
+                tr:nth-child(2n+1) {
+                    background: #f6f6f6;
+                }
+            }
+            .alerticon {
+                font-size: 33px;
+                //color: #008580;
+                margin-left: 195px;
+            }
+            .circleIcon {
+                font-size: 33px;
+                color: #008580;
+            }
+            .fontColor {
+                color: #929292;
+                font-weight: 100;
+            }
+        }
+        .contLeft {
+            float: left;
+            width: 200px;
+            position: relative;
+            .detail {
+                .icon {
+                    font-size: 22px;
+                }
+            }
+            .detailHide {
+                display: none;
+            }
+            // p.link {
+            //     z-index: 2;
+            //     top: 302px;
+            //     left: 105px;
+            //     border-bottom: 15px solid #333;
+            //     border-left: 15px solid transparent;
+            //     border-right: 15px solid transparent;
+            //     margin: 0 auto;
+            //     width: 0;
+            //     position: absolute;
+            // }
+            // p.link1 {
+            //     z-index: 3;
+            //     top: 303px;
+            //     left: 106px;
+            //     border-bottom: 14px solid #fff;
+            //     border-left: 14px solid transparent;
+            //     border-right: 14px solid transparent;
+            //     margin: 0 auto;
+            //     width: 0;
+            //     position: absolute;
+            // }
+            .detailOverlay {
+                position: absolute;
+                z-index: 1;
+                top: 316px;
+                left: 10px;
+                width: 500px;
+                text-align: left;
+                .detailText {
+                    border: 1px solid #333;
+                    padding: 20px;
+                    background: #fff;
+                    p {
+                        color: #333;
+                        margin: 0;
+                        padding-top: 10px;
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .riskLevel0 {
+                border-radius: 50%;
+                border: 6px solid #E6E6E6;
+                height: 100px;
+                margin: 35px 0 15px 45px;
+                width: 100px;
+                font-size: 80px;
+                color: #E6E6E6;
+                line-height: 100px;
+                text-align: center;
+            }
+            
+            .riskLevel1 {
+                border-radius: 50%;
+                border: 6px solid #6E86AC;
+                height: 127px;
+                margin: 35px 0 15px 45px;
+                width: 127px;
+                font-size: 80px;
+                color: #6E86AC;
+                line-height: 127px;
+                text-align: center;
+            }
+            .riskLevel2 {
+                border-radius: 50%;
+                border: 6px solid #6FA897;
+                height: 127px;
+                margin: 35px 0 15px 45px;
+                width: 127px;
+                font-size: 80px;
+                color: #6FA897;
+                line-height: 127px;
+                text-align: center;
+            }
+            .riskLevel3 {
+                border-radius: 50%;
+                border: 6px solid #82B864;
+                height: 127px;
+                margin: 35px 15px 15px 30px;
+                width: 127px;
+                font-size: 80px;
+                color: #82B864;
+                line-height: 127px;
+                text-align: center;
+            }
+            .riskLevel4 {
+                border-radius: 50%;
+                border: 6px solid #f07e2e;
+                height: 127px;
+                margin: 35px 0 15px 45px;
+                width: 127px;
+                font-size: 80px;
+                color: #f07e2e;
+                line-height: 127px;
+                text-align: center;
+            }
+            .riskLevel5 {
+                border-radius: 50%;
+                border: 6px solid #FF0303;
+                height: 100px;
+                margin: 35px 0 15px 45px;
+                width: 100px;
+                font-size: 80px;
+                color: #FF0303;
+                line-height: 100px;
+                text-align: center;
+            }
+            .adventurous {
+                line-height: 26px;
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+                .icon {
+                    color: #333333;
+                    font-size: 25px;	
+                    line-height: 21px;
+                }
+            }
+            .detail:hover .detailHide {
+                display: block;
+            }
+        }
+        .contMiddle {
+            float: left;
+            margin: 0 20px;
+            width: 448px;
+            .erroIconSolid,
+            .confirmIconSolid{
+                margin-left: 125px;
+            }
+        }
+        .contright {
+            float: right;
+            width: 448px;
+            table {
+                margin-top: 44px;
+                td:first-child {
+                    width: 320px;
+                }
+                .tickagree {
+                    font-size: 33px;
+                    color: #008580;
+                }
+                .crosswrong {
+                    font-size: 33px;
+                    color: #929292;
+                }
+            }            
+            .erroIconSolid {
+                font-size: 28px;
+                color: #f07e2e;
+                margin-left: 217px;
+            }
+            .confirmIconSolid {
+                font-size: 30px;
+                color: #008580;
+                margin-left: 215px;
+            }
+            .fontColor {
+                color: #929292;
+                font-weight: 100;
+            }
+        }
+    }
+    .moduleTwo {
+        //border: 1px solid #ccc;
+        //height: 425px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #fff;
+        // .insurance {
+        //     border: 1px solid #ccc;
+        //     margin-top: 20px;
+        //     padding: 10px;
+        //     font-size: 15px;
+        //     line-height: 20px;
+        //     background-color: #fff;
+        //     .insureName {
+        //         font-size: 26px;
+        //         .icon {
+        //             vertical-align: -1px;
+        //             color: #d80a1e;
+        //         }
+        //     }
+        //     .text {
+        //         display: block;
+        //         margin-top: 10px;
+        //     }
+
+        // }
+        .financialProfile,.dataDisplay{
+            table {
+                tr {
+                    th,
+                    td {
+                        height: 37.51px;
+                        vertical-align: middle;
+                        font-size: 14px;
+                    }
+                    th {
+                        padding: 0 20px;
+                        background-color: #2F3D46;
+                        color: #fff;
+                        font-weight: bold;	
+                        line-height: 18px;
+                    }
+                    th:first-child,
+                    td:first-child {
+                        padding-left: 15px;
+                        width: 315px;
+                        text-align: left;
+                    }
+                    th:last-child,
+                    td:last-child {
+                        padding-right: 15px;
+                        width: 223px;
+                        text-align: right;
+                    }
+                    .fontStrong{
+                        font-weight: bold;
+                    }
+                    .small{
+                        font-size: 12px;
+                        font-weight: normal;
+                    }
+                }
+                tr:nth-child(2n) {
+                    background: #f6f6f6;
+                }
+            }
+        }
+        .financialProfile {
+            float: left;
+            width: 580px;
+            .rowList {
+                position: relative;
+                margin: 0px;
+                .icon {
+                    font-size: 22px;
+                    vertical-align: 0;
+                }
+                .viewEdit {
+                    color: #DB0011;
+                }
+                .listName {
+                    display: inline-block;
+                    //margin-bottom: 8px;
+                    font-size: 22px;	
+                    font-weight: 300;	
+                    line-height: 27px;
+                    color: #333333;
+                    a{
+                       color: #333333;
+                       text-decoration: none; 
+                    }
+                }
+                .listType {
+                    font-size: 17px;
+                }
+                .listDate {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                    font-size: 17px;
+                }
+            }
+            .dateModify{
+                color: #5C5C5C;
+                font-size: 12px;
+                margin: 4px 0px 15px 0px;
+                line-height: 14px;
+            }
+            .prompt {
+                position: relative;
+                margin-top: 30px;
+                overflow: hidden;
+                font-size: 18px;
+                .chkbox {
+                    display: none;
+                }
+                label {
+                    display: block;
+                }
+                .chkbox + label {
+                    border: 1px solid #7c7c7c;
+                    display: inline-block;
+                    height: 20px;
+                    width: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    background: none;
+                }
+                .chkbox:checked + label::after {
+                    content: "\2714";
+                    color: #008580;
+                    vertical-align: 5px;
+                }
+                .description {
+                    margin-left: 5px;
+                    vertical-align: 5px;
+                }
+                .chkEdit {
+                    top: 0;
+                }
+                .icon {
+                    color: #d80a1e;
+                }
+            }
+
+
+        }
+        .dataDisplay {
+            float: right;
+            width: 580px;
+            p{
+                text-align: right;
+            }
+            .picShow {
+                padding-top: 85px;
+                height: 220px;
+                //background: #253038;
+                color: #333;
+                .warning{
+                    color: #fff;
+                    text-align: center;
+                    .erroIcon{
+                        font-size: 52px;
+                    }
+                    .warningMsg{
+                        font-size: 18px;
+                        color: #fff;
+                        line-height: 24px;
+                        margin: 0px;
+                        text-align: center;
+                    }
+                }
+                .Assests{
+                    //float: right;
+                    margin-top: -87px;
+                }
+            }
+            .updateDescript{
+                float: left;
+                margin-top: 15px;
+                width: 427px;
+                height: 28px;
+                font-size: 12px;
+                color:#333333;
+            }
+            .updateBtn{
+                text-align: right;
+                margin-bottom: 20px;
+                a{
+                    display: inline-block;
+                    width: 200px;
+                    border: 1px solid #333333;
+                    position: relative;
+                    background-color: transparent;
+                    line-height: 40px;
+                    height: 40px;
+                    right:0px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: #333333;
+                    text-align: center;
+                }
+                .erroIconSolid{
+                    font-size: 28px;
+                    color: #f07e2e;
+                    margin-left: 5px;
+                }
+                .confirmIconSolid{
+                    font-size: 30px;
+                    color: #008580;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    .whatwhouldyoulike{
+        margin-top: 20px;
+        height: 23px;	
+        width: 277px;	
+        color: #333333;	
+        font-family: "Univers Next for HSBC";	
+        font-size: 22px;	
+        font-weight: 300;	
+        line-height: 27px;
+    }
+    .moduleThree{
+        clear: both;
+        margin-top: 10px;
+        position: relative;
+        top:-170px;
+        .whatyouwant{
+            float: left;
+            
+            height: 175px;
+            width: 600px;
+            background-color: #FFFFFF;
+            p{
+                margin-top: 21px;
+                margin-left: 26px;
+                height: 16px;	
+                width: 223px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 16px;	
+                font-weight: bold;	
+                line-height: 19px;
+            }
+            .wantDescription{
+                height: 54px;	
+                width: 485px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 14px;	
+                line-height: 18px;
+                margin-left: 26px;
+                margin-top: 5px;
+            }
+            input{
+                cursor:pointer;
+                display: inline-block;
+                height: 40px;	
+                width: 192px;	
+                background-color: #3E505D;
+                color: #fff;
+                border: none;
+                margin-left: 20px;
+            }
+        }
+        .needGuidance{
+            float: left;
+            margin-left: 60px;
+            height: 175px;
+            width: 600px;
+            background-color: #FFFFFF;
+             p{
+                margin-top: 21px;
+                margin-left: 26px;
+                height: 16px;	
+                width: 223px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 16px;	
+                font-weight: bold;	
+                line-height: 19px;
+            }
+            .wantDescription{
+                height: 54px;	
+                width: 485px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 14px;	
+                line-height: 18px;
+                margin-left: 26px;
+                margin-top: 5px;
+            }
+            input{
+                cursor:pointer;
+                display: inline-block;
+                height: 40px;	
+                width: 192px;	
+                background-color: #3E505D;
+                color: #fff;
+                border: none;
+               margin-left: 20px;
+            }
+        }
+    }
+}
+.center {
+    text-align: center;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

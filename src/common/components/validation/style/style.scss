@@ -1,0 +1,20 @@
+.errorMessage {
+     position: relative;
+     .AmountInputError,
+     input[data-role=validate],
+     *[data-role=validate] {
+        border: 1px solid #83000A !important;
+        background-color: #F9F2F3 !important;
+        // -webkit-box-shadow: 0 1px 3px #bd3f3f inset !important;
+        // -moz-box-shadow: 0 1px 3px #bd3f3f inset !important;
+        // -ms-box-shadow: 0 1px 3px #bd3f3f inset !important;
+        // box-shadow: 0 1px 3px #bd3f3f inset !important;
+    }
+}
+.successInput *[data-role=validate]{
+    border:1px solid lightsteelblue;
+    // -webkit-box-shadow: 0 1px 3px lightsteelblue inset !important;
+    // -moz-box-shadow: 0 1px 3px lightsteelblue inset !important;
+    // -ms-box-shadow: 0 1px 3px lightsteelblue inset !important;
+    // box-shadow: 0 1px 3px lightsteelblue inset !important;
+}

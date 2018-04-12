@@ -1,0 +1,194 @@
+.panel{
+            border: 1px solid #D7D8D6;	
+            background-color: #FFFFFF;
+            line-height: 44px;
+            margin-bottom: 5px;
+            h3{
+                color: #333333;
+                font-size: 22px;		
+                line-height: 18px;
+                margin: 15px 20px;
+                vertical-align: middle;
+                .title{
+                    vertical-align: middle;
+                    padding-left: 10px;
+                    border-left: 5px solid #DB0011;
+                    .iconAgree{
+                        color: #008580;
+                        font-size: 30px;
+                    }
+                }
+                .icon{
+                    color: #333333;
+                    float: right;
+                    margin-top: -23px;
+                    .iconDown{
+                        font-size: 30px;
+                    }
+                }
+            }
+ } 
+    .results {
+            padding: 20px;
+            width:1210px;
+            background: #FFFFFF;
+            color: #fff;
+            .lineCss{
+                background-color: lightgray;
+                height:1px;
+                margin-top:-15px;
+            }    
+            .inputBoxCss{
+                    position: relative;
+                    margin-top: 10px;
+                    .pCss{
+                        color:black;
+                    }
+                    .iconEdit {
+                        margin: 0px 0px 5px 5px;
+                        font-size: 25px;
+                        color:black;
+                    }                                                                             
+        }           
+
+}
+ .clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+} 
+                .choose {
+                    margin-top: 10px;
+                    position: relative;
+                    .iconEdit {
+                        margin: 0 0 0 5px;
+                        font-size: 30px;
+                    }
+                    .radioCheck {
+                        float: left;
+                        margin-right: 30px;
+                        padding-left:15px;
+                    }
+                    .iconEdit {
+                            margin: 0px 0 0 5px;
+                            font-size: 25px;
+                            color:black;
+                    }                      
+                    .sexFontColor{
+                        color:gray;
+                    }                
+                    .detailHide {
+                        display: none;
+                    }
+                    .redIcon{
+                        color:red;
+                    }
+                    .pCss{
+                        color:black;
+                    }
+                }
+                .choose:hover .detailHide {
+                    display: block;
+                } 
+ .triangle{
+    width:0px;
+    height:0px;
+    line-height:0;
+    border:20px solid transparent;
+    border-bottom-color:#F6F6F6;
+    border-top:0; 
+    margin-left:15px;
+    margin-bottom:-10px;
+ }
+     .shortTermInvestDetailPanel{
+        background-color:#F6F6F6;  
+        width:1220px;
+        .shortTermInvestDetailDiv{
+                padding: 10px 22px 0px 16px;
+                .pCss{
+                    color: black;
+                }
+                .iconEdit {
+                        margin: 0px 0px 5px 5px;
+                        font-size: 25px;
+                        color:black;
+                }                 
+                .shortTermInvestDetailTextArea{
+                    width: 100%;
+                    padding-left: 10px;
+                    padding-top: 10px;                    
+                }                
+        }
+     }   
+
+     // radioButton
+.radioButtonList{
+    color:black;
+    .radioButtonLabel {
+        .labelText {
+            display: inline-block;
+            line-height: 30px;
+        }
+    }
+    .radioButtonList li {
+        padding: 5px 0;
+    }   
+            ul {
+                    li {
+                        padding: 5px 0px 0px 17px;
+                        line-height: 23px;
+                        float:left;
+                        span {
+                            float: right;
+                            margin-right: 20px;
+                        }
+                    }
+                    li:nth-child(2n + 1) {
+                        background: #FFFFFF;
+                        color:black;
+                    }
+                    li:first-child {
+                        border-bottom: 1px solid #FFF;
+                    }
+                }       
+}     
+
+                    // checkbox button
+                    .checkboxList {
+                        li {
+                            padding: 10px 17px;
+                            line-height: 25px;
+                        }
+                        .customCheckbox {
+                            margin-right: 10px;
+                            width: 22px;
+                            height: 22px;
+                            border: 1px solid #d7d8d6;
+                            background: #fff;
+                        }
+                        .icon {
+                            margin-left: -3px;
+                            margin-top: -3px;
+                            color: #008580;
+                            font-size: 1.75rem;
+                            font-weight: normal;
+                        }
+                        .agree::before {
+                            content: "\F00A";
+                        }
+                        .checkBoxfontCss{
+                            color:black;
+                            padding-left: 5px;
+                        }
+                    }  
+                    .textarea {
+                        width: 100%;
+                        height: 120px;
+                    }

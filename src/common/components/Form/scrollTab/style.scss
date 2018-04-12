@@ -1,0 +1,26 @@
+.scrollTab {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scrollTabNode {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 13px 22px;
+    border: 1px solid #919191;
+    cursor: pointer;
+    margin-left: -1px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &.active {
+        color: #4e4e4e;
+        background-color: #e7e7e7;
+    }
+
+    &.inactive {
+        color: #4e4e4e;
+    }
+}

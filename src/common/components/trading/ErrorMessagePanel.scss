@@ -1,0 +1,24 @@
+/********************************  ErrorMessagePanel css  *******************************/
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+.error-message {
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: $num-0 auto;
+    padding-left: 170px;
+    position: absolute;
+    width: 100%;
+    color: #b30000;
+    text-align: $left;
+    background-color: #1d262e;
+}
+.disabled {
+    background: #ccc;
+    color: #929292;
+}
+.hidden {
+    display: $hidden;
+}

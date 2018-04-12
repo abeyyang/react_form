@@ -1,0 +1,200 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        //padding: 20px;
+        width: 1305px;
+        //background-color: #666;
+        .errorMessage {
+            margin-top: 3px;
+        }
+        .notify{
+           background-color: #EDEDED;
+           padding: 20px 20px 0px 20px;
+           .notifyCnt{
+                padding: 15px;
+                border-color: #f07e2e;
+                color: #8a6d3b;
+                background-color: #fcf8e3;
+                position: relative;
+                border: 1px solid #f07e2e;
+                .iconWarn{
+                    color: #f07e2e;
+                    position: absolute;
+                    top: 8px;
+                    left: 15px;
+                    margin-right: 10px;
+                    font-size: 1.7rem;
+                }
+                .notifyCancel{
+                    top: 6px;
+                    font-size: 30px;
+                    position: absolute;
+                    right: 15px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+                .notifyMsg{
+                    margin-left: 40px;
+                    font-size: 14px;
+                    color: #333;
+                    .notifyTitle{
+                        font-weight: bold;
+                    }
+                    .notifyDetail{
+                        line-height: 18px;
+                    }
+                }
+           }  
+        }
+        .tabs{
+            background-color: #EDEDED;
+            font-size: 14px;
+             ul{
+                    padding: 0px;
+                    margin: 20px 20px 0px 20px;
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 420px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:first-child{
+                    background-color: #EDEDED;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                }
+                li:first-child::after{
+                    padding-left: 0px;
+                }
+                 li:nth-child(2){
+                    border-right: 1px #B6B7B6 solid;
+                 }
+                li::after{
+                    visibility: hidden;
+                }
+            }
+        }
+        .tabs2{
+            background-color: #EDEDED;
+            font-size: 14px;
+                 ul{
+                    padding: 0px;
+                    margin: 20px 20px 0px 20px;
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 420px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:first-child::after{
+                    padding-left: 0px;
+                }
+                li:nth-child(2){
+                    background-color: #EDEDED;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:nth-child(2)::after{
+                    padding-left: 0px;
+                }
+             }
+        }
+        .tabs3{
+            background-color: #EDEDED;
+            font-size: 14px;
+                 ul{
+                    padding: 0px;
+                    margin: 20px 20px 0px 20px;
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 420px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:last-child{
+                    background-color: #EDEDED;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:nth-child(2)::after,
+                li:last-child::after{
+                    padding-left: 0px;
+                }
+                li:first-child{
+                    border-right: 1px #B6B7B6 solid;
+                 }
+                li::after{
+                    visibility: hidden;
+                }
+             }
+        }
+        
+        h4 {
+            height: 80px;
+            padding: 0 25px;
+            line-height: 80px;
+            background-color: #fff;
+            position: relative;
+            .dropDown {
+                position: absolute;
+                right: 25px;
+                font-size: 30px;
+                color: #333;
+            }
+            .title {
+                border-left: 5px solid #d80a1e;
+                padding-left: 25px;
+                font-size: 30px;
+                color: #333;
+            }
+        }
+        .mt20 {
+            margin-top: 20px;
+        }
+        .clearfix {
+            zoom: 1;
+        }
+        .clearfix::before,
+        .clearfix::after {
+            display: table;
+            content: " ";
+        }
+        .clearfix::after {
+            clear: both;
+            overflow: hidden;
+        }
+
+    }
+}
+.notification .closeIcon {
+    top: 6px;
+    font-size: 30px;
+}

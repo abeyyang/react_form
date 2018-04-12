@@ -1,0 +1,79 @@
+.table {
+    position: relative;
+    overflow: hidden;
+
+    .fixedHead,
+    .tableRow,
+    .tableHead {
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+        color: white;
+    }
+
+    .tableHead,
+    .fixedHead {
+        z-index: 4;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-clip: content-box;
+    }
+
+    .tableHead {
+        position: absolute;
+    }
+
+    .fixedHead {
+        position: fixed;
+    }
+
+    .tableRow {
+        display: table;
+
+        > * {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .tableBody,
+    .fixedColumn {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tableBody {
+        position: relative;
+        overflow: auto;
+
+        .tableRow {
+            position: relative;
+        }
+    }
+
+    .fixedColumn,
+    .fixedHeaderColumn {
+        overflow: hidden;
+
+        .tableRow {
+            background-color: transparent;
+        }
+    }
+
+    .fixedColumn {
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .fixedHeaderColumn {
+        .scrollHead {
+            background-color: transparent;
+        }
+    }
+
+    .fixedHeaderColumn {
+        z-index: 5;
+    }
+}

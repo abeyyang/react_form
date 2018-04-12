@@ -1,0 +1,329 @@
+.bodyBackground{
+    background-color: #000;
+    //font-family: "Univers Next for HSBC";
+    .mainBackground{
+        margin: 0 auto;
+        width: 1305px;
+        background-color: #eeeceb;
+        .header{
+            background-color:#eeeceb;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 0px;
+            padding-left: 20px;
+            .MainTiltle{
+                color: #333333;	
+                .tiltle{
+                    height: 65px;
+                    font-size: 32px;
+                    font-weight: 300;
+                    line-height: 65px;
+                }
+                .subTitle{
+                    font-size:14px;
+                    div {
+                        text-align: left;
+                        width: 252px;
+                        border-bottom: 4px solid #DB0011;
+                    }
+                }
+            }
+            .theme{
+                margin-top: 20px;
+                color: #333333;	
+                button{
+                    font-size: 16px;
+                    height: 40px;
+                    border: 1px solid #929292;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        .readyToStart {
+            background-color:#eeeceb;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            >div {
+                background-color: white;
+                height: 130px;
+            }
+            .textStyle{
+                padding-top: 20px;
+                padding-left: 20px;
+                width:60%;
+                float:left;          
+            }
+            .pStyle{			
+                margin-top: 10px;
+                margin-left: 20px;	
+                font-family: "Univers Next for HSBC";
+                font-size: 28px;
+                font-weight: 300;
+	         }
+            .spanStyle{
+                margin-top: 5px;
+                margin-left: 20px;
+                font-size: 16px;
+                line-height: 18px;
+                font-family: "Univers Next for HSBC";
+                color: #333333;
+	        }
+            .buttonStyle{
+                width: 30%;
+                float: right;
+                padding-top: 20px;
+                padding-right: 20px;
+                a {
+                    width: 123px;
+                    height: 40px;
+                    background: #415562;
+                    color: #FFFFFF;
+                    line-height: 40px;
+                    float: right;
+                    margin-left: 20px;
+                    margin-top: 25px;
+                    text-align: center;
+                    cursor:pointer;
+                }
+            }
+        }
+        .footer {
+            background-color:#eeeceb;
+            padding-top: 0px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            
+        }
+        .back {
+            padding-top: 20px;
+            a {
+                font-size: 14px;
+                color: #333;
+                text-decoration: none;
+            }
+        }
+
+        .topTab0{
+            background-color: #eeeceb;
+            ul{
+                li{
+                    width: 419px;
+                    height: 30px;
+                    font-size: 14px;
+                    padding: 0px 0px 0px 0px;
+                    margin-left: 2px;
+                    margin-right: 2px;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:first-child{
+                    margin-left: 0px;
+                }
+                li:last-child{
+                    margin-right: 0px;
+                }
+                li:first-child{
+                    font-weight: bold;
+                }
+                li:first-child{
+                    border-bottom: 4px solid #DB0011;
+                }
+                li:nth-child(2),
+                li:last-child{
+                    border-bottom: 4px solid #929292;
+                }
+                li::after{
+                    visibility: hidden;
+                }
+             }
+        }
+        
+        .tabs0{
+            background-color: #eeeceb;
+            height: 65px;
+            padding: 0px 20px 0px 20px;
+            ul{
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 252px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:first-child{
+                    background-color: #FFFFFF;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                }
+                li:nth-child(2),
+                li:nth-child(3),
+                li:nth-child(4){
+                    border-right: 1px #B6B7B6 solid;
+                }
+                li::after{
+                    visibility: hidden;
+                }
+            }
+        }
+        .tabs1{
+            background-color: #eeeceb;
+            height: 65px;
+            padding: 0px 20px 0px 20px;
+            ul{
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 252px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:nth-child(2){
+                    background-color: #FFFFFF;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:nth-child(3),
+                li:nth-child(4){
+                    border-right: 1px #B6B7B6 solid;
+                }
+                li::after{
+                    visibility: hidden;
+                }
+             }
+        }
+        .tabs2{
+            background-color: #eeeceb;
+            height: 65px;
+            padding: 0px 20px 0px 20px;
+            ul{
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 252px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:nth-child(3){
+                    background-color: #FFFFFF;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:first-child,
+                li:nth-child(4){
+                    border-right: 1px #B6B7B6 solid;
+                }
+                li::after{
+                    visibility: hidden;
+                }
+             }
+        }
+        .tabs3{
+            background-color: #eeeceb;
+            height: 65px;
+            padding: 0px 20px 0px 20px;
+            ul{
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 252px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:nth-child(4){
+                    background-color: #FFFFFF;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:first-child,
+                li:nth-child(2){
+                    border-right: 1px #B6B7B6 solid;
+                }
+                li::after{
+                    visibility: hidden;
+                }
+             }
+        }
+        .tabs4{
+            background-color: #eeeceb;
+            height: 65px;
+            padding: 0px 20px 0px 20px;
+            ul{
+                    background-color: #D7D8D6;
+                li{
+                    height: 60px;
+                    width: 252px;
+                    line-height: 60px; 
+                    padding: 0px;
+                    text-align: center;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:last-child{
+                    background-color: #FFFFFF;
+                    border-left: 1px solid #B6B7B6;
+                    border-right: 1px solid #B6B7B6;
+                    border-top: 5px solid #DB0011;
+                    span::before{
+                        visibility: hidden;
+                    }
+                }
+                li:first-child,
+                li:nth-child(2),
+                li:nth-child(3){
+                    border-right: 1px #B6B7B6 solid;
+                 }
+                li::after{
+                    visibility: hidden;
+                }
+             }
+        }
+    }
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

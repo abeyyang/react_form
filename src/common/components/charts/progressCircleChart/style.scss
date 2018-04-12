@@ -1,0 +1,52 @@
+@import "../../../styles/variable.scss";
+
+.chart {
+    position: relative;
+    display: inline-block;
+}
+
+.chartSvg {
+
+    &.barStartFrom-top {
+        transform: rotate(-90deg);
+    }
+    &.barStartFrom-left {
+        transform: rotate(180deg);
+    }
+    &.barStartFrom-bottom {
+        transform: rotate(90deg);
+    }
+}
+
+.background {
+    background: transparent;
+
+    fill: none;
+    stroke: rgba($slate, 0.5);
+}
+
+.bar {
+    background: transparent;
+
+    fill: none;
+    stroke: $jade;
+
+    transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.progressText {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    .progressTextNumber {
+        font-size: 22px;
+    }
+    .progressTextPrecent {
+        font-size: 16px;
+    }
+}

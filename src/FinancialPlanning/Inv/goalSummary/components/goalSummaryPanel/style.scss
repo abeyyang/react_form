@@ -1,0 +1,128 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        padding: 20px;
+        width: 1305px;
+        background-color: #666;
+        .productSummaryPage {
+            padding-bottom: 20px;
+            background-color: #eeeceb;
+            h4 {
+                //height: 80px;
+                padding: 20px 0px 0px 20px;
+                //line-height: 80px;
+                //padding-left: 20px;
+                //background-color: #fff;
+                position: relative;
+                .title {
+                    //border-left: 5px solid #d80a1e;
+                    font-size: 32px;
+                    color: #333;
+                    line-height: 32px;
+                }
+            }
+            .nowyouneed{
+                height: 36px;	
+                width: 1138px;	
+                color: #333333;	
+                font-size: 14px;	
+                line-height: 18px;
+                margin:10px 0px 0px 20px;
+            }
+         
+        }
+        .footer {
+            bottom: 0;
+            left: 9.6%;
+            padding: 10px 25px;
+            width: 1300px;
+            font-size: 18px;
+            background: #fff;
+            position: fixed;
+            .button {
+                float: right;
+                a {
+                    display: inline-block;
+                    margin-top: 8px;
+                    padding: 15px 25px;
+                }
+                .save {
+                    background: #d80a1e;
+                    color: #fff;
+                }
+            }
+        }
+        .button {
+            float: right;
+            margin-top: -50px;
+            font-size: 16px;
+            margin-right: 15px;
+            a {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+            .save {
+                color: #333333;
+                border: 1px solid #333333;
+                width: 145px;
+                margin-right: 20px;
+            }
+            .finalise{	
+                width: 171px;
+                color: #fff;
+            }
+        }
+        .back {
+            padding: 0 20px 20px;
+            a {
+                font-size: 14px;
+                color: #333;
+            }
+            .icon {
+                //color: #d80a1e;
+            }
+        }
+        .decalration{
+            margin: 20px 20px;
+            border-top: 1px solid #D7D8D6;
+            border-bottom: 1px solid #D7D8D6;
+            height: 42px;
+            line-height: 42px;
+            span{
+                color: #333333;
+                font-size: 16px;
+            }
+            .iconDown{
+                font-size: 25px;
+                float: right;
+                margin-top: 10px;
+                margin-right: -5px;
+            }
+        }
+    }
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}
+
+ .dropDown {
+        position: absolute;
+        right: 25px;
+        font-size: 30px;
+        color: #333;
+    }

@@ -1,0 +1,499 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        padding: 20px;
+        width: 1305px;
+        background-color: #666;
+        .financialProfile {
+            background-color: #eeeceb;
+            h4 {
+                height: 80px;
+                padding: 0 25px;
+                line-height: 80px;
+                background-color: #fff;
+                position: relative;
+                .title {
+                    border-left: 5px solid #d80a1e;
+                    padding-left: 25px;
+                    font-size: 30px;
+                    color: #333;
+                }
+            }
+            .showAll {
+                padding: 20px 20px 0 20px;
+                font-size: 18px;
+                text-align: right;
+                background: #eeeceb;
+                .icon {
+                    font-size: 20px;
+                    vertical-align: -3px;
+                }
+                .expand {
+                    float: left;
+                }
+                .indicate {
+                    float: right;
+                    font-size: 14px;
+                    padding-right: 25px;
+                    .symbol{
+                       color: #d80a1e; 
+                    }
+                }
+                
+            }
+            .salesMain {
+                //border: 1px solid #ccc;
+                //margin: 20px;
+                padding: 20px;
+                //background-color: #fff;
+               
+                h6 {
+                    border-bottom: 1px solid #ccc;
+                    border-left: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    border-top: 3px solid #d80a1e;
+                    padding: 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    background: #fff;
+                }
+                li{
+                    border-top-width: 0px;
+                    padding-bottom:0px;
+                    padding-top:0px;
+                    margin-bottom: 25px;
+                }
+                .question {
+                    cursor:context-menu;
+                    margin-top: 0px;
+                    background: #fff;
+                    h5 {
+                        border-bottom: 1px solid #ccc;
+                        border-left: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                        border-top: 3px solid #d80a1e;
+                        padding: 20px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        background: #f2f2f2;
+                        .icon {
+                            float: right;
+                        }
+                    }
+                    .questionCon {
+                        padding: 20px;
+                        p {
+                            margin-top: 20px;
+                            width: 80%;
+                            line-height: 25px;
+                        }
+                        p.summary {
+                            font-size: 18px;
+                            padding-bottom: 15px;
+                        }
+                        .formListLia{
+                            margin-left: 0px;
+                            padding-left: 15px;
+                            height: 35px;
+                            width: 320px;
+                            font-size: 20px;
+                        }
+                        .icon{
+                            font-size: 28px;
+                        }
+                        .radioCheck {
+                            margin-top: 20px;
+                            label {
+                                font-weight: normal;
+                                vertical-align: -5px;
+                                .wrapper {
+                                    position: relative;
+                                    top: 5px;
+                                    left: 0;
+                                    border-radius: 50%;
+                                    border: 1px solid #ccc;
+                                    box-sizing: content-box;
+                                    display: inline-block;
+                                    height: 30px;
+                                    margin-right: 10px;
+                                    width: 30px;
+                                    .checked {
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                        height: 15px;
+                                        margin: 8px 0 0 8px;
+                                        width: 15px;
+                                        background: #1d262e;
+                                    }
+                                }
+                            }
+                            input[type='radio'] {
+                                display: none;
+                            }
+                            span.por {
+                                font-size: 18px;
+                            }
+                            span.percent {
+                                margin-left: 45px;
+                                font-size: 12px;
+                            }
+                        }
+                        .on {
+                            input[type='radio'] + label .checked {
+                                background: #008580;
+                            }
+                        }
+                        .incomeConent,
+                        .LiabConent{
+                             width: 1180px;
+                              table {
+                                  margin-bottom: 15px;
+                                tr {
+                                    th{
+                                        height: 45px;
+                                        vertical-align: middle;
+                                        .icon{
+                                            font-size: 28px;
+                                        }
+                                    }
+                                    td {
+                                        border-bottom-width: 1px;
+                                        border-bottom-style: solid; 
+                                        border-bottom-color: #939393;
+                                        height: 65px;
+                                        vertical-align: middle;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        .icon{
+                                            font-size: 28px;
+                                        }
+                                    }
+                                    th {
+                                        background-color: #253038;
+                                        color: #fff;
+                                        text-align: center;
+                                    }
+                                    th:first-child,
+                                    td:first-child {
+                                        padding-left: 15px;
+                                        text-align: left;
+                                        border-left-width: 1px;
+                                        border-left-style: solid; 
+                                        border-left-color: #939393;
+                                    }
+                                    th:last-child,
+                                    td:last-child {
+                                        text-align: center;
+                                        border-right-width: 1px;
+                                        border-right-style: solid; 
+                                        border-right-color: #939393;
+                                    
+                                    }
+                                }
+                            }
+                        }
+
+                        .incomeConent{
+                            th:first-child,
+                            td:first-child{
+                                width: 900px;
+                            }
+                            th:last-child,
+                            td:last-child {
+                                width: 300px;
+                            }
+                            .formList{
+                                margin-left: 0px;
+                                padding-left: 8px;
+                                height: 45px;
+                                width: 270px;
+                                font-size: 20px;
+                            }
+                            .lastTd{
+                                height: 50px;
+                            }
+                        }
+                        .LiabConent{
+                            th:first-child,
+                            td:first-child {
+                                padding-left: 15px;
+                                width:180px;
+                                text-align: left;
+                                border-right-width: 0px;
+                            }
+                            .inputTd{
+                                 width:280px;
+                                 padding:0px 8px;
+                                .formListLia{
+                                    margin-left: 0px;
+                                    padding-left: 8px;
+                                    height: 45px;
+                                    width: 220px;
+                                    font-size: 20px;
+                                }
+                            }
+                            .textTd{
+                                width:120px;
+                                text-align: center;
+                            }
+                            .remarkTd{
+                                width:160px;
+                                text-align: center;
+                                border-right-width: 1px;
+                            }
+                            .lastTr{
+                                height: 45px;
+                            }
+                            .tableBottom{
+                                font-size: 12px;
+                            }
+                        }
+                        .next {
+                            a {
+                                border: 1px solid #d80a1e;
+                                float: right;
+                                color: #d80a1e;
+                                padding: 15px 20px;
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+                .currencySelect {
+                    p {
+                        margin: 10px 0;
+                        font-size: 18px;
+                    }
+                    select {
+                        border: 1px solid #ccc;
+                        -moz-appearance: none;
+                        -webkit-appearance: none;
+                        appearance: none;
+                        padding: 12px 70px 12px 20px;
+                        font-family: inherit;
+                    }
+                    select::-ms-expand {
+                        display: none;
+                    }
+                }
+                .average {
+                    .income,
+                    .expenses {
+                        float: left;
+                        width: 36%;
+                    }
+                    .expenses {
+                        margin-left: 50px;
+                    }
+                    .list {
+                        margin-top: 20px;
+                        p {
+                            margin: 10px 0;
+                            min-height: 50px;
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                        .currencyType {
+                            border: 1px solid #ccc;
+                            float: left;
+                            position: relative;
+                            padding: 12px;
+                            width: 340px;
+                            span {
+                                color: #666;
+                            }
+                            .num {
+                                position: absolute;
+                                top: 10px;
+                                left: 60px;
+                                border: none;
+                            }
+                        }
+                        .iconEdit {
+                            float: left;
+                            margin: 6px 0 0 5px;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .reason {
+                    margin-top: 35px;
+                    p {
+                        width: 70%;
+                        line-height: 25px;
+                    }
+                    select {
+                        width: 30%;
+                    }
+                }
+                .monthly {
+                    margin-top: 35px;
+                    p.strong {
+                        width: 70%;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                    p.minHeight {
+                        min-height: 20px;
+                    }
+                }
+                .number {
+                    margin-top: 35px;
+                    span {
+                        margin-right: 20px;
+                    }
+                }
+                .choose {
+                    margin-top: 35px;
+                    .iconEdit {
+                        margin: 0 0 0 5px;
+                        font-size: 30px;
+                    }
+                    .radioCheck {
+                        float: left;
+                        margin-right: 30px;
+                    }
+                    label {
+                        font-weight: normal;
+                        .wrapper {
+                            position: relative;
+                            top: 5px;
+                            left: 0;
+                            border-radius: 50%;
+                            border: 1px solid #ccc;
+                            box-sizing: content-box;
+                            display: inline-block;
+                            height: 30px;
+                            margin-right: 10px;
+                            width: 30px;
+                            .checked {
+                                border-radius: 50%;
+                                display: inline-block;
+                                height: 15px;
+                                margin: 8px 0 0 8px;
+                                width: 15px;
+                                background: #1d262e;
+                            }
+                        }
+                    }
+                    input[type='radio'] {
+                        display: none;
+                    }
+                    .on {
+                        input[type='radio'] + label .checked {
+                            background: #008580;
+                        }
+                    }
+                }
+                .financial{
+                    background: #253038;
+                     h3 {
+                        margin: 20px 20px 0;
+                        background: #253038;
+                        color: #fff;
+                        font-size: 24px;
+                        font-weight: 200;
+                        height: 65px;
+                        line-height: 65px;
+                        vertical-align: middle;
+                        .up {
+                            position: absolute;
+                            right: 220px;
+                            font-size: 24px;
+                            color: #fff;
+                        }
+                        .title {
+                            border: none;
+                            color: #fff;
+                        }
+                    }
+                    .results {
+                        //margin: 0 20px 20px;
+                        padding: 25px 30px 30px 30px;
+                        background: #1d262e;
+                        color: #fff;
+                        .showLeft,
+                        .showRight {
+                            border: 1px solid #797d80;
+                            width: 580px;
+                        }
+                        ul {
+                            li {
+                                //padding: 20px;
+                                line-height: 50px;
+                                height: 50px;
+                                padding-left:15px;
+                                margin-bottom: 0px;
+                                span {
+                                    float: right;
+                                    margin-right: 20px;
+                                }
+                            }
+                            li:nth-child(2n + 1) {
+                                background: #253038;
+                            }
+                            li:first-child {
+                                border-bottom: 1px solid #797d80;
+                            }
+                        }
+                        .showLeft {
+                            float: left;
+                        }
+                        .showRight {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            bottom: 0;
+            left: 9.6%;
+            padding: 10px 25px;
+            width: 1300px;
+            font-size: 18px;
+            background: #fff;
+            position: fixed;
+            .button {
+                float: right;
+                a {
+                    display: inline-block;
+                    margin-top: 8px;
+                    padding: 15px 25px;
+                }
+                .save {
+                    background: #d80a1e;
+                    color: #fff;
+                }
+            }
+        }
+        .back {
+            padding: 0 20px 20px;
+            a {
+                font-size: 18px;
+                color: #333;
+            }
+            .icon {
+                color: #d80a1e;
+            }
+        }
+    }
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

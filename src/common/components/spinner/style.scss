@@ -1,0 +1,48 @@
+@import "../../styles/variable.scss";
+
+.spinner {
+    display: flex;
+    flex-flow: row nowrap;
+
+    $height: 45px;
+    height: $height;
+    line-height: $height - 4;
+    &.disabledStyle {
+        opacity: 0.7;
+    }
+    .spinnerButton:focus {
+        outline: auto;
+    }
+
+    > * {
+        display: flex;
+        flex: 1.5 18%;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        box-sizing: border-box;
+
+        line-height: inherit;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    > :not(.spinnerButton) {
+        $borderStyle: 1px solid $pewter;
+        flex: 7 70%;
+        padding: 0;
+        border-top: $borderStyle;
+        border-bottom: $borderStyle;
+        text-align: center;
+    }
+}
+
+.spinnerButton {
+    border: 1px solid $jade;
+    background-color: $jade;
+
+    &::before {
+        color: $white;
+    }
+}

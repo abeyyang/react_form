@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "HSBCIcon-Font-STB";
+    font-style: normal;
+    font-weight: normal;
+    src: url("wealth/src/Web/styles/fonts/HSBCIcon-Font.eot");
+    src: url("wealth/src/Web/styles/fonts/HSBCIcon-Font.eot?#iefix") format("embedded-opentype");
+    src: url("wealth/src/Web/styles/fonts/HSBCIcon-Font.woff") format("woff");
+    src: url("wealth/src/Web/styles/fonts/HSBCIcon-Font.ttf") format("truetype");
+}
+summary::-webkit-details-marker {
+    display: none;
+    
+}
+summary::after{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    content: "\F055";
+    background: transparent;
+    font-family: "HSBCIcon-Font-STB";
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+}
+.details {
+    border: 1px solid #eee;
+    background: #fff;
+    .summary ~ * {
+        display: none;
+    }
+
+    &[open] {
+        .summary ~ * {
+            display: block;
+        }
+        .summary{
+            border-bottom-color:#eee;
+        }
+        summary::after {
+            content:"\F056";
+        }
+    }
+}
+
+.summary {
+    display: block;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    cursor:pointer;
+    & > span {
+        display: inline-block;
+        line-height: 24px;
+        height: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-left: 4px solid #d60202;
+        font-size: 18px;
+        margin: 0 20px;
+        padding: 0 5px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    & > div {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 20px;
+        & > span,
+        & > b,
+        & > i {
+            display:inline-block;
+            width: 33%;
+            font-style:normal;
+            font-weight: normal;
+            font-size: 16px;
+            color:#333;
+        }
+        & > span {
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+        }
+        & > b {
+            font-size: 16px;
+            border-left:4px solid #d60202;
+            height: 22px;
+            line-height: 23px;
+        }
+        & > i {
+            font-size: 14px;
+        }
+        & > span > span {
+            margin-right: 5px;
+        }
+        & > span > span::before {
+            font-size: 35px;
+        }
+    }
+}

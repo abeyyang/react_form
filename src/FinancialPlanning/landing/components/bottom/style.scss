@@ -1,0 +1,121 @@
+.specialPage {
+    padding: 0px 20px 20px 20px;
+    background-color: #eeeceb;
+    p.mt20 {
+        margin-top: 30px;
+    }
+    .whatwhouldyoulike{
+        //margin-top: 20px;
+        height: 23px;	
+        width: 277px;	
+        color: #333333;	
+        font-family: "Univers Next for HSBC";	
+        font-size: 22px;	
+        font-weight: 300;	
+        line-height: 27px;
+    }
+    .moduleThree{
+        clear: both;
+        margin-top: 10px;
+        .whatyouwant{
+            height: 155px;
+            width: 610px;
+            background-color: #FFFFFF;
+            p{
+                padding-top: 20px;
+                margin-top: 21px;
+                margin-left: 26px;
+                height: 16px;	
+                width: 223px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 16px;	
+                font-weight: bold;	
+                line-height: 19px;
+            }
+            .wantDescription{
+                height: 54px;	
+                width: 485px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 14px;	
+                line-height: 18px;
+                margin-left: 26px;
+                margin-top: 5px;
+            }
+            a{
+                cursor:pointer;
+                display: inline-block;
+                line-height: 40px;
+                height: 40px;	
+                width: 192px;	
+                background-color: #3E505D;
+                color: #fff;
+                border: none;
+                margin-left: 20px;
+                text-align: center;
+            }
+            .disable{
+                cursor: context-menu;
+                background-color: #B6B7B6;
+            }
+        }
+        .needGuidance{
+            float: left;
+            // position: absolute;
+            margin-left: 655px;
+            margin-top: -155px;
+            height: 155px;
+            width: 610px;
+            background-color: #FFFFFF;
+             p{
+                margin-top: 21px;
+                margin-left: 26px;
+                height: 16px;	
+                width: 223px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 16px;	
+                font-weight: bold;	
+                line-height: 19px;
+            }
+            .wantDescription{
+                height: 54px;	
+                width: 485px;	
+                color: #333333;	
+                font-family: "Univers Next for HSBC";	
+                font-size: 14px;	
+                line-height: 18px;
+                margin-left: 26px;
+                margin-top: 5px;
+            }
+            a{
+                cursor:pointer;
+                display: inline-block;
+                line-height: 40px;
+                height: 40px;	
+                width: 192px;	
+                background-color: #3E505D;
+                color: #fff;
+                border: none;
+               margin-left: 20px;
+               text-align: center;
+            }
+        }
+    }
+}
+.center {
+    text-align: center;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}

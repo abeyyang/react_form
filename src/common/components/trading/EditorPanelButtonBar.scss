@@ -1,0 +1,95 @@
+/********************************  EditorPanelButtonBar css  *******************************/
+@charset "utf-8";
+@import "../../styles/trading/tradingVariable";
+
+.control {
+    // bottom: 1070px;
+    margin-top: 85px; 
+    border-top: $border #404040;
+    // position: $position-absolute;
+    display: $block;
+    // width: 90%;
+    .button {
+        position: $position-relative;
+        color: $color-6;
+        margin-top: $num-3;
+        text-align: $center;
+        a {
+            color: $color-c;
+        }
+        .cover {
+            z-index: 10;
+            position: $position-absolute;
+            right: $num-0;
+            bottom: $num-0;
+            border: $border #333;
+            width: 100%;
+            text-indent: -9999px;
+            background: #333;
+            opacity: 0.7;
+        }
+    }
+    .fr {
+        float: $right;
+    }
+    .next a {
+        border: $border white;
+        display: $block;
+        padding: $num-1 $num-2;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .preview a {
+        border: $border $red;
+        color: $white;
+        display: $block;
+        padding: $num-1 $num-2;
+        text-decoration: none;
+        cursor: pointer;
+        background: $red;
+    }
+    .next {
+        margin-left: $num-2;
+        margin-right: $num-2;
+    }
+    .cancel a {
+        border: $border $white;
+        display: $block;
+        padding: $num-1 $num-2;
+        text-decoration: none;
+        cursor: pointer;
+        background: none;
+    }
+}
+
+.clear {
+    clear: $clear;
+}
+
+/* overlay */
+.warning-title {
+    font-size: 26px;
+    color: $color-3;
+}
+.choose {
+    border-bottom: $border-col;
+    padding: $num-2 $num-0 45px $num-0;
+    color: $color-3;
+}
+.p-btn {
+    margin-top: $num-2;
+    a {
+        border: $border $color-6;
+        display: $inline-block;
+        float: $right;
+        margin-left: 8px;
+        max-width: 160px;
+        min-width: 55px;
+        padding: $num-1 15px;
+        color: $color-6;
+        text-align: center;
+    }
+    a:hover {
+        text-decoration: $hidden;
+    }
+}

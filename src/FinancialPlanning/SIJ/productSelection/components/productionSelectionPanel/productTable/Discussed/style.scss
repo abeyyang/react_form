@@ -1,0 +1,22 @@
+.chkbox {
+    display: none;
+}
+label.boxlabel {
+    display: block;
+}
+.chkbox + label {
+    border: 1px solid #7c7c7c;
+    display: inline-block;
+    height: 20px;
+    margin-right: 15px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: -5px;
+    background: none;
+}
+.chkbox:checked + label::after {
+    content: "\2714";
+    color: #008580;
+    vertical-align: 6px;
+}

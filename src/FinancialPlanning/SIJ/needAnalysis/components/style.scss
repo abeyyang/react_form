@@ -1,0 +1,639 @@
+.bodyBackground {
+    background-color: #000;
+    a {
+        text-decoration: none;
+    }
+    .mainBackground {
+        margin: 0 auto;
+        padding: 20px 0px;
+        width: 1305px;
+        background-color: #eeeceb;
+        padding-bottom: 45px;
+        select {
+                margin-top: 10px;
+                border: 1px solid #7C7C7C;
+                padding-left: 12px;
+                width: 220px;
+                height: 40px;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                font-family: inherit;
+                background-image: url('./images/down.png') no-repeat right center transparent;
+            }
+            select::-ms-expand {
+                display: none;
+            }
+        .nav {
+            .tab {
+                margin-bottom: 20px;
+                padding: 0px 20px;
+                li {
+                    border-bottom: 5px solid #929292;
+                    float: left;
+                    margin-right: 2px;
+                    padding-bottom: 10px;
+                    width: 420px;
+                    a {
+                        color: #333;
+                    }
+                }
+                li:last-child {
+                    margin-right: 0;
+                }
+                li.on {
+                    border-bottom: 5px solid #d80a1e;
+                }
+            }
+            .editGoal{
+                background-color: #fff;
+                margin: 0px 20px;
+                height: 55px;
+                margin-top: 10px;
+                padding: 0 20px;
+                line-height:55px;
+                span{
+                    margin-right: 10px;
+                }
+                .goalName{
+                    float: left;
+                    .goalNameShow,.goalNameHidden{
+                        width: 500px;
+                        background-color: #fff;
+                        height: 35px;
+                        vertical-align: middle;
+                    }
+                    .goalNameHidden{
+                        border-style: hidden;
+                    }   
+                    .goal{
+                        border-left: 5px solid #d80a1e;
+                        padding-left: 10px;
+                        color: #333333;
+                        font-size: 20px;	
+                        line-height: 18px;
+                        .iconInsurance{
+                            font-size: 32px;
+                        }
+                    }
+                     .circle{
+                        vertical-align: middle;
+                        width:25px;
+                        height:25px;
+                        margin-left:10px;
+                        border-radius: 50%;
+                        background-color: #E9A115;
+                        display: inline-block;
+                        -moz-border-radius:50%;
+                        -webkit-border-radius:50%;
+                        color:#fff;
+                        text-align: center;
+                        line-height: 25px;
+                    }
+                    .riskLevel0{
+                        background-color: #E6E6E6;
+                    }
+                    .riskLevel1{
+                        background-color: #6E86AC;
+                    }
+                    .riskLevel2{
+                        background-color: #6FA897;
+                    }
+                    .riskLevel3{
+                        background-color: #82B864;
+                    }
+                    .riskLevel4{
+                        background-color: #E9A115;
+                    }
+                    .riskLevel5{
+                        background-color: #FF0303;
+                    }
+                }
+                .editGoalName{
+                    float: right;
+                    font-size: 14px;
+                    font-family: "Univers Next for HSBC";
+                    color: #333333;
+                    cursor:pointer;
+                    line-height: 55px;
+                    height: 55px;
+                    .iconEdit{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .needAnalysisPanel {
+            background-color: #eeeceb;
+            h4 {
+                clear: both;
+                height: 80px;
+                line-height: 80px;
+                .title {
+                    padding-left: 20px;
+                    font-size: 32px;	
+                    font-weight: 300;	
+                    line-height: 32px;
+                    color: #333;
+                }
+            }
+            .needAnalysisMain {
+                padding: 0 20px;
+                .nacon {
+                    padding: 20px 20px 20px 20px;
+                    background: #fff;
+                    h5 {
+                        margin: 20px 20px 5px 0px;
+                        font-size: 16px;
+                        color: #333333;
+                        line-height: 28px;
+                    }
+                    .title{
+                        border-left: 5px solid #d80a1e;
+                        padding-left: 20px; 
+                        color: #333333;
+                        font-size: 22px;	
+                        line-height: 18px;
+                    }
+                    .input {
+                        height: 45px;
+                        width: 105px;
+                        font-size: 16px;
+                        text-align: left;
+                            padding-left: 15px;
+                    }
+                    .input1 {
+                        height: 36px;	
+                        width: 240px;	
+                        border: 1px solid #D7D8D6;	
+                        background-color: #FFFFFF;
+                        vertical-align: middle;
+                        font-size: 16px;
+                    }
+                    .currencyType {
+                        background-color: #FFFFFF;
+                        margin-left: 32px;
+                        border: 1px solid #ccc;
+                        padding-left: 15px;
+                        width: 244px;
+                        margin-top: 10px;
+                        span { 
+                            color: #929292;
+                        }
+                        .num {
+                            color: #929292;;
+                            height: 38px;
+                            top: 10px;
+                            left: 60px;
+                            border: none;
+                        }
+                    }  
+                    .errorBar{
+                        margin-left: 10px;
+                    .errorlabel{
+                        background-color: #f6bfc3;
+                        color: #000;
+                        margin-left: 15px;
+                        display: block;
+                            position: relative;
+                            z-index: 1;
+                            clear: both;
+                            margin-top: 10px;
+                            padding: 12px;
+                            left: 0 !important;
+                            width: 240px !important;
+                    }
+                    .triangle{
+                        width:0px;
+                        height:0px;
+                        line-height:0;
+                        border:10px solid transparent;
+                        border-bottom-color: #f6bfc3;
+                        border-top:0; 
+                        margin-left:128px;
+                        margin-bottom:-10px;
+                    } 
+                }  
+                .chkbox {
+                    display: none;
+                }
+                label.boxlabel {
+                    display: block;
+                }
+                .chkbox + label {
+                    border: 1px solid #7c7c7c;
+                    display: inline-block;
+                    height: 20px;
+                    margin-right: 15px;
+                    width: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    vertical-align: -5px;
+                    background: none;
+                }
+                .chkbox:checked + label::after {
+                    content: "\2714";
+                    color: #008580;
+                    vertical-align: 6px;
+                }
+                .radioCheck {
+                    float: left;
+                    margin-right: 30px;
+                    margin-top: 10px;
+                }
+                label.radiolabel{
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 10px;
+                    padding-left: 32px;
+                }
+                label.radiolabel::before{
+                    content: "";
+                    width:21px;
+                    height: 21px;
+                    margin-right: 10px;
+                    border-radius: 50%;
+                    -webkit-border-radius:50%;
+                    border: 1px solid #ccc;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0px;
+                    margin-right: 10px;
+                    bottom: -8px;
+                    
+                }
+                input[type='radio'] {
+                    display: none;
+                }
+                    
+                input[type='radio']:checked + label::before{
+                    content: "\2022";
+                    color: #008580;
+                    font-size: 25px;
+                    text-align: center;
+                }
+                .icon {
+                    font-size: 35px;
+                    color: #008580;
+                }
+                .small {
+                    font-size: 12px;
+                    margin-left: 20px;
+                    color: #5C5C5C;
+                }
+                .smallAnswer{
+                    font-size: 12px;
+                    margin-left: 35px;
+                }
+                .answers{
+                    margin-left: 20px;
+                }
+                .naconTwo{
+                    margin-top: 20px;
+                    background-color: #F6F6F6;
+                    padding: 10px 20px;
+                }
+                .naconThree{
+                    padding-top: 50px;
+                    background-color: #F6F6F6;
+                    padding: 20px;
+                    input{
+                        background-color: #FFFFFF;
+                    }
+                }
+                .naconFive,.naconSix{
+                    select{
+                        margin-left: 18px;
+                    }
+                }
+                .naconEight{
+                    input{
+                        margin-left: 18px; 
+                        width: 60px;
+                        margin-right: 15px;
+                    } 
+                    button{
+                        margin-left: 9px;
+                        height: 30px;	
+                        width: 82px;	
+                        background-color: #3E505D;
+                        color: #FFFFFF;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .naconAttached {
+                padding: 5px 20px;
+                background: #fff;
+                .errorMessage{
+                    color: #DB0011;
+                }
+                .total {
+                    color: #333333;
+                    font-size: 22px;
+                    border-left: 5px solid #d80a1e;
+                    padding-left: 20px;
+                }
+                .showAll{
+                    padding: 20px;
+                    font-size: 18px;
+                    text-align: right;
+                    border-bottom: 3px solid #F6F6F6;
+                    margin-top: -40px;
+                    .required{
+                        font-size: 12px;	
+                        line-height: 14px;
+                        .flag{
+                            color: #AF000D;
+                        }
+                    }
+                }
+                .fill{
+                    background-color: #F6F6F6;
+                    padding: 20px;
+                    .left {
+                        width: 385px;
+                    }
+                    .middle {
+                        width: 385px;
+                    }
+                    .right {
+                        width: 440px;
+                        .errorMessage{
+                            color: #DB0011;
+                        }
+                    }
+                    .left,.middle,.right{
+                        h5 {
+                            margin: 0px 0px 10px;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #333333;
+                        }
+                        .currencyType,.errorcurrencyType {
+                            background-color: #FFFFFF;
+                            border: 1px solid  #ccc;
+                            height: 38px;
+                            width: 260px;
+                            line-height: 38px;
+                            margin-bottom: 30px;
+                            span {
+                                color: #666;
+                            }
+                            .num {
+                                top: 10px;
+                                left: 60px;
+                                border: none;
+                                background-color: #FFFFFF; 
+                            }
+                            .inputFlag{
+                                float: right;
+                                position: absolute;
+                                margin-top: -12px;
+                                margin-left: 35px;
+                                color: #AF000D;
+                                font-size: 14px;
+                            }
+                        }
+                        .errorcurrencyType {
+                            border: 1px solid  #ff1a1a;
+                            margin-left: 24px;
+                            span{
+                                margin-left: 15px;
+                            }
+                        }
+                        .errorBar{
+                            margin-top: -30px;
+                            margin-left: 10px;
+                            .errorlabel{
+                                background-color: #f6bfc3;
+                                color: #000;
+                                margin-left: 15px;
+                                display: block;
+                                position: relative;
+                                z-index: 1;
+                                clear: both;
+                                margin-top: 10px;
+                                padding: 12px;
+                                left: 0 !important;
+                                width: 240px !important;
+                            }
+                            .triangle{
+                                width:0px;
+                                height:0px;
+                                line-height:0;
+                                border:10px solid transparent;
+                                border-bottom-color: #f6bfc3;
+                                border-top:0; 
+                                margin-left:128px;
+                                margin-bottom:-10px;
+                            } 
+                        }
+                    }
+                    
+                    .showAll{
+                        margin-right: 56px;
+                        margin-top: -85px;
+                            .iconEdit {
+                            font-size: 30px;
+                        }
+                        .iconKey{
+                            font-size: 30px; 
+                        }
+                    }
+                    .input {
+                        height: 30px;
+                        padding-left: 20px;;
+                        font-size: 23px;
+                        text-align: left;
+                    }
+                    .inputwidth {
+                        width: 30%;
+                    }
+                    .icon {
+                        font-size: 35px;
+                        color: #008580;
+                    }
+                }
+                h5 {
+                    margin: 20px 0px 10px;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #333333;
+                }
+                p{
+                    color: #5C5C5C;
+                    font-size: 12px;	
+                    line-height: 16px;
+                    margin-left: 20px;
+                    width: 763px;
+                }
+                .currencyType {
+                    margin-left: 20px;
+                    border: 1px solid #ccc;
+                    background-color: #FFFFFF;
+                    padding-left: 15px;
+                    width: 244px;
+                    margin-top: 10px;
+                    span { 
+                        color: #929292;
+                    }
+                    .numOther {
+                        color: #929292;;
+                        height: 36px;
+                        top: 10px;
+                        left: 60px;
+                        border: none;
+                    }
+                }
+                .textarea{
+                    margin-left: 20px;
+                    padding-bottom: 20px;
+                    textarea{
+                        color: #999;
+                        font-family: inherit;
+                        height: 62px;	
+                        width: 692px;	
+                        border: 1px solid #929292;	
+                        background-color: #FFFFFF;
+                        padding: 10px;
+                    }
+                }
+                .errorBar{
+                    margin-left: 4px;
+                    .errorlabel{
+                        background-color: #f6bfc3;
+                        color: #000;
+                        margin-left: 15px;
+                        display: block;
+                        position: relative;
+                        z-index: 1;
+                        clear: both;
+                        margin-top: 10px;
+                        padding: 12px;
+                        left: 0 !important;
+                        width: 240px !important;
+                    }
+                    .triangle{
+                        width:0px;
+                        height:0px;
+                        line-height:0;
+                        border:10px solid transparent;
+                        border-bottom-color: #f6bfc3;
+                        border-top:0; 
+                        margin-left:128px;
+                        margin-bottom:-10px;
+                    } 
+                }
+            }
+            /*
+            .naconInExp{
+                padding: 20px 20px 20px 0px;
+                background: #fff;
+                p {
+                    margin-bottom: 10px;
+                    line-height: 20px;
+                }
+                .total {
+                    font-size: 24px;
+                }
+                .left {
+                    float: left;
+                    width: 385px;
+                }
+                .middle {
+                    float: left;
+                    width: 385px;
+                }
+                .right {
+                    float: right;
+                    width: 440px;
+                    .errorMessage{
+                        color: #DB0011;
+                    }
+                }
+                h5 {
+                    margin: 20px 0 10px;
+                    font-size: 22px;
+                }
+                .input {
+                    height: 45px;
+                    padding-left: 20px;
+                    width: 70%;
+                    font-size: 23px;
+                    text-align: left;
+                }
+                .inputwidth {
+                    width: 30%;
+                }
+                .textarea textarea {
+                    color: #999;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    font-family: inherit;
+                }
+                .icon {
+                    font-size: 35px;
+                    color: #008580;
+                }
+                .iconEdit {
+                    font-size: 35px;
+                } 
+            }*/
+            }
+        }
+        .footer {
+            width: 1300px;
+            font-size: 18px;
+            .back {
+                margin-top: 30px;
+                margin-left: 20px;
+                a {
+                    font-size: 14px;	
+                    line-height: 18px;
+                    color: #333;
+                }
+            }
+            .button {
+                float: right;
+                margin-right: 40px;
+                margin-top: -20px;
+                a {
+                    display: inline-block;
+                    color: #333;
+                }
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                .save{
+                    margin-right: 17px;
+                    width: 145px;
+                    border: 1px solid #333333;
+                    color: #333;
+                }
+            }
+        }
+    }
+    .mt20 {
+        margin-top: 20px;
+    }
+    .mt10 {
+        margin-top: 10px;
+    }
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+    overflow: hidden;
+}
+
+.errorMessage{
+    color: #DB0011;
+}
